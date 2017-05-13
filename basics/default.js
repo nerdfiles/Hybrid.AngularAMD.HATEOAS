@@ -8,6 +8,11 @@
 module.exports = function (grunt) {
   'use strict';
 
+  var prefixOfList = '';
+  var hr = '\n';
+  var l = ' ● ';
+  var nl = '\n';
+
   Array.prototype.label = function (l) {
     var b = this.map(function (i) {
       return (l + i);
@@ -24,11 +29,6 @@ module.exports = function (grunt) {
     this.push(q);
     return this.join(q);
   };
-
-  var prefixOfList = '';
-  var hr = '\n';
-  var l = ' ✔︎ ';
-  var nl = '\n';
 
   var basics = [
     'default',
@@ -52,7 +52,7 @@ module.exports = function (grunt) {
    * @description Display global tasks list.
    */
   grunt.registerTask('default', 'Silly tasks output', function () {
-    grunt.log.write('⦿ 𝘽 𝘼 𝙎 𝙄 𝘾 𝙎', basics);
+    grunt.log.write('◎ 𝘽 𝘼 𝙎 𝙄 𝘾 𝙎', basics);
     grunt.log.write(hr);
     grunt.log.write('◉ 𝙒 𝙊 𝙍 𝙆 𝙁 𝙇 𝙊 𝙒 𝙎', workflows);
   });
