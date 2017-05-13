@@ -16,7 +16,7 @@ After cloning:
     $ npm i
     $ bower i
 
-Review Grunt tasks:
+Review Grunt "strategies":
 
     $ grunt
 
