@@ -14,7 +14,9 @@
     "organic-css": "https://github.com/krasimir/organic-css.git",
     "tachyons": "^4.7.2",
     "animate.css": "^3.5.2",
-    "hint.css": "^2.5.0"
+    "hint.css": "^2.5.0",
+    "tachyons-sass": "^4.7.1",
+    "animate.scss": "*"
   },
   "resolutions": {
     "angular": "1.5"
