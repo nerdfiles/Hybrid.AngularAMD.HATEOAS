@@ -10,7 +10,11 @@
     "angular-resource": "1.5",
     "angular-sanitize": "1.5",
     "angular-touch": "1.5",
-    "angular-ui-router": "0.4.2"
+    "angular-ui-router": "0.4.2",
+    "organic-css": "https://github.com/krasimir/organic-css.git",
+    "tachyons": "^4.7.2",
+    "animate.css": "^3.5.2",
+    "hint.css": "^2.5.0"
   },
   "resolutions": {
     "angular": "1.5"
