@@ -1,0 +1,18 @@
+{
+  "name": "ngAmdMicroservicesSeed",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "1.6.4",
+    "angular-route": "*",
+    "angularAMD": "https://github.com/marcoslin/angularAMD.git",
+    "requirejs": "2.1.14",
+    "angular-animate": "*",
+    "angular-cookies": "*",
+    "angular-resource": "*",
+    "angular-sanitize": "*",
+    "angular-touch": "*"
+  },
+  "resolutions": {
+    "angular": "1.6.4"
+  }
+}

@@ -1,0 +1,36 @@
+{
+
+  "env": {
+    "client": "client",
+    "clientScripts": "scripts",
+    "clientStyles": "styles",
+    "template": "template",
+    "views": "views",
+    "vendor": "ext",
+    "build": "build",
+    "dist": "dist",
+    "hostname": "localhost",
+    "port": 9001,
+    "portSecure": 8443
+  },
+
+  "vendorScripts": [
+    "angular/angular.js",
+    "angular-route/angular-route.js",
+    "angularAMD/dist/angularAMD.js",
+    "angularAMD/dist/ngload.js",
+    "requirejs/require.js",
+    "angular-animate/angular-animate.js",
+    "angular-cookies/angular-cookies.js",
+    "angular-resource/angular-resource.js",
+    "angular-sanitize/angular-sanitize.js",
+    "angular-touch/angular-touch.js"
+  ],
+
+  "vendorStyles": [],
+
+  "buildFiles": [
+    "images/**"
+  ]
+
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+
+  <meta charset="utf-8" />
+  <title></title>
+  <meta
+    name="description"
+    content=""
+  />
+  <meta
+    name="viewport"
+    content="width=device-width"
+  />
+  <link
+    rel="stylesheet"
+    href="styles/interface.css"
+  />
+
+  <base href="/" />
+
+</head>
+
+<body>
+
+  <div ng-view></div>
+
+  <script
+    type="text/javascript"
+    data-main="scripts/boot.js"
+    src="scripts/ext/require.js"
+  ></script>
+
+  <!-- build:js scripts/optimized.js -->
+  <!-- endbuild -->
+
+  <!-- @exclude -->
+  <script
+    type="text/javascript"
+    src="http://localhost:1337/livereload.js?snipver=1"
+  ></script>
+  <!-- @endexclude -->
+
+</body>
+
+</html>

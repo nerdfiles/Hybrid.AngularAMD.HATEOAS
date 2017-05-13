@@ -1,0 +1,12 @@
+scripts/ext/
+styles/ext/
+bower_components/
+node_modules/
+.sass-cache/
+.idea
+*.swp
+dist
+build/
+docs/
+reports/
+*.log
