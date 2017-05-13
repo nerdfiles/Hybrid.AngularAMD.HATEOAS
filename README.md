@@ -55,13 +55,13 @@ Removing vendors in similar fashion is easy:
 
 ## Other noteworthy points
 
-1. RequireJS Hot Swapping / Code-On-Demand
+1. TODO RequireJS Hot Swapping / Code-On-Demand
 2. ngdocs on RequireJS
 3. ngdocs on GruntJS (really modular tasks as basics and workflows)
 4. Organic CSS
 5. Optimized builds
-5. Layering: (RequireJS Modules + DualApi) ➢ Hypertext Passing
-6. TODO `ui-router` + [angular-hypermedia][angular-hypermedia] or [angular-hy-res][angular-hy-res]
+6. TODO Layering: (RequireJS Modules + DualApi) ➢ Hypertext Passing
+7. TODO [angular-hypermedia][angular-hypermedia] or [angular-hy-res][angular-hy-res]
 
 
 [halberd]: https://github.com/jpbochi/halberd
