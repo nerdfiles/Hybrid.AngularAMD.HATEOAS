@@ -4,8 +4,6 @@
  * @name basics.module:add
  * @description Add properties to or elements to properties in project file.
  */
-var fs = require('fs');
-
 module.exports = function (grunt) {
   'use strict';
 
@@ -19,8 +17,9 @@ module.exports = function (grunt) {
 
     var br = '\n';
     var prefix = '✅  ';
+    var warning = '⚠️  ';
 
-    var project = JSON.parse(fs.readFileSync('./project.json', 'utf8'));
+    var project = JSON.parse(grunt.file.read('./project.json', { encoding: 'utf8' }));
     var vendor = grunt.option('vendor');
     var layer = grunt.option('layer');
     var layerScripts = 'vendorScripts';
@@ -32,7 +31,7 @@ module.exports = function (grunt) {
     } else if (layer === 'script') {
       __layer__ = layerScripts;
     } else {
-      return grunt.log.error('Please specify a layer!');
+      return grunt.log.write(warning + 'Please specify a layer!');
     }
 
     // Prune base path from param
@@ -44,20 +43,29 @@ module.exports = function (grunt) {
     }
     var newVendor = v.join('');
 
-    // Push vendor to project vendors array
-    project[__layer__].push(newVendor);
-
-    // Update project file
-    var j = JSON.stringify(project, null, 2);
-    var fp = __dirname + '/../project.json';
-
-    try {
-      grunt.file.write(fp, j, { encoding: 'utf8' });
-    } catch (e) {
-      return grunt.log.error(e);
+    if (project[__layer__].indexOf(newVendor) !== -1) {
+      return grunt.log.write(warning + 'Vendor already exists in build setup.');
     }
 
-    grunt.log.write('Added to vendorScripts in project.json:' + br, prefix + newVendor);
+    var fileExists = grunt.file.exists(basePath + newVendor);
+    if (!fileExists) {
+      return grunt.log.write(warning + 'Vendor does not exist. Try installing with $ bower install VENDOR_NAME');
+    }
+
+		// Push vendor to project vendors array
+		project[__layer__].push(newVendor);
+
+		// Update project file
+		var j = JSON.stringify(project, null, 2);
+		var fp = __dirname + '/../project.json';
+
+		try {
+			grunt.file.write(fp, j, { encoding: 'utf8' });
+		} catch (e) {
+			return grunt.log.error(e);
+		}
+
+		grunt.log.write('Added to vendorScripts in project.json:' + br, prefix + newVendor);
 
   });
 
