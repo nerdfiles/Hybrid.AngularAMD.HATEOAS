@@ -10,11 +10,43 @@ module.exports = function (grunt) {
   var modules = [
     { name: 'boot' },
     {
+      name    : 'http',
+      exclude : ['boot']
+    },
+    {
+      name    : 'route',
+      exclude : ['boot']
+    },
+    {
+      name    : 'config/env',
+      exclude : ['boot']
+    },
+    {
+      name    : 'config/api',
+      exclude : ['boot']
+    },
+    {
+      name    : 'service/user',
+      exclude : ['boot']
+    },
+    {
       name    : 'module/home/index',
       exclude : ['boot']
     },
     {
       name    : 'module/settings/index',
+      exclude : ['boot']
+    },
+    {
+      name    : 'section/header/index',
+      exclude : ['boot']
+    },
+    {
+      name    : 'section/nav/index',
+      exclude : ['boot']
+    },
+    {
+      name    : 'interface',
       exclude : ['boot']
     }
   ];
@@ -29,13 +61,51 @@ module.exports = function (grunt) {
      */
     build: {
       options: {
-        baseUrl                : '<%= env.client %>/<%= env.clientScripts %>',
-        mainConfigFile         : '<%= env.client %>/<%= env.clientScripts %>/boot.js',
-        removeCombined         : true,
-        findNestedDependencies : true,
-        optimize               : 'none',
-        dir                    : '<%= env.build %>/<%= env.clientScripts %>/',
-        modules                : modules
+        baseUrl                    : '<%= env.client %>/<%= env.clientScripts %>',
+        mainConfigFile             : '<%= env.client %>/<%= env.clientScripts %>/boot.js',
+        findNestedDependencies     : true,
+        preserveLicenseComments    : false,
+        optimizeAllPluginResources : true,
+        logLevel                   : 0,
+
+        // removeCombined          : true,
+        removeCombined             : false,
+
+        // optimize                : 'none',
+        optimize                   : 'uglify2',
+
+        // modules                 : modules,
+        name                       : 'interface',
+        paths                      : {
+
+          'angularAMD' : '<%= env.vendor %>/angularAMD',
+          'ngload'     : '<%= env.vendor %>/ngload',
+
+          'angular'          : '<%= env.vendor %>/angular',
+          'angular-route'    : '<%= env.vendor %>/angular-route',
+          'angular-animate'  : '<%= env.vendor %>/angular-animate',
+          'angular-cookies'  : '<%= env.vendor %>/angular-cookies',
+          'angular-resource' : '<%= env.vendor %>/angular-resource',
+          'angular-sanitize' : '<%= env.vendor %>/angular-sanitize',
+          'angular-touch'    : '<%= env.vendor %>/angular-touch',
+          'angular-ui-router': '<%= env.vendor %>/angular-ui-router',
+
+          'core/http'        : 'http',
+          'core/route'       : 'route',
+
+          'interface'        : 'interface',
+
+          'HomeModuleIndexController'        : 'module/home/index',
+          'SettingsModuleIndexController'    : 'module/settings/index',
+          'HeaderSectionIndexController'     : 'section/header/index',
+          'NavigationSectionIndexController' : 'section/nav/index'
+
+        },
+
+        // dir                     : '<%= env.build %>/<%= env.clientScripts %>/',
+        // keepBuildDir            : true,
+        out                        : './<%= env.build %>/<%= env.name %>/app.js'
+
       }
     }
   };

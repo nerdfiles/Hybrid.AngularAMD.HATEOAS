@@ -1,5 +1,6 @@
 {
   "env": {
+    "name": "client",
     "client": "client",
     "clientScripts": "scripts",
     "clientStyles": "styles",

@@ -47,7 +47,6 @@
       'HeaderSectionIndexController'     : 'section/header/index',
       'NavigationSectionIndexController' : 'section/nav/index'
 
-
     },
 
     /**
