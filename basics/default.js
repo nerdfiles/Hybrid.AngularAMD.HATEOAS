@@ -4,7 +4,6 @@
  * @name basics.module:default
  * @description Default basic.
  */
-
 module.exports = function (grunt) {
   'use strict';
 
