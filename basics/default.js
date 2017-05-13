@@ -33,6 +33,8 @@ module.exports = function (grunt) {
 
   var basics = [
     'default',
+    'add/vendor --layer=(style|script) --vendor=[bower_components/]path/to/file.(js|css)',
+    'remove/vendor --layer=(style|script) --vendor=[bower_components/]path/to/file.(js|css)',
     'read/env'
   ].label(l).prefix(nl).prepare(nl);
 

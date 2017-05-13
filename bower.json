@@ -10,7 +10,8 @@
     "angular-cookies": "*",
     "angular-resource": "*",
     "angular-sanitize": "*",
-    "angular-touch": "*"
+    "angular-touch": "*",
+    "angular-ui-router": "ui-router#^1.0.3+hybrid-2.0.0-2"
   },
   "resolutions": {
     "angular": "1.6.4"
