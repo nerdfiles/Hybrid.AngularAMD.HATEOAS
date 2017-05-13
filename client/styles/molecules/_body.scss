@@ -5,9 +5,9 @@
  */
 
 body {
-	@include atoms((
-		font-size-16,
-		line-height-28,
-		font-family
-	))
+  @include atoms((
+    font-size-16,
+    line-height-28,
+    font-family
+  ))
 }

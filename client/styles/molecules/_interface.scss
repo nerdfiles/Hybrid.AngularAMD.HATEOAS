@@ -5,12 +5,12 @@
  */
 
 .interface {
-	@include atoms((
-		block,
-		margin-centered,
-		padding-reset,
+  @include atoms((
+    block,
+    margin-centered,
+    padding-reset,
     padding-10
-	)) {
-		max-width: 960px;
-	}
+  )) {
+    max-width: 960px;
+  }
 }
