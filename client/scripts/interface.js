@@ -6,22 +6,24 @@
  */
 define([
   'angularAMD',
-  'angular-route',
+  'core/http',
+  'core/route',
   'angular-animate',
   'angular-cookies',
   'angular-resource',
   'angular-sanitize',
-  'angular-touch'
-], function (angularAMD) {
+  'angular-touch',
+  'angular-ui-router'
+], function (angularAMD, httpSettings, routeContract) {
   'use strict';
 
   var appDependencies = [
-    'ngRoute',
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui.router'
   ];
 
   var app = angular.module('app', appDependencies);
@@ -33,50 +35,24 @@ define([
    * @function
    */
   app.config([
-    '$routeProvider',
+    '$stateProvider',
+    '$urlRouterProvider',
     routeContract
   ]);
 
   /**
    * @ngdoc method
-   * @name httpConfig
+   * @name httpSettings
    * @methodOf app:interface
    * @function
    */
   app.config([
     '$httpProvider',
     '$locationProvider',
-    httpConfig
+    httpSettings
   ]);
 
   ////////////
-
-  /**
-   * @function routeContract
-   */
-  function routeContract ($routeProvider) {
-    $routeProvider
-
-      .when('/', angularAMD.route({
-        templateUrl   : 'views/home.html',
-        controllerUrl : 'module/home/index'
-      }))
-
-      .when('/settings', angularAMD.route({
-        templateUrl   : 'views/settings.html',
-        controllerUrl : 'module/settings/index'
-      }))
-
-      .otherwise({redirectTo: '/'});
-  }
-
-  /**
-   * @function httpConfig
-   */
-  function httpConfig ($httpProvider, $locationProvider) {
-    $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-    $locationProvider.html5Mode(true);
-  }
 
   return angularAMD.bootstrap(app);
 

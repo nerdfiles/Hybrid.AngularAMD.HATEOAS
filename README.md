@@ -30,7 +30,8 @@ Here's an example of adding a vendor to the build:
 
 Removing vendors in similar fashion is easy:
 
-    $ grunt remove/vendor --layer=script --vendor=bower_components/angular-ui-router/release/angular-ui-router.js
+    $ grunt remove/vendor --layer=script --vendor=bower_components/angular-route/angular-route.js
+    $ bower uninstall angular-route --save
     $ grunt setup
     $ grunt build
 

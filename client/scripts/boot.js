@@ -34,7 +34,19 @@
       'angular-cookies'  : 'ext/angular-cookies',
       'angular-resource' : 'ext/angular-resource',
       'angular-sanitize' : 'ext/angular-sanitize',
-      'angular-touch'    : 'ext/angular-touch'
+      'angular-touch'    : 'ext/angular-touch',
+      'angular-ui-router': 'ext/angular-ui-router',
+
+      'core/http'        : 'http',
+      'core/route'       : 'route',
+
+      'interface'        : 'interface',
+
+      'HomeModuleIndexController'        : 'module/home/index',
+      'SettingsModuleIndexController'    : 'module/settings/index',
+      'HeaderSectionIndexController'     : 'section/header/index',
+      'NavigationSectionIndexController' : 'section/nav/index'
+
 
     },
 
@@ -45,6 +57,10 @@
      * @description TBD
      */
     shim: {
+
+      'angular': {
+        exports: 'angular'
+      },
 
       'angular-route': [
           'angular'
@@ -76,6 +92,10 @@
 
       'angular-touch': [
           'angular'
+      ],
+
+      'angular-ui-router': [
+        'angular'
       ]
 
     },

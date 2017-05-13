@@ -22,9 +22,24 @@
 
 </head>
 
-<body>
+<body
+  itemscope
+  itemtype="http://schema.org/WebPage"
+  class=""
+>
 
-  <div ng-view></div>
+  <div
+    itemscope
+    itemtype="http://schema.org/MobileSoftwareApplication"
+  >
+
+    <div data-ui-view="header"></div>
+
+    <div data-ui-view="nav"></div>
+
+    <div data-ui-view="main"></div>
+
+  </div>
 
   <script
     type="text/javascript"

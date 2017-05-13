@@ -4,7 +4,8 @@
  * @name app.home.module:index
  * @description Home Module Index Controller.
  */
-define([], function () {
+define([
+], function () {
   var moduleInterface = [
     '$scope',
     HomeModuleIndexController
