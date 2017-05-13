@@ -12,7 +12,7 @@ module.exports = function (grunt) {
    * Report
    * @description A complexity/maintainability analysis report.
    */
-  grunt.task.registerTask('report/complexity', '', function () {
+  grunt.task.registerTask('report/complexity', 'A complexity/maintainability analysis report', function () {
 
     exec('node ./utils/plato/base.js', function (error, stdout, stderr) {
       if (error) {
