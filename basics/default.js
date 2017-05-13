@@ -55,7 +55,7 @@ module.exports = function (grunt) {
    * @description Display global tasks list.
    */
   grunt.registerTask('default', 'Silly tasks output', function () {
-    grunt.log.write(headerBasics, basics);
+    grunt.log.write(nl + headerBasics, basics);
     grunt.log.write(br);
     grunt.log.write(headerWorkflows, workflows);
   });
