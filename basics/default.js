@@ -8,6 +8,8 @@
 module.exports = function (grunt) {
   'use strict';
 
+  var headerBasics = '◎ 𝘽 𝘼 𝙎 𝙄 𝘾 𝙎';
+  var headerWorkflows = '◉ 𝙒 𝙊 𝙍 𝙆 𝙁 𝙇 𝙊 𝙒 𝙎';
   var prefixOfList = '';
   var br = '\n';
   var l = ' ● ';
@@ -52,9 +54,9 @@ module.exports = function (grunt) {
    * @description Display global tasks list.
    */
   grunt.registerTask('default', 'Silly tasks output', function () {
-    grunt.log.write('◎ 𝘽 𝘼 𝙎 𝙄 𝘾 𝙎', basics);
+    grunt.log.write(headerBasics, basics);
     grunt.log.write(br);
-    grunt.log.write('◉ 𝙒 𝙊 𝙍 𝙆 𝙁 𝙇 𝙊 𝙒 𝙎', workflows);
+    grunt.log.write(headerWorkflows, workflows);
   });
 
 };
