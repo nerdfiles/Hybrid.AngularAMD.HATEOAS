@@ -9,8 +9,11 @@ module.exports = function (grunt) {
   var exec = require('child_process').exec;
 
   /**
-   * Report
+   * @ngdoc method
+   * @methodOf workflows.module:report
+   * @name complexity
    * @description A complexity/maintainability analysis report.
+   * @example `$ grunt report/complexity`
    */
   grunt.task.registerTask('report/complexity', 'A complexity/maintainability analysis report', function () {
 
