@@ -22,7 +22,8 @@
     "angular-cookies/angular-cookies.js",
     "angular-resource/angular-resource.js",
     "angular-sanitize/angular-sanitize.js",
-    "angular-touch/angular-touch.js"
+    "angular-touch/angular-touch.js",
+    "angular-ui-router/release/angular-ui-router.js"
   ],
   "vendorStyles": [],
   "buildFiles": [
