@@ -1,0 +1,13 @@
+// ./client/styles/molecules/_body.scss
+/**
+ * @name app.molecules:_body
+ * @description Body molecule.
+ */
+
+body {
+	@include atoms((
+		font-size-16,
+		line-height-28,
+		font-family
+	))
+}

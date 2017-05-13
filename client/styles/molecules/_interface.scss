@@ -1,0 +1,16 @@
+// ./client/styles/molecules/_interface.scss
+/**
+ * @name app.molecules:_interface
+ * @description
+ */
+
+.interface {
+	@include atoms((
+		block,
+		margin-centered,
+		padding-reset,
+    padding-10
+	)) {
+		max-width: 960px;
+	}
+}

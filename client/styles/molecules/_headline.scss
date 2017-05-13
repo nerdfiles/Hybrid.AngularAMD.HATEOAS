@@ -1,0 +1,15 @@
+// ./client/styles/molecules/_headline.scss
+/**
+ * @name app.molecules:_headline
+ * @description Headers molecule.
+ */
+
+@mixin headline--title {
+  h1 {
+  }
+}
+
+@mixin headline--release-date {
+  span {
+  }
+}

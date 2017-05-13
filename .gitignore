@@ -11,3 +11,5 @@ docs/
 reports/
 *.log
 client/scripts/ext/
+client/styles/interface.css
+client/styles/interface.css.map

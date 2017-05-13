@@ -1,0 +1,31 @@
+// ./client/styles/molecules/_company.scss
+/**
+ * @name app.molecules:_company
+ * @description Company molecule.
+ */
+
+@mixin company-pic {
+  img {
+    @include atoms((
+      left,
+      margin-right-30
+    ));
+  }
+}
+
+.company--headline {
+  @include atoms((
+  )) {
+    display: flex;
+    flex-direction: row;
+
+  }
+}
+
+dt.details--specifications {
+  @include atoms((
+
+  )) {
+    @include absolute($x: -9999px);
+  }
+}

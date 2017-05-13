@@ -1,0 +1,14 @@
+// ./client/styles/molecules/_user-pic.scss
+/**
+ * @name app.molecules:_user-pic
+ * @description User profile picture molecule.
+ */
+
+@mixin user-pic {
+  img {
+    @include atoms((
+      left,
+      margin-right-30
+    ));
+  }
+}

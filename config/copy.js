@@ -1,5 +1,5 @@
-// ./config/copy.js
 /**
+// ./config/copy.js
  * @ngdoc object
  * @name config.module:copy
  * @description copy config.
@@ -27,7 +27,7 @@ module.exports = function (grunt) {
         {
           cwd     : 'bower_components',
           expand  : true,
-          flatten : true,
+          flatten : false,
           dest    : '<%= env.client %>/<%= env.clientStyles %>/<%= env.vendor %>/',
           src     : grunt.project.vendorStyles
         }

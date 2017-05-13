@@ -1,0 +1,10 @@
+// ./app/styles/atoms/_atoms.scss
+/**
+ * @name app.atoms:_atoms
+ * @description Atoms definitions.
+ */
+
+@include define-atom("font-family") {
+	font-family: "Helvetica";
+}
+

@@ -1,3 +1,17 @@
-body {
-  background: pink;
-}
+// ./client/styles/interface.scss
+/**
+ * @name app.interface
+ * @description Interface for Style.
+ */
+
+@import "./ext/organic-css/src/main";
+@import "./ext/organic-css/src/molecules/_reset";
+
+@import "atoms/_atoms";
+@import "molecules/_body";
+@import "molecules/_navigation";
+@import "molecules/_interface";
+@import "molecules/_user-pic";
+@import "molecules/_company";
+@import "molecules/_headline";
+@import "organelles/_organelles";

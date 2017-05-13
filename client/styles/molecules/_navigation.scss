@@ -1,0 +1,22 @@
+// ./client/styles/molecules/_navigation.scss
+/**
+ * @name app.molecules:_navigation
+ * @description Navigation molecule.
+ */
+
+@mixin navigation-item {
+  li {
+    @include atoms((
+			inline-block,
+      padding-10
+    ));
+  }
+}
+
+@mixin navigation-link {
+	a {
+		@include atoms((
+			font-size-14
+		));
+	}
+}
