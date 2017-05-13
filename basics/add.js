@@ -52,20 +52,20 @@ module.exports = function (grunt) {
       return grunt.log.write(warning + 'Vendor does not exist. Try installing with $ bower install VENDOR_NAME');
     }
 
-		// Push vendor to project vendors array
-		project[__layer__].push(newVendor);
+    // Push vendor to project vendors array
+    project[__layer__].push(newVendor);
 
-		// Update project file
-		var j = JSON.stringify(project, null, 2);
-		var fp = __dirname + '/../project.json';
+    // Update project file
+    var j = JSON.stringify(project, null, 2);
+    var fp = __dirname + '/../project.json';
 
-		try {
-			grunt.file.write(fp, j, { encoding: 'utf8' });
-		} catch (e) {
-			return grunt.log.error(e);
-		}
+    try {
+      grunt.file.write(fp, j, { encoding: 'utf8' });
+    } catch (e) {
+      return grunt.log.error(e);
+    }
 
-		grunt.log.write('Added to vendorScripts in project.json:' + br, prefix + newVendor);
+    grunt.log.write('Added to vendorScripts in project.json:' + br, prefix + newVendor);
 
   });
 
