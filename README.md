@@ -24,6 +24,8 @@ Review Grunt tasks:
 
 *Stratgies* combine *Basics* and *Workflows* to achieve certain desirable configurations.
 
+<img src="https://git.kpd-i.com/aalexander/Hybrid.angularAMD.HATEOAS/raw/master/resources/grunt-default.png" alt="Strategies layout"/>
+
 ### Vendor stuff
 
 Here's an example of adding a vendor to the build:
