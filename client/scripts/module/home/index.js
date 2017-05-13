@@ -7,12 +7,12 @@
 define([
 ], function () {
   var moduleInterface = [
-    '$scope',
     HomeModuleIndexController
   ];
   return moduleInterface;
   ////////////
-  function HomeModuleIndexController ($scope) {
-    $scope.pageTitle = 'Home';
+  function HomeModuleIndexController () {
+    var vm = this;
+    vm.pageTitle = 'Home';
   }
 });

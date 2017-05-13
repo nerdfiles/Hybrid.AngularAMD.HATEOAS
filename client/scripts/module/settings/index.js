@@ -6,12 +6,12 @@
  */
 define([], function () {
   var moduleInterface = [
-    '$scope',
     SettingsModuleIndexController
   ];
   return moduleInterface;
   ////////////
-  function SettingsModuleIndexController ($scope) {
-    $scope.pageTitle = 'Settings';
+  function SettingsModuleIndexController () {
+    var vm = this;
+    vm.pageTitle = 'Settings';
   }
 });

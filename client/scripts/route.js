@@ -25,15 +25,18 @@ define([
         views: {
           'header': angularAMD.route({
             templateUrl   : 'views/section/header.html',
-            controllerUrl : 'HeaderSectionIndexController'
+            controllerUrl : 'HeaderSectionIndexController',
+            controllerAs  : 'vm'
           }),
           'nav': angularAMD.route({
             templateUrl   : 'views/section/nav.html',
-            controllerUrl : 'NavigationSectionIndexController'
+            controllerUrl : 'NavigationSectionIndexController',
+            controllerAs  : 'vm'
           }),
           'main': angularAMD.route({
             templateUrl   : 'views/page/home.html',
-            controllerUrl : 'HomeModuleIndexController'
+            controllerUrl : 'HomeModuleIndexController',
+            controllerAs  : 'vm'
           })
         }
       })
@@ -43,15 +46,18 @@ define([
         views: {
           'header': angularAMD.route({
             templateUrl   : 'views/section/header.html',
-            controllerUrl : 'HeaderSectionIndexController'
+            controllerUrl : 'HeaderSectionIndexController',
+            controllerAs  : 'vm'
           }),
           'nav': angularAMD.route({
             templateUrl   : 'views/section/nav.html',
-            controllerUrl : 'NavigationSectionIndexController'
+            controllerUrl : 'NavigationSectionIndexController',
+            controllerAs  : 'vm'
           }),
           'main': angularAMD.route({
             templateUrl   : 'views/page/settings.html',
-            controllerUrl : 'SettingsModuleIndexController'
+            controllerUrl : 'SettingsModuleIndexController',
+            controllerAs  : 'vm'
           })
         }
       });

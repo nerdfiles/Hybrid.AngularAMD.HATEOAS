@@ -6,12 +6,12 @@
  */
 define([], function () {
   var sectionInterface = [
-    '$scope',
     HeaderSectionIndexController
   ];
   return sectionInterface;
   ////////////
-  function HeaderSectionIndexController ($scope) {
-    $scope.sectionTitle = 'Header';
+  function HeaderSectionIndexController () {
+    var vm = this;
+    vm.sectionTitle = 'Header';
   }
 });
