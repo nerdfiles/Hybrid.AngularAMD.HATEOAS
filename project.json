@@ -24,7 +24,29 @@
     "angular-touch/angular-touch.js",
     "angular-ui-router/release/angular-ui-router.js"
   ],
-  "vendorStyles": [],
+  "vendorStyles": [
+    "organic-css/src/common.scss",
+    "organic-css/src/main.scss",
+    "organic-css/src/atoms/_box-model.scss",
+    "organic-css/src/atoms/_break-point.scss",
+    "organic-css/src/atoms/_clearfix.scss",
+    "organic-css/src/atoms/_colors.scss",
+    "organic-css/src/atoms/_cursor.scss",
+    "organic-css/src/atoms/_display.scss",
+    "organic-css/src/atoms/_effects.scss",
+    "organic-css/src/atoms/_floats.scss",
+    "organic-css/src/atoms/_keyframes.scss",
+    "organic-css/src/atoms/_position.scss",
+    "organic-css/src/atoms/_sizes.scss",
+    "organic-css/src/atoms/_text.scss",
+    "organic-css/src/atoms/_transition.scss",
+    "organic-css/src/atoms/_vendors.scss",
+    "organic-css/src/atoms/_widths.scss",
+    "organic-css/src/molecules/_reset.scss",
+    "tachyons/css/tachyons.css",
+    "animate.css/animate.css",
+    "hint.css/hint.css"
+  ],
   "buildFiles": [
     "images/**"
   ]
