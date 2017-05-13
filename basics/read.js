@@ -12,8 +12,9 @@ module.exports = function (grunt) {
    * @name read/env
    * @description Read project environment variables.
    */
-  grunt.registerTask('read/env', function () {
-    grunt.log.write('Environment loaded:', grunt.project);
+  grunt.task.registerTask('read/env', 'Read project environment variables', function () {
+    var nl = '\n';
+    grunt.log.write('Environment loaded: ' + nl, grunt.project);
   });
 
 };
