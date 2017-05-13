@@ -27,7 +27,7 @@ module.exports = function (grunt) {
     build: {
       options: {
         reporter       : require('jshint-stylish'),
-        reporterOutput : '',
+        reporterOutput : __dirname + '/../reports/jshint/index.html',
         jshintrc       : __dirname + '/../.jshintrc'
       },
       files: {
