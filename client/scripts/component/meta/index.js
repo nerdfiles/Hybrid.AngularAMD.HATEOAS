@@ -1,7 +1,7 @@
-// ./client/scripts/component/metaSpec/index.js
+// ./client/scripts/component/meta/index.js
 /**
  * @ngdoc overview
- * @name app.core.component:metaSpec
+ * @name app.core.component:meta
  * @description Dynamic meta-content settings.
  */
 define(['interface'], function (__interface__) {

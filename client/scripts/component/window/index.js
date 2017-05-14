@@ -1,8 +1,8 @@
-// ./client/scripts/component/title/index.js
+// ./client/scripts/component/window/index.js
 /**
  * @ngdoc overview
- * @name app.core.component:title
- * @description Dynamic title setting on window.
+ * @name app.core.component:window
+ * @description Dynamic window setting on window.
  */
 define(['interface'], function (__interface__) {
   function WindowSpecController ($scope, $rootScope) {
