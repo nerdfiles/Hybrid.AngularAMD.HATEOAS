@@ -1,8 +1,9 @@
 <div
-  ng-show="vm.page !== null"
+  ng-show="vm.pageLoading !== true"
   role="main"
   class="module--page"
 >
+
   <figure class="page--order">
     <header class="order--headline">
       <h1>{{vm.pageTitle}}</h1>
@@ -15,9 +16,13 @@
       </dl>
     </figcaption>
   </figure>
+
 </div>
 
-<ul class="module--pagination">
+<ul
+  ng-show="vm.pageLoading !== true"
+  class="module--pagination"
+>
   <li>
     <a
       ng-click="vm.followRel('prev')"

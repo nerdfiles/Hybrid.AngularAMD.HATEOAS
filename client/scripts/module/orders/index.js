@@ -22,17 +22,20 @@ define([
 
     var vm = this;
     vm.pageTitle = 'Orders';
+    vm.pageLoading = true;
 
     var _id = parseInt($stateParams.id, 10);
     var orderId = !isNaN(_id) ? _id : ($stateParams.id === '') ? 'multiple' : null;
     var method = (orderId === 'multiple') ? orderId : 'one';
 
     OrderService[method](orderId).then(function (response) {
-      if (response.expect)
+      if (response.expect) {
         return ErrorService.notify(response);
+      }
       vm.page = response;
       vm.followRel = followRel;
       vm.hasRel = hasRel;
+      vm.pageLoading = false;
     });
 
     ////////////
