@@ -4,20 +4,28 @@
  * @description Global organelles.
  */
 
-.navigation {
-  @include navigation-item;
-  @include navigation-link;
+.interface--navigation {
+  @include navigation--item;
+  @include navigation--link;
 }
 
-.interface--user {
-  @include user-pic;
+.interface--breadcrumb {
+  @include breadcrumb--listing;
 }
 
-.interface--company {
-  @include company-pic;
+.interface--customer {
+  @include customer--pic;
 }
 
-.company--headline {
+.page--order {
+  @include order--pic;
+}
+
+.order--headline {
   @include headline--title;
   @include headline--release-date;
+}
+
+.module--pagination {
+  @include pagination--listing;
 }

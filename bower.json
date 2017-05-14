@@ -16,7 +16,9 @@
     "animate.css": "^3.5.2",
     "hint.css": "^2.5.0",
     "tachyons-sass": "^4.7.1",
-    "animate.scss": "*"
+    "animate.scss": "*",
+    "angular-hypermedia": "^1.0.1",
+    "cuid": "^1.3.8"
   },
   "resolutions": {
     "angular": "1.5"

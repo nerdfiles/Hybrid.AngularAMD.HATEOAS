@@ -20,10 +20,15 @@
     "requirejs/require.js",
     "angular-animate/angular-animate.js",
     "angular-cookies/angular-cookies.js",
-    "angular-resource/angular-resource.js",
     "angular-sanitize/angular-sanitize.js",
     "angular-touch/angular-touch.js",
-    "angular-ui-router/release/angular-ui-router.js"
+    "angular-ui-router/release/angular-ui-router.js",
+    "lodash/lodash.js",
+    "angular-hypermedia/dist/hypermedia.js",
+    "linkheader-parser/dist/linkheader-parser-browser.js",
+    "mediatype-parser/dist/mediatype-parser-browser.js",
+    "uri-templates/uri-templates.js",
+    "cuid/dist/browser-cuid.js"
   ],
   "vendorStyles": [
     "organic-css/src/common.scss",

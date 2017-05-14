@@ -1,0 +1,17 @@
+// ./client/styles/molecules/_breadcrumb.scss
+/**
+ * @name app.molecules:_breadcrumb
+ * @description Pagination molecule.
+ */
+@mixin breadcrumb--listing {
+  li {
+    @include atoms((
+      inline-block
+    ));
+  }
+  a {
+    @include atoms((
+      cursor-pointer
+    ));
+  }
+}

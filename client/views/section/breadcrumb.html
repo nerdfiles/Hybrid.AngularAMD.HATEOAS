@@ -1,0 +1,39 @@
+<h1>{{vm.sectionTitle}}</h1>
+<ol class="breadcrumb--list">
+  <li
+    itemscope
+    itemtype="http://data-vocabulary.org/Breadcrumb"
+  >
+    <a
+      ui-sref="default"
+      itemprop="url"
+      title="Return to Home"
+    >
+      <span itemprop="title">Home</span>
+    </a>
+  </li>
+  <li
+    itemscope
+    itemtype="http://data-vocabulary.org/Breadcrumb"
+  >
+    <a
+      href="orders/"
+      itemprop="url"
+      title="List of orders"
+    >
+      <span itemprop="title">Orders</span>
+    </a>
+  </li>
+  <li
+    itemscope
+    itemtype="http://data-vocabulary.org/Breadcrumb"
+  >
+    <a
+      href="orders/42"
+      itemprop="url"
+      title="Order no. 42 detail"
+    >
+      <span itemprop="title">Order</span>
+    </a>
+  </li>
+</ol>

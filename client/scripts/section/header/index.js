@@ -9,9 +9,9 @@ define([], function () {
     HeaderSectionIndexController
   ];
   return sectionInterface;
-  ////////////
   function HeaderSectionIndexController () {
     var vm = this;
     vm.sectionTitle = 'Header';
+    ////////////
   }
 });

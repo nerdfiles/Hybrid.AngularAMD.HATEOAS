@@ -1,0 +1,45 @@
+{
+  "class": [ "order" ],
+  "properties": {
+      "orderNumber": 43,
+      "itemCount": 1,
+      "status": "shipped"
+  },
+  "entities": [
+    {
+      "class": [ "items", "collection" ],
+      "rel": [ "http://localhost:9001/api/v0/rels/order-items" ],
+      "href": "http://localhost:9001/api/v0/orders/43/items"
+    },
+    {
+      "class": [ "info", "customer" ],
+      "rel": [ "http://localhost:9001/api/v0/rels/customer" ],
+      "properties": {
+        "customerId": "td666",
+        "name": "The Devil"
+      },
+      "_links": {
+        "self": { "href": "http://localhost:9001/api/v0/customers/td666" }
+      }
+    }
+  ],
+  "_actions": [
+    {
+      "name": "add-item",
+      "title": "Add Item",
+      "method": "POST",
+      "href": "http://localhost:9001/api/v0/orders/43/items",
+      "type": "application/x-www-form-urlencoded",
+      "fields": [
+        { "name": "orderNumber", "type": "hidden", "value": "43" },
+        { "name": "productCode", "type": "text" },
+        { "name": "quantity", "type": "number" }
+      ]
+    }
+  ],
+  "_links": {
+    "self": { "href": "http://localhost:9001/api/v0/orders/43" },
+    "prev": { "href": "http://localhost:9001/api/v0/orders/42" },
+    "next": { "href": "http://localhost:9001/api/v0/orders/44" }
+  }
+}

@@ -1,0 +1,48 @@
+{
+ "_meta": {
+  "dataCount": 25,
+  "dataLimit": 25,
+  "dataTotal": 100,
+  "dataOrder": {"created": "desc"},
+  "responseTime": 0.004,
+  "message": "Everything looking good kemosabe."
+ },
+ "_http": {
+  "code": 200,
+  "name": "OK",
+  "message": "Optional message with more details...More useful in the event of errors. This section allows for the extension of HTTP status codes (perhaps this is all frowned upon and that's ok, a more generic HTTP status could could be presented in the headers remaining consistent with standards and this _http block could present additional related details for the more adventurous). More importantly, this could handle language translations quite nicely."
+ },
+ "_links": [
+  {"rel": "self", "href": "/posts"},
+  {"rel": "next", "href": "/posts/page-2"},
+  {"rel": "prev", "href": "/posts/page-1"},
+  {"rel": "skip", "href": "/posts/page-{pageNumber:[0-9]}"},
+  {"rel": "read", "href": "/posts/read/{id}"}
+ ],
+ "_data": {
+  "posts": [
+    {"_id": "01234ef", "title": "Boom"}
+  ]
+ },
+ "_actions": {
+  "_forms": {
+   "formName": {
+    "name": "add-post",
+    "title": "Add Blog Post",
+    "method": "POST",
+    "action": "/posts/add",
+    "enctype": "application/x-www-form-urlencoded",
+    "fields": [
+     { "name": "title", "type": "text", "validation": [{"rule": "[A-z0-9]\s", "message": "Must be alpha numeric."}] },
+     { "name": "authorId", "type": "hidden", "value": "42" }
+    ]
+   }
+  },
+  "_errors": {
+    "formName": [
+     {"name": "title", "message": "Cannot be blank."}
+    ]
+  }
+
+ }
+}

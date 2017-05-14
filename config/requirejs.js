@@ -61,6 +61,7 @@ module.exports = function (grunt) {
      */
     build: {
       options: {
+        // TODO assets/scripts?
         baseUrl                    : '<%= env.client %>/<%= env.clientScripts %>',
         mainConfigFile             : '<%= env.client %>/<%= env.clientScripts %>/boot.js',
         findNestedDependencies     : true,
@@ -78,6 +79,8 @@ module.exports = function (grunt) {
         name                       : 'interface',
         paths                      : {
 
+          'lodash' : '<%= env.vendor %>/lodash',
+
           'angularAMD' : '<%= env.vendor %>/angularAMD',
           'ngload'     : '<%= env.vendor %>/ngload',
 
@@ -85,10 +88,10 @@ module.exports = function (grunt) {
           'angular-route'    : '<%= env.vendor %>/angular-route',
           'angular-animate'  : '<%= env.vendor %>/angular-animate',
           'angular-cookies'  : '<%= env.vendor %>/angular-cookies',
-          'angular-resource' : '<%= env.vendor %>/angular-resource',
           'angular-sanitize' : '<%= env.vendor %>/angular-sanitize',
           'angular-touch'    : '<%= env.vendor %>/angular-touch',
           'angular-ui-router': '<%= env.vendor %>/angular-ui-router',
+          'angular-hy-res'   : '<%= env.vendor %>/angular-hy-res-full',
 
           'core/http'        : 'http',
           'core/route'       : 'route',
@@ -99,6 +102,54 @@ module.exports = function (grunt) {
           'SettingsModuleIndexController'    : 'module/settings/index',
           'HeaderSectionIndexController'     : 'section/header/index',
           'NavigationSectionIndexController' : 'section/nav/index'
+
+        },
+
+        shim: {
+
+          'angular': {
+            exports: 'angular'
+          },
+
+          'angular-route': [
+            'angular'
+          ],
+
+          'angularAMD': [
+            'angular'
+          ],
+
+          'ngload': [
+            'angularAMD'
+          ],
+
+          'angular-animate': [
+            'angular'
+          ],
+
+          'angular-cookies': [
+            'angular'
+          ],
+
+          'angular-sanitize': [
+            'angular'
+          ],
+
+          'angular-touch': [
+            'angular'
+          ],
+
+          'angular-ui-router': [
+            'angular'
+          ],
+
+          'angular-hy-res': [
+            'angular'
+          ],
+
+          'lodash': {
+            exports: '_'
+          }
 
         },
 

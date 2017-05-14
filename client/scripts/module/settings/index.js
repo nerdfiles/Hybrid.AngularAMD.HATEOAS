@@ -5,13 +5,18 @@
  * @description Settings Module Index Controller.
  */
 define([], function () {
+
   var moduleInterface = [
     SettingsModuleIndexController
   ];
+
   return moduleInterface;
-  ////////////
+
   function SettingsModuleIndexController () {
+
     var vm = this;
     vm.pageTitle = 'Settings';
+
+    ////////////
   }
 });

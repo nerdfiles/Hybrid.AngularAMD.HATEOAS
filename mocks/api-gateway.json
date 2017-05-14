@@ -1,0 +1,70 @@
+{
+  "createdDate": "2016-06-01T18:53:41Z",
+  "description": "A sample API created programmatically by calling API Gateway control service using the REST API",
+  "id": "fugvjdxtri",
+  "name": "my-test-api",
+  "_links": {
+    "self": {
+      "href": "/restapis/fugvjdxtri"
+    },
+    "authorizer:by-id": {
+      "href": "/restapis/fugvjdxtri/authorizers/{authorizer_id}",
+      "templated": true
+    },
+    "authorizer:create": {
+      "href": "/restapis/fugvjdxtri/authorizers"
+    },
+    "deployment:by-id": {
+      "href": "/restapis/fugvjdxtri/deployments/{deployment_id}{?embed}",
+      "templated": true
+    },
+    "deployment:create": {
+      "href": "/restapis/fugvjdxtri/deployments"
+    },
+    "model:by-name": {
+      "href": "/restapis/fugvjdxtri/models/{model_name}?flatten=false",
+      "templated": true
+    },
+    "model:create": {
+      "href": "/restapis/fugvjdxtri/models"
+    },
+    "resource:by-id": {
+      "href": "/restapis/fugvjdxtri/resources/{resource_id}{?embed}",
+      "templated": true
+    },
+    "resource:create": {
+      "href": "/restapis/fugvjdxtri/resources/3kzxbg5sa2"
+    },
+    "restapi:authorizers": {
+      "href": "/restapis/fugvjdxtri/authorizers"
+    },
+    "restapi:delete": {
+      "href": "/restapis/fugvjdxtri"
+    },
+    "restapi:deployments": {
+      "href": "/restapis/fugvjdxtri/deployments{?limit}",
+      "templated": true
+    },
+    "restapi:models": {
+      "href": "/restapis/fugvjdxtri/models"
+    },
+    "restapi:resources": {
+      "href": "/restapis/fugvjdxtri/resources{?limit,embed}",
+      "templated": true
+    },
+    "restapi:stages": {
+      "href": "/restapis/fugvjdxtri/stages{?deployment_id}",
+      "templated": true
+    },
+    "restapi:update": {
+      "href": "/restapis/fugvjdxtri"
+    },
+    "stage:by-name": {
+      "href": "/restapis/fugvjdxtri/stages/{stage_name}",
+      "templated": true
+    },
+    "stage:create": {
+      "href": "/restapis/fugvjdxtri/stages"
+    }
+  }
+}

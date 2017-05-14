@@ -1,0 +1,45 @@
+{
+  "class": [ "order" ],
+  "properties": {
+      "orderNumber": 41,
+      "itemCount": 30,
+      "status": "pending"
+  },
+  "entities": [
+    {
+      "class": [ "items", "collection" ],
+      "rel": [ "http://localhost:9001/api/v0/rels/order-items" ],
+      "href": "http://localhost:9001/api/v0/orders/41/items"
+    },
+    {
+      "class": [ "info", "customer" ],
+      "rel": [ "http://localhost:9001/api/v0/rels/customer" ],
+      "properties": {
+        "customerId": "sb111",
+        "name": "Steve Billy"
+      },
+      "_links": {
+        "self": { "href": "http://localhost:9001/api/v0/customers/sb111" }
+      }
+    }
+  ],
+  "_actions": [
+    {
+      "name": "add-item",
+      "title": "Add Item",
+      "method": "POST",
+      "href": "http://localhost:9001/api/v0/orders/41/items",
+      "type": "application/x-www-form-urlencoded",
+      "fields": [
+        { "name": "orderNumber", "type": "hidden", "value": "41" },
+        { "name": "productCode", "type": "text" },
+        { "name": "quantity", "type": "number" }
+      ]
+    }
+  ],
+  "_links": {
+    "self": { "href": "http://localhost:9001/api/v0/orders/41" },
+    "prev": { "href": "http://localhost:9001/api/v0/orders/40" },
+    "next": { "href": "http://localhost:9001/api/v0/orders/42" }
+  }
+}

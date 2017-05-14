@@ -24,18 +24,69 @@ define([
         url: '/',
         views: {
           'header': angularAMD.route({
-            templateUrl   : 'views/section/header.html',
+            templateUrl   : 'assets/views/section/header.html',
             controllerUrl : 'HeaderSectionIndexController',
             controllerAs  : 'vm'
           }),
           'nav': angularAMD.route({
-            templateUrl   : 'views/section/nav.html',
+            templateUrl   : 'assets/views/section/nav.html',
             controllerUrl : 'NavigationSectionIndexController',
             controllerAs  : 'vm'
           }),
+          'notification': angularAMD.route({
+            templateUrl   : 'assets/views/section/notification.html',
+            controllerUrl : 'NotificationSectionIndexController',
+            controllerAs  : 'vm'
+          }),
+          'breadcrumb': angularAMD.route({
+            templateUrl   : 'assets/views/section/breadcrumb.html',
+            controllerUrl : 'BreadcrumbSectionIndexController',
+            controllerAs  : 'vm'
+          }),
           'main': angularAMD.route({
-            templateUrl   : 'views/page/home.html',
+            templateUrl   : 'assets/views/page/home.html',
             controllerUrl : 'HomeModuleIndexController',
+            controllerAs  : 'vm'
+          }),
+          'footer': angularAMD.route({
+            templateUrl   : 'assets/views/section/footer.html',
+            controllerUrl : 'FooterSectionIndexController',
+            controllerAs  : 'vm'
+          })
+        }
+      })
+
+      .state('orders', {
+        url: '/orders/:id?',
+        views: {
+          'header': angularAMD.route({
+            templateUrl   : 'assets/views/section/header.html',
+            controllerUrl : 'HeaderSectionIndexController',
+            controllerAs  : 'vm'
+          }),
+          'nav': angularAMD.route({
+            templateUrl   : 'assets/views/section/nav.html',
+            controllerUrl : 'NavigationSectionIndexController',
+            controllerAs  : 'vm'
+          }),
+          'notification': angularAMD.route({
+            templateUrl   : 'assets/views/section/notification.html',
+            controllerUrl : 'NotificationSectionIndexController',
+            controllerAs  : 'vm'
+          }),
+          'breadcrumb': angularAMD.route({
+            templateUrl   : 'assets/views/section/breadcrumb.html',
+            controllerUrl : 'BreadcrumbSectionIndexController',
+            controllerAs  : 'vm'
+          }),
+          'main': angularAMD.route({
+            templateUrl   : 'assets/views/page/orders.html',
+            controllerUrl : 'OrdersModuleIndexController',
+            controllerAs  : 'vm'
+          }),
+          'footer': angularAMD.route({
+            templateUrl   : 'assets/views/section/footer.html',
+            controllerUrl : 'FooterSectionIndexController',
             controllerAs  : 'vm'
           })
         }
@@ -45,18 +96,33 @@ define([
         url: '/settings',
         views: {
           'header': angularAMD.route({
-            templateUrl   : 'views/section/header.html',
+            templateUrl   : 'assets/views/section/header.html',
             controllerUrl : 'HeaderSectionIndexController',
             controllerAs  : 'vm'
           }),
           'nav': angularAMD.route({
-            templateUrl   : 'views/section/nav.html',
+            templateUrl   : 'assets/views/section/nav.html',
             controllerUrl : 'NavigationSectionIndexController',
             controllerAs  : 'vm'
           }),
+          'notification': angularAMD.route({
+            templateUrl   : 'assets/views/section/notification.html',
+            controllerUrl : 'NotificationSectionIndexController',
+            controllerAs  : 'vm'
+          }),
+          'breadcrumb': angularAMD.route({
+            templateUrl   : 'assets/views/section/breadcrumb.html',
+            controllerUrl : 'BreadcrumbSectionIndexController',
+            controllerAs  : 'vm'
+          }),
           'main': angularAMD.route({
-            templateUrl   : 'views/page/settings.html',
+            templateUrl   : 'assets/views/page/settings.html',
             controllerUrl : 'SettingsModuleIndexController',
+            controllerAs  : 'vm'
+          }),
+          'footer': angularAMD.route({
+            templateUrl   : 'assets/views/section/footer.html',
+            controllerUrl : 'FooterSectionIndexController',
             controllerAs  : 'vm'
           })
         }

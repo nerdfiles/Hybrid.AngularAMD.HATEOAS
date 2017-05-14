@@ -6,13 +6,19 @@
  */
 define([
 ], function () {
+
   var moduleInterface = [
     HomeModuleIndexController
   ];
+
   return moduleInterface;
-  ////////////
+
   function HomeModuleIndexController () {
+
     var vm = this;
     vm.pageTitle = 'Home';
+
+    ////////////
+
   }
 });

@@ -10,20 +10,20 @@ define([
   'core/route',
   'angular-animate',
   'angular-cookies',
-  'angular-resource',
   'angular-sanitize',
   'angular-touch',
-  'angular-ui-router'
+  'angular-ui-router',
+  'angular-hypermedia'
 ], function (angularAMD, httpSettings, routeContract) {
   'use strict';
 
   var appDependencies = [
     'ngAnimate',
     'ngCookies',
-    'ngResource',
     'ngSanitize',
     'ngTouch',
-    'ui.router'
+    'ui.router',
+    'hypermedia'
   ];
 
   var app = angular.module('app', appDependencies);

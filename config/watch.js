@@ -21,10 +21,16 @@ module.exports = function (grunt) {
       },
       files: [
         '<%= env.client %>/<%= env.clientScripts %>/*',
-        '<%= env.client %>/<%= env.clientScripts %>/modules/**/*',
+        '<%= env.client %>/<%= env.clientScripts %>/module/**/*',
+        '<%= env.client %>/<%= env.clientScripts %>/section/**/*',
+        '<%= env.client %>/<%= env.clientScripts %>/directive/**/*',
+        '<%= env.client %>/<%= env.clientScripts %>/service/*',
+        '<%= env.client %>/<%= env.clientScripts %>/component/*',
+        '<%= env.client %>/<%= env.clientScripts %>/config/*',
+        '<%= env.client %>/<%= env.clientScripts %>/filter/*',
         '<%= env.client %>/<%= env.clientScripts %>/<%= env.template %>/*',
         '<%= env.client %>/<%= env.clientStyles %>/**/*.css',
-        '<%= env.client %>/<%= env.views %>/*',
+        '<%= env.client %>/<%= env.views %>/**/*',
         '<%= env.client %>/index.html',
         '<%= env.client %>/<%= env.clientScripts %>/<%= env.vendor %>/*',
         '<%= env.client %>/<%= env.clientStyles %>/<%= env.vendor %>/*'
@@ -43,7 +49,9 @@ module.exports = function (grunt) {
         spawn   : false,
         atBegin : true
       },
-      files: [],
+      files: [
+        './server/base.js'
+      ],
       tasks: ['express:develop']
     },
 

@@ -15,7 +15,7 @@
   />
   <link
     rel="stylesheet"
-    href="styles/interface.css"
+    href="/assets/styles/interface.css"
   />
 
   <base href="/" />
@@ -33,18 +33,42 @@
     itemtype="http://schema.org/MobileSoftwareApplication"
   >
 
-    <div data-ui-view="header"></div>
+    <header
+      class="interface--header"
+      data-ui-view="header"
+    ></header>
 
-    <div data-ui-view="nav"></div>
+    <section
+      class="interface--navigation"
+      data-ui-view="nav"
+    ></section>
 
-    <div data-ui-view="main"></div>
+    <aside
+      class="interface--notifications"
+      data-ui-view="notification"
+    ></aside>
+
+    <section
+      class="interface--breadcrumb"
+      data-ui-view="breadcrumb"
+    ></section>
+
+    <section
+      class="interface--module"
+      data-ui-view="main"
+    ></section>
+
+    <footer
+      class="interface--footer"
+      data-ui-view="footer"
+    ></footer>
 
   </div>
 
   <script
     type="text/javascript"
-    data-main="scripts/boot.js"
-    src="scripts/ext/require.js"
+    data-main="/assets/scripts/boot.js"
+    src="/assets/scripts/ext/require.js"
   ></script>
 
   <!-- build:js scripts/optimized.js -->

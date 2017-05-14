@@ -1,10 +1,10 @@
-// ./client/styles/molecules/_company.scss
+// ./client/styles/molecules/_order.scss
 /**
- * @name app.molecules:_company
+ * @name app.molecules:_order
  * @description Company molecule.
  */
 
-@mixin company-pic {
+@mixin order--pic {
   img {
     @include atoms((
       left,
@@ -13,7 +13,7 @@
   }
 }
 
-.company--headline {
+.order--headline {
   @include atoms((
   )) {
     display: flex;

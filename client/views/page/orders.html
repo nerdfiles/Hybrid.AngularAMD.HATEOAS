@@ -1,0 +1,37 @@
+<div
+  ng-show="vm.page !== null"
+  role="main"
+  class="module--page"
+>
+  <figure class="page--order">
+    <header class="order--headline">
+      <h1>{{vm.pageTitle}}</h1>
+    </header>
+    <img src="" alt="Order Default Image" />
+    <figcaption>
+      <dl>
+        <dt>Order ID</dt>
+        <dd>{{vm.page.properties.orderNumber}}</dd>
+      </dl>
+    </figcaption>
+  </figure>
+</div>
+
+<ul class="module--pagination">
+  <li>
+    <a
+      ng-click="vm.followRel('prev')"
+      ng-class="{
+        disabled: !vm.hasRel('prev')
+      }"
+    >⏮</a>
+  </li>
+  <li>
+    <a
+      ng-click="vm.followRel('next')"
+      ng-class="{
+        disabled: !vm.hasRel('next')
+      }"
+    >⏭</a>
+  </li>
+</ul>

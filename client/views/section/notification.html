@@ -1,0 +1,11 @@
+<ul>
+  <li
+    ng-repeat="notification in notifications"
+    ng-show="notification && notification.expect !== null"
+  >
+    <p>
+      <span class="label">⚠️</span>
+      <span class="content">{{notification.info}}</span>
+    </p>
+  </li>
+</ul>

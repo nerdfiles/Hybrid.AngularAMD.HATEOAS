@@ -1,0 +1,17 @@
+// ./client/styles/molecules/_pagination.scss
+/**
+ * @name app.molecules:_pagination
+ * @description Pagination molecule.
+ */
+@mixin pagination--listing {
+  li {
+    @include atoms((
+      inline-block
+    ));
+  }
+  a {
+    @include atoms((
+      cursor-pointer
+    ));
+  }
+}

@@ -32,13 +32,15 @@ app.use(logger(logConfig));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.get('/', function (request, response, next) {
+app.get('/:singlePage?/:id?', function (request, response, next) {
   response.sendFile('index.html', {
     root: __dirname + '/../client'
   });
 });
 
-app.use(express.static(__dirname + '/../client'));
+app.use('/assets', express.static(__dirname + '/../client'));
 
-app.listen(app.get('post'));
+require('./mockRoutes')(app);
+
+app.listen(app.get('port'));
 console.log('Serving http://localhost:' + app.get('port'));
