@@ -5,7 +5,8 @@ module.exports = function (app) {
 
   app.get('/api/v0/orders/:id', function (request, response, next) {
     var id = request.params.id || null;
-    var _json, json;
+    var _json;
+    var json;
 
     try {
       _json = JSON.parse(fs.readFileSync(__dirname + '/../mocks/orders/' + id + '.json', 'utf8'));
@@ -17,8 +18,9 @@ module.exports = function (app) {
     }
 
     response
-      .setHeader('Content-Type', 'application/json')
-      .status(_json.status)
+      .setHeader('Content-Type', 'application/json');
+    response
+      .status(json.status)
       .send(JSON.stringify(json, null, 3));
   });
 
