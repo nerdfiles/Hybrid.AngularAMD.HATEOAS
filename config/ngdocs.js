@@ -43,11 +43,22 @@ module.exports = function (grunt) {
         'basics/*.js',
         'workflows/*.js',
         'client/scripts/boot.js',
+        'client/scripts/http.js',
+        'client/scripts/route.js',
         'client/scripts/interface.js',
         'client/scripts/module/**/*.js',
+        'client/scripts/component/**/*.js',
+        'client/scripts/directive/**/*.js',
+        'client/scripts/filter/**/*.js',
+        'client/scripts/section/**/*.js',
+        'client/scripts/service/**/*.js',
         '!client/script/boot.unit.js',
         '!client/script/interface.spec.js',
-        '!client/script/modules/**/*.spec.js'
+        '!client/script/filter/*.spec.js',
+        '!client/script/module/**/*.spec.js',
+        '!client/script/section/**/*.spec.js',
+        '!client/script/directive/**/*.spec.js',
+        '!client/script/component/**/*.spec.js'
       ],
       title: 'Documentation'
     }

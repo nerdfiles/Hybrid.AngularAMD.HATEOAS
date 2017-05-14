@@ -1,7 +1,7 @@
 // ./client/scripts/service/error.js
 /**
  * @ngdoc service
- * @name app.core.module:error
+ * @name app.core.window:error
  * @description Error Service Module.
  */
 define([

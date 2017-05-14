@@ -1,7 +1,7 @@
 // ./client/scripts/service/user.js
 /**
  * @ngdoc service
- * @name app.core.module:user
+ * @name app.core.login:user
  * @description User Service Module.
  */
 define([

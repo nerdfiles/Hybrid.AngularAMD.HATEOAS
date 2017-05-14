@@ -1,7 +1,7 @@
 // ./client/scripts/component/window/index.js
 /**
  * @ngdoc overview
- * @name app.core.component:window
+ * @name app.core.seo:window
  * @description Dynamic window setting on window.
  */
 define(['interface'], function (__interface__) {

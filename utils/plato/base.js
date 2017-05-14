@@ -8,13 +8,16 @@ var plato = require('plato');
 
 var files = [
   './client/scripts/boot.js',
-  './client/scripts/interface.js',
+  './client/scripts/http.js',
   './client/scripts/route.js',
+  './client/scripts/interface.js',
   './client/scripts/directive/**',
   './client/scripts/filter/**',
   './client/scripts/module/**',
   './client/scripts/config/**',
-  './client/scripts/service/**'
+  './client/scripts/section/**',
+  './client/scripts/service/**',
+  './client/scripts/component/**'
 ];
 
 var outputDir = './reports/complexity';

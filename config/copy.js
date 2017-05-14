@@ -1,4 +1,5 @@
 // ./config/copy.js
+/**
  * @ngdoc object
  * @name config.module:copy
  * @description copy config.
