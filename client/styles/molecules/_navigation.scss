@@ -4,11 +4,10 @@
  * @description Navigation molecule.
  */
 
-@mixin navigation--item {
+@mixin navigation--listing {
   li {
     @include atoms((
-      inline-block,
-      padding-10
+      inline-block
     ));
   }
 }
@@ -16,7 +15,7 @@
 @mixin navigation--link {
   a {
     @include atoms((
-      font-size-14,
+      font-size-16,
       cursor-pointer
     ));
   }

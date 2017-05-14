@@ -4,28 +4,46 @@
  * @description Global organelles.
  */
 
+.interface--header {
+}
+
+/**
+ * @name app.organelles.interface:navigation
+ * @memberOf app.organelles:_organelles
+ * @requires hint.css
+ */
 .interface--navigation {
-  @include navigation--item;
+  @include navigation--listing;
   @include navigation--link;
+}
+
+.interface--notifications {
 }
 
 .interface--breadcrumb {
   @include breadcrumb--listing;
+  @include breadcrumb--link;
 }
 
-.interface--customer {
-  @include customer--pic;
+.interface--module {
 }
 
-.page--order {
-  @include order--pic;
-}
+  .module--pagination {
+    @include pagination--listing;
+  }
 
-.order--headline {
-  @include headline--title;
-  @include headline--release-date;
-}
+  .page--customer {
+    @include customer--pic;
+  }
 
-.module--pagination {
-  @include pagination--listing;
+  .page--order {
+    @include order--pic;
+  }
+
+  .order--headline {
+    @include headline--title;
+    @include headline--release-date;
+  }
+
+.interface--footer {
 }

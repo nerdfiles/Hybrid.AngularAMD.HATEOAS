@@ -51,7 +51,19 @@
     "organic-css/src/molecules/_reset.scss",
     "tachyons/css/tachyons.css",
     "animate.css/animate.css",
-    "hint.css/hint.css"
+    "hint.css/hint.css",
+    "hint.css/src/hint-always.scss",
+    "hint.css/src/hint-color-types.scss",
+    "hint.css/src/hint-core.scss",
+    "hint.css/src/hint-effects.scss",
+    "hint.css/src/hint-mixins.scss",
+    "hint.css/src/hint-position.scss",
+    "hint.css/src/hint-rounded.scss",
+    "hint.css/src/hint-sizes.scss",
+    "hint.css/src/hint-theme.scss",
+    "hint.css/src/hint-variables.scss",
+    "hint.css/src/hint.scss",
+    "hint.css/src/hint.base.scss"
   ],
   "buildFiles": [
     "images/**"

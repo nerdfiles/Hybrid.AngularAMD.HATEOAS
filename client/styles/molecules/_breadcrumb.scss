@@ -9,9 +9,13 @@
       inline-block
     ));
   }
+}
+
+@mixin breadcrumb--link {
   a {
     @include atoms((
-      cursor-pointer
+      cursor-pointer,
+      font-size-14
     ));
   }
 }
