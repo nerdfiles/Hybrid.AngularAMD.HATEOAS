@@ -21,12 +21,13 @@ define([
   function OrdersModuleIndexController ($stateParams, OrderService, ErrorService) {
 
     var vm = this;
-    vm.pageTitle = 'Orders';
-    vm.pageLoading = true;
 
     var _id = parseInt($stateParams.id, 10);
     var orderId = !isNaN(_id) ? _id : ($stateParams.id === '') ? 'multiple' : null;
     var method = (orderId === 'multiple') ? orderId : 'one';
+
+    vm.pageTitle = (method === 'multiple') ? 'Orders' : 'Order';
+    vm.pageLoading = true;
 
     OrderService[method](orderId).then(function (response) {
       if (response.expect) {

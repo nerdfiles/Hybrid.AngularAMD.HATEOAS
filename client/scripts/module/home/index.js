@@ -5,6 +5,8 @@
  * @description Home Module Index Controller.
  */
 define([
+  'core/window',
+  'core/meta'
 ], function () {
 
   var moduleInterface = [
@@ -16,6 +18,14 @@ define([
   function HomeModuleIndexController () {
 
     var vm = this;
+    vm.meta = {
+      title: {
+        content: 'Home'
+      },
+      description: {
+        content: 'Consectetur exercitation non consectetur eu adipisicing et sit ut sit.'
+      }
+    };
     vm.pageTitle = 'Home';
 
     ////////////

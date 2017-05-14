@@ -48,12 +48,14 @@
       'mediatype-parser-browser'  : 'ext/mediatype-parser-browser',
       'uri-templates'             : 'ext/uri-templates',
 
-      // Application Core
-      'core/http'        : 'http',
-      'core/route'       : 'route',
-
       // Application Interface
-      'interface'        : 'interface',
+      'interface' : 'interface',
+
+      // Application Core
+      'core/http'   : 'http',
+      'core/route'  : 'route',
+      'core/window' : 'component/window/index',
+      'core/meta'   : 'component/meta/index',
 
       // Application Services
       'service/order' : 'service/order',

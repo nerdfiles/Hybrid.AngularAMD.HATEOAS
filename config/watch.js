@@ -25,7 +25,7 @@ module.exports = function (grunt) {
         '<%= env.client %>/<%= env.clientScripts %>/section/**/*',
         '<%= env.client %>/<%= env.clientScripts %>/directive/**/*',
         '<%= env.client %>/<%= env.clientScripts %>/service/*',
-        '<%= env.client %>/<%= env.clientScripts %>/component/*',
+        '<%= env.client %>/<%= env.clientScripts %>/component/**/*',
         '<%= env.client %>/<%= env.clientScripts %>/config/*',
         '<%= env.client %>/<%= env.clientScripts %>/filter/*',
         '<%= env.client %>/<%= env.clientScripts %>/<%= env.template %>/*',
