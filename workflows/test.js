@@ -13,5 +13,19 @@ module.exports = function (grunt) {
     'karma'
   ]);
 
+  /**
+   * test/emulate
+   */
+  grunt.registerTask('test/emulate', [
+    'shell:build'
+  ]);
+
+  /**
+   * test/run
+   */
+  grunt.registerTask('test/run', [
+    'shell:run'
+  ]);
+
 };
 

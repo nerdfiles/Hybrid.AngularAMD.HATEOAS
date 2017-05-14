@@ -25,6 +25,7 @@ module.exports = function (grunt) {
   var bower         = require('./config/bower')(grunt);
   var clean         = require('./config/clean')(grunt);
   var copy          = require('./config/copy')(grunt);
+  var cordova       = require('./config/cordova')(grunt);
   var cssmin        = require('./config/cssmin')(grunt);
   var express       = require('./config/express')(grunt);
   var filerev       = require('./config/filerev')(grunt);
@@ -37,6 +38,7 @@ module.exports = function (grunt) {
   var preprocess    = require('./config/preprocess')(grunt);
   var requirejs     = require('./config/requirejs')(grunt);
   var sass          = require('./config/sass')(grunt);
+  var shell         = require('./config/shell')(grunt);
   var svgmin        = require('./config/svgmin')(grunt);
   var uglify        = require('./config/uglify')(grunt);
   var useminPrepare = require('./config/useminPrepare')(grunt);
@@ -50,6 +52,7 @@ module.exports = function (grunt) {
   grunt.config('bower'         , bower);
   grunt.config('clean'         , clean);
   grunt.config('copy'          , copy);
+  grunt.config('cordova'       , cordova);
   grunt.config('cssmin'        , cssmin);
   grunt.config('express'       , express);
   grunt.config('filerev'       , filerev);
@@ -62,6 +65,7 @@ module.exports = function (grunt) {
   grunt.config('preprocess'    , preprocess);
   grunt.config('requirejs'     , requirejs);
   grunt.config('sass'          , sass);
+  grunt.config('shell'         , shell);
   grunt.config('svgmin'        , svgmin);
   grunt.config('uglify'        , uglify);
   grunt.config('useminPrepare' , useminPrepare);

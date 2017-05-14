@@ -30,7 +30,20 @@
     "uri-templates/uri-templates.js",
     "cuid/dist/browser-cuid.js",
     "../node_modules/dual-protocol/index.js",
-    "dual-protocol/src/"
+    "../node_modules/dual-protocol/example.js",
+    "../node_modules/dual-protocol/src/Promise.js",
+    "../node_modules/dual-protocol/src/bluebirdLib.js",
+    "../node_modules/dual-protocol/src/domain.js",
+    "../node_modules/dual-protocol/src/lodash.js",
+    "../node_modules/dual-protocol/src/lodashLib.js",
+    "../node_modules/dual-protocol/src/message.js",
+    "../node_modules/dual-protocol/src/mount.js",
+    "../node_modules/dual-protocol/src/promiseLib.js",
+    "../node_modules/dual-protocol/src/protocol.js",
+    "../node_modules/dual-protocol/src/send.js",
+    "../node_modules/dual-protocol/src/uid.js",
+    "../node_modules/dual-protocol/src/unmount.js",
+    "../node_modules/dual-protocol/src/waitFor.js"
   ],
   "vendorStyles": [
     "organic-css/src/common.scss",

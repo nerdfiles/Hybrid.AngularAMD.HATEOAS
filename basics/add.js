@@ -43,21 +43,12 @@ module.exports = function (grunt) {
     }
     var newVendor = v.join('');
 
-    // Prune base path from param
-    var nodeModules = 'node_modules/';
-    newVendor = vendor.split(nodeModules);
-    var ii = newVendor.indexOf(nodeModules);
-    if (ii !== -1) {
-      v.splice(ii, 1);
-    }
-    newVendor = newVendor.join('');
-
     if (project[__layer__].indexOf(newVendor) !== -1) {
       return grunt.log.write(warning + 'Vendor already exists in build setup.');
     }
 
     var fileExists = grunt.file.exists(basePath + newVendor);
-    var node_modules__Exists = grunt.file.exists(nodeModules + newVendor);
+    var node_modules__Exists = /^node_modules/.test(newVendor);
     if (!fileExists && !node_modules__Exists) {
       return grunt.log.write(warning + 'Vendor does not exist. Try installing with $ bower install VENDOR_NAME');
     }

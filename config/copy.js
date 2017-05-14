@@ -20,7 +20,7 @@ module.exports = function (grunt) {
         {
           cwd     : 'bower_components',
           expand  : true,
-          flatten : true,
+          flatten : false,
           dest    : '<%= env.client %>/<%= env.clientScripts %>/<%= env.vendor %>/',
           src     : grunt.project.vendorScripts
         },
