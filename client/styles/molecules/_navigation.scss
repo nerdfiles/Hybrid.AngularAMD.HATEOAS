@@ -25,7 +25,8 @@
     @include atoms((
       font-size-16,
       cursor-pointer,
-      padding-left-10
+      padding-left-10,
+      no-underline
     ));
   }
 }

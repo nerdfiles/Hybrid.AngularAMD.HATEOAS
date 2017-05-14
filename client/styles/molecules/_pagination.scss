@@ -11,7 +11,8 @@
   }
   a {
     @include atoms((
-      cursor-pointer
+      cursor-pointer,
+      no-underline,
     ));
   }
 }
