@@ -25,7 +25,7 @@ module.exports = function (grunt) {
   var bower         = require('./config/bower')(grunt);
   var clean         = require('./config/clean')(grunt);
   var copy          = require('./config/copy')(grunt);
-  var cordova       = require('./config/cordova')(grunt);
+  var cordovacli    = require('./config/cordovacli')(grunt);
   var cssmin        = require('./config/cssmin')(grunt);
   var express       = require('./config/express')(grunt);
   var filerev       = require('./config/filerev')(grunt);
@@ -52,7 +52,7 @@ module.exports = function (grunt) {
   grunt.config('bower'         , bower);
   grunt.config('clean'         , clean);
   grunt.config('copy'          , copy);
-  grunt.config('cordova'       , cordova);
+  grunt.config('cordovacli'    , cordovacli);
   grunt.config('cssmin'        , cssmin);
   grunt.config('express'       , express);
   grunt.config('filerev'       , filerev);

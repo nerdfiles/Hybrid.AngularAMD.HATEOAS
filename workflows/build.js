@@ -19,4 +19,17 @@ module.exports = function (grunt) {
     'copy:build'
   ]);
 
+  /**
+   * Build
+   */
+  grunt.registerTask('build/platform', [
+    'jshint:build',
+    'clean:build',
+    'preprocess:build',
+    'htmlmin:build',
+    'cssmin:build',
+    'copy:setupPlatformBuild',
+    // 'requirejs:build'
+  ]);
+
 };

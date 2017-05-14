@@ -19,7 +19,8 @@
     "animate.scss": "*",
     "angular-hypermedia": "^1.0.1",
     "cuid": "^1.3.8",
-    "ionic": "^3.2.1"
+    "ionic": "^3.2.1",
+    "lodash": "^4.17.4"
   },
   "resolutions": {
     "angular": "1.5"

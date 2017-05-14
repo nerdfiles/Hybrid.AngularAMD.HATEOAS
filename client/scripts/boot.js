@@ -27,26 +27,25 @@
 
       // Needful
       'lodash' : 'ext/lodash',
-      'cuid'   : 'ext/browser-cuid',
+      'cuid'   : 'ext/cuid/dist/browser-cuid',
 
       // AMD Dependencies
-      'angularAMD' : 'ext/angularAMD',
-      'ngload'     : 'ext/ngload',
+      'angularAMD' : 'ext/angularAMD/dist/angularAMD',
+      'ngload'     : 'ext/angularAMD/dist/ngload',
 
       // Framework Dependencies
-      'angular'            : 'ext/angular',
-      'angular-route'      : 'ext/angular-route',
-      'angular-animate'    : 'ext/angular-animate',
-      'angular-cookies'    : 'ext/angular-cookies',
-      'angular-sanitize'   : 'ext/angular-sanitize',
-      'angular-touch'      : 'ext/angular-touch',
-      'angular-ui-router'  : 'ext/angular-ui-router',
-      'angular-hypermedia' : 'ext/hypermedia',
+      'angular'            : 'ext/angular/angular',
+      'angular-animate'    : 'ext/angular-animate/angular-animate',
+      'angular-cookies'    : 'ext/angular-cookies/angular-cookies',
+      'angular-sanitize'   : 'ext/angular-sanitize/angular-sanitize',
+      'angular-touch'      : 'ext/angular-touch/angular-touch',
+      'angular-ui-router'  : 'ext/angular-ui-router/release/angular-ui-router',
+      'angular-hypermedia' : 'ext/angular-hypermedia/dist/hypermedia',
 
       // Hypermedia Dependencies
-      'linkheader-parser-browser' : 'ext/linkheader-parser-browser',
-      'mediatype-parser-browser'  : 'ext/mediatype-parser-browser',
-      'uri-templates'             : 'ext/uri-templates',
+      'linkheader-parser-browser' : 'ext/linkheader-parser/dist/linkheader-parser-browser',
+      'mediatype-parser-browser'  : 'ext/mediatype-parser/dist/mediatype-parser-browser',
+      'uri-templates'             : 'ext/uri-templates/uri-templates',
 
       // Application Interface
       'interface' : 'interface',

@@ -8,8 +8,8 @@ module.exports = function (grunt) {
   var objectInterface = {
 
     options: {
-        path : 'native',
-        cli  : 'cordova'
+      path : 'client',
+      cli  : 'cordova'
     },
 
     cordova: {
@@ -17,17 +17,17 @@ module.exports = function (grunt) {
             command   : ['create','platform','plugin','build'],
             platforms : ['ios','android'],
             plugins   : ['device','dialogs'],
-            path      : 'client',
-            id        : 'io.cordova.hellocordova',
-            name      : 'HelloCordova'
+            path      : 'config/platforms',
+            id        : 'io.cordova.ngangularamdhateoas',
+          name      : 'ngAngularAmdHateoas'
         }
     },
 
     create: {
         options: {
             command : 'create',
-            id      : 'com.hybridAngularAmdHateoas',
-            name    : 'hybridAngularAmdHateoas'
+            id      : 'com.ngAngularAmdHateoas',
+            name    : 'ngAngularAmdHateoas'
         }
     },
 
@@ -103,7 +103,7 @@ module.exports = function (grunt) {
               '--variable',
               'APP_ID=fbXXXXXXXX',
               '--variable',
-              'APP_NAME=hybridAngularAmdHateoas'
+              'APP_NAME=ngAngularAmdHateoas'
             ],
             command : 'plugin',
             action  : 'add',

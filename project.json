@@ -23,7 +23,6 @@
     "angular-sanitize/angular-sanitize.js",
     "angular-touch/angular-touch.js",
     "angular-ui-router/release/angular-ui-router.js",
-    "lodash/lodash.js",
     "angular-hypermedia/dist/hypermedia.js",
     "linkheader-parser/dist/linkheader-parser-browser.js",
     "mediatype-parser/dist/mediatype-parser-browser.js",
@@ -43,7 +42,8 @@
     "../node_modules/dual-protocol/src/send.js",
     "../node_modules/dual-protocol/src/uid.js",
     "../node_modules/dual-protocol/src/unmount.js",
-    "../node_modules/dual-protocol/src/waitFor.js"
+    "../node_modules/dual-protocol/src/waitFor.js",
+    "lodash/dist/lodash.js"
   ],
   "vendorStyles": [
     "organic-css/src/common.scss",
@@ -81,6 +81,10 @@
     "hint.css/src/hint.base.scss"
   ],
   "buildFiles": [
-    "images/**"
+    "images/**",
+    "scripts/**",
+    "styles/**",
+    "views/**",
+    "index.html"
   ]
 }

@@ -16,3 +16,4 @@ client/styles/interface.css.map
 client/styles/ext/
 *.swo
 .DS_Store
+config/platforms/

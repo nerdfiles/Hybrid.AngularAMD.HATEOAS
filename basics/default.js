@@ -41,11 +41,13 @@ module.exports = function (grunt) {
   var workflows = [
     'setup',
     'develop',
-    'build',
+    'build(/platform)',
     'deploy',
     'test/(emulate|run|unit)',
+    'native/(build/(ios|android)) # Try $ cd ./config/platforms',
     'docs',
-    'report/complexity'
+    'report/complexity',
+    'show/(control|link|discovery|value|attribution) TODO'
   ].label(l).prefix(nl).prepare(nl);
 
   /**

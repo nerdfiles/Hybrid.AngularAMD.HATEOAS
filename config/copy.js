@@ -53,6 +53,24 @@ module.exports = function (grunt) {
 
     /**
      * @ngdoc property
+     * @name platform
+     * @propertyOf config.module:copy
+     * @description Prepare platform task.
+     */
+    setupPlatformBuild: {
+      files: [
+        {
+          cwd     : '<%= env.client %>/',
+          expand  : true,
+          flatten : false,
+          dest    : './config/platforms/www/',
+          src     : grunt.project.buildFiles
+        }
+      ]
+    },
+
+    /**
+     * @ngdoc property
      * @name deploy
      * @propertyOf config.module:copy
      * @description Deploy task.
