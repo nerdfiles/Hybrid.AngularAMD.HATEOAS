@@ -37,12 +37,15 @@ define([
       if (response.info) {
         $rootScope.$broadcast('client:info', response);
       }
-      if (response.warn)
+      if (response.warn) {
         $rootScope.$broadcast('client:warn', response);
-      if (response.debug)
+      }
+      if (response.debug) {
         $rootScope.$broadcast('client:debug', response);
-      if (response.error)
+      }
+      if (response.error) {
         $rootScope.$broadcast('client:error', response);
+      }
     }
 
   }

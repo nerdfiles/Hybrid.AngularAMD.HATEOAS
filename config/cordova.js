@@ -8,7 +8,7 @@ module.exports = function (grunt) {
   var objectInterface = {
 
     options: {
-        path : 'client',
+        path : 'native',
         cli  : 'cordova'
     },
 

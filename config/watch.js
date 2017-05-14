@@ -35,7 +35,7 @@ module.exports = function (grunt) {
         '<%= env.client %>/<%= env.clientScripts %>/<%= env.vendor %>/*',
         '<%= env.client %>/<%= env.clientStyles %>/<%= env.vendor %>/*'
       ],
-      task: ['jshint:build']
+      task: []
     },
 
     /**
