@@ -28,7 +28,9 @@
     "linkheader-parser/dist/linkheader-parser-browser.js",
     "mediatype-parser/dist/mediatype-parser-browser.js",
     "uri-templates/uri-templates.js",
-    "cuid/dist/browser-cuid.js"
+    "cuid/dist/browser-cuid.js",
+    "../node_modules/dual-protocol/index.js",
+    "dual-protocol/src/"
   ],
   "vendorStyles": [
     "organic-css/src/common.scss",

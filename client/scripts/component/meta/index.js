@@ -7,7 +7,8 @@
 define(['interface'], function (__interface__) {
   function MetaSpecController ($scope, $rootScope) {
     $scope.vm.sep = ' ';
-    $scope.vm.prefix = '📝';
+    var defaultIcon = '📝';
+    $scope.vm.prefix = $scope.vm.construct.icon || defaultIcon;
   }
   __interface__.component('metaSpec', {
     templateUrl: 'assets/scripts/component/meta/index.html',

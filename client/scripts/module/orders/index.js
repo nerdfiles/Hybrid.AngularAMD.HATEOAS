@@ -5,12 +5,16 @@
  * @description Orders Module Index Controller.
  */
 define([
+  'core/window',
+  'core/meta',
   'service/order',
   'service/error'
 ], function () {
 
   var moduleInterface = [
     '$stateParams',
+    '$timeout',
+    '$rootScope',
     'OrderService',
     'ErrorService',
     OrdersModuleIndexController
@@ -18,16 +22,27 @@ define([
 
   return moduleInterface;
 
-  function OrdersModuleIndexController ($stateParams, OrderService, ErrorService) {
+  function OrdersModuleIndexController ($stateParams, $timeout, $rootScope, OrderService, ErrorService) {
 
     var vm = this;
+    vm.meta = {
+      title: {
+        icon    : '🎫',
+        content : null
+      },
+      description: {
+        icon    : '🎫',
+        content : null
+      }
+    };
 
     var _id = parseInt($stateParams.id, 10);
     var orderId = !isNaN(_id) ? _id : ($stateParams.id === '') ? 'multiple' : null;
     var method = (orderId === 'multiple') ? orderId : 'one';
 
-    vm.pageTitle = (method === 'multiple') ? 'Orders' : 'Order';
+    vm.pageTitle = (method === 'multiple') ? 'Orders' : 'Order detail';
     vm.pageLoading = true;
+    vm.meta.title.content = vm.meta.description.content = (method === 'one') ? 'Loading...' : vm.pageTitle;
 
     OrderService[method](orderId).then(function (response) {
       if (response.expect) {
@@ -37,6 +52,7 @@ define([
       vm.followRel = followRel;
       vm.hasRel = hasRel;
       vm.pageLoading = false;
+      vm.meta.title.content = vm.meta.description.content = (vm.pageTitle + ' for Order ID: ' + orderId);
     });
 
     ////////////

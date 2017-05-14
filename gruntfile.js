@@ -30,6 +30,7 @@ module.exports = function (grunt) {
   var filerev       = require('./config/filerev')(grunt);
   var htmlmin       = require('./config/htmlmin')(grunt);
   var jshint        = require('./config/jshint')(grunt);
+  var karma         = require('./config/karma')(grunt);
   var ngAnnotate    = require('./config/ngAnnotate')(grunt);
   var ngdocs        = require('./config/ngdocs')(grunt);
   var parallel      = require('./config/parallel')(grunt);
@@ -54,6 +55,7 @@ module.exports = function (grunt) {
   grunt.config('filerev'       , filerev);
   grunt.config('htmlmin'       , htmlmin);
   grunt.config('jshint'        , jshint);
+  grunt.config('karma'         , karma);
   grunt.config('ngAnnotate'    , ngAnnotate);
   grunt.config('ngdocs'        , ngdocs);
   grunt.config('parallel'      , parallel);

@@ -4,7 +4,10 @@
  * @name app.settings.module:index
  * @description Settings Module Index Controller.
  */
-define([], function () {
+define([
+  'core/window',
+  'core/meta'
+], function () {
 
   var moduleInterface = [
     SettingsModuleIndexController
@@ -15,6 +18,16 @@ define([], function () {
   function SettingsModuleIndexController () {
 
     var vm = this;
+    vm.meta = {
+      title: {
+        icon    : '⚙',
+        content : 'Settings'
+      },
+      description: {
+        icon    : '⚙',
+        content: 'Aliquip aliqua sint reprehenderit aliquip incididunt elit aliqua pariatur consequat ex qui.'
+      }
+    };
     vm.pageTitle = 'Settings';
 
     ////////////
