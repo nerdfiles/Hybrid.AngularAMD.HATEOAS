@@ -1,0 +1,7 @@
+@mixin header--headline {
+  h1 {
+    @include atoms((
+      completely-hide
+    ))
+  }
+}

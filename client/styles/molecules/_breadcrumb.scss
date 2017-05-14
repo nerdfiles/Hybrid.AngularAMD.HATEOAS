@@ -3,6 +3,22 @@
  * @name app.molecules:_breadcrumb
  * @description Pagination molecule.
  */
+@mixin breadcrumb--base {
+  ol {
+    @include atoms((
+      shadow-3
+    ));
+  }
+}
+
+@mixin breadcrumb--headline {
+  h1 {
+    @include atoms((
+      completely-hide
+    ));
+  }
+}
+
 @mixin breadcrumb--listing {
   li {
     @include atoms((
@@ -15,7 +31,8 @@
   a {
     @include atoms((
       cursor-pointer,
-      font-size-14
+      font-size-14,
+      padding-left-10
     ));
   }
 }

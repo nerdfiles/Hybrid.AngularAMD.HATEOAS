@@ -4,6 +4,14 @@
  * @description Navigation molecule.
  */
 
+@mixin navigation--headline {
+  h1 {
+    @include atoms((
+      completely-hide
+    ));
+  }
+}
+
 @mixin navigation--listing {
   li {
     @include atoms((
@@ -16,7 +24,8 @@
   a {
     @include atoms((
       font-size-16,
-      cursor-pointer
+      cursor-pointer,
+      padding-left-10
     ));
   }
 }

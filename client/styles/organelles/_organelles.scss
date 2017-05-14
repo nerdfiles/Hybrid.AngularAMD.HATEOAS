@@ -4,15 +4,13 @@
  * @description Global organelles.
  */
 
-.interface--header {
-}
-
 /**
  * @name app.organelles.interface:navigation
  * @memberOf app.organelles:_organelles
  * @requires hint.css
  */
 .interface--navigation {
+  @include navigation--headline;
   @include navigation--listing;
   @include navigation--link;
 }
@@ -20,7 +18,14 @@
 .interface--notifications {
 }
 
+/**
+ * @name app.organelles.interface:breadcrumb
+ * @memberOf app.organelles:_organelles
+ * @requires hint.css
+ */
 .interface--breadcrumb {
+  @include breadcrumb--base;
+  @include breadcrumb--headline;
   @include breadcrumb--listing;
   @include breadcrumb--link;
 }
@@ -45,5 +50,3 @@
     @include headline--release-date;
   }
 
-.interface--footer {
-}
