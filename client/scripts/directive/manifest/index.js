@@ -13,7 +13,6 @@ function manifest (angularAMD) {
     PackageService.get().then(PackagetLoadCompleted, PackageLoadFailed);
     function PackagetLoadCompleted (content) { $scope.vm.package = content; }
     function PackageLoadFailed (error) { console.log('⚠️ Could not load project manifest'); }
-    console.log($scope.vm);
   }
   angularAMD.directive('appManifest', [appManifest]);
   function appManifest () {
