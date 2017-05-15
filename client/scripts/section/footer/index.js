@@ -4,7 +4,9 @@
  * @name app.footer.section:index
  * @description Footer Section Index Controller.
  */
-define([], footer);
+define([
+  'core/directive/manifest'
+], footer);
 function footer () {
   var sectionInterface = [
     IndexController

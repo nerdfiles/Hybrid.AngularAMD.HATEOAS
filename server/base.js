@@ -45,17 +45,22 @@ app.use(logger(logConfig));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+// Serve Assets
+app.use('/assets/package.json', express.static(__dirname + '/../package.json'));
+app.use('/assets', express.static(__dirname + '/../client'));
+
+// Serve dualapi
+app.get('/assets/scripts/dual.js', browserify(__dirname + '/../client/scripts/served.js'));
+
+// Serve Mock API
+require('./mockRoutes')(app);
+
+// Serve App
 app.get('/:singlePage?/:id?', function (request, response, next) {
   response.sendFile('index.html', {
     root: __dirname + '/../client'
   });
 });
-
-app.use('/assets', express.static(__dirname + '/../client'));
-
-app.get('/assets/scripts/dual.js', browserify(__dirname + '/../client/scripts/served.js'));
-
-require('./mockRoutes')(app);
 
 var server = http.createServer(app);
 app.get('io').attach(server);

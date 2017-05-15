@@ -9,7 +9,6 @@ define([
   'core/http',
   'core/route',
   'common/icons',
-  'core/directive/version',
   'angular-animate',
   'angular-cookies',
   'angular-sanitize',

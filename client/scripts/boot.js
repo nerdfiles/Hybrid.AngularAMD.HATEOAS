@@ -60,20 +60,23 @@ function boot () {
       'core/dual'     : '/assets/dual',
 
       // Application Core
-      'core/http'              : 'http',
-      'core/route'             : 'route',
-      'core/window'            : 'component/window/index',
-      'core/meta'              : 'component/meta/index',
-      'core/directive/version' : 'directive/version/index',
+      'core/http'               : 'http',
+      'core/route'              : 'route',
+      'core/window'             : 'component/window/index',
+      'core/meta'               : 'component/meta/index',
+      'core/directive/manifest' : 'directive/manifest/index',
 
       // Application Commons
       'utils/google/maps' : 'utils/google.maps',
       'common/icons'      : 'common/icons',
 
       // Application Services
-      'service/order' : 'service/order',
-      'service/user'  : 'service/user',
-      'service/error' : 'service/error',
+      'service/order'   : 'service/order',
+      'service/user'    : 'service/user',
+      'service/error'   : 'service/error',
+
+      // Application Externals
+      'external/service/package' : 'external/package',
 
       // Thematic Sections
       'HeaderSectionIndexController'       : 'section/header/index',
