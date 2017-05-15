@@ -12,6 +12,7 @@ function bump (grunt) {
       tagName            : 'v%VERSION%',
       tagMessage         : 'Version %VERSION%',
       push               : false,
+      pushTo             : false,
       gitDescribeOptions : '--tags --always --abbrev=1 --dirty=-d',
       globalReplace      : false,
       prereleaseName     : false,
