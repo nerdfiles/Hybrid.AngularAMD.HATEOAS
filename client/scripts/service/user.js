@@ -6,7 +6,9 @@
  */
 define([
   'interface'
-], function (__interface__) {
+], user);
+
+function user (__interface__) {
   'use strict';
 
   __interface__.factory('UserService', [
@@ -33,4 +35,4 @@ define([
 
     return service;
   }
-});
+}

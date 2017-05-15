@@ -9,7 +9,9 @@ define([
   'core/meta',
   'service/order',
   'service/error'
-], function () {
+], orders);
+function orders () {
+  'use strict';
 
   var moduleInterface = [
     '$stateParams',
@@ -17,12 +19,12 @@ define([
     '$rootScope',
     'OrderService',
     'ErrorService',
-    OrdersModuleIndexController
+    IndexController
   ];
 
   return moduleInterface;
 
-  function OrdersModuleIndexController ($stateParams, $timeout, $rootScope, OrderService, ErrorService) {
+  function IndexController ($stateParams, $timeout, $rootScope, OrderService, ErrorService) {
 
     var vm = this;
     vm.meta = {
@@ -67,4 +69,4 @@ define([
       return rel in vm.page.$links;
     }
   }
-});
+}

@@ -8,13 +8,17 @@ define([
   'angularAMD',
   'core/http',
   'core/route',
+  'common/icons',
+  'core/directive/version',
   'angular-animate',
   'angular-cookies',
   'angular-sanitize',
   'angular-touch',
   'angular-ui-router',
   'angular-hypermedia'
-], function (angularAMD, httpSettings, routeContract) {
+], __interface__);
+
+function __interface__ (angularAMD, httpSettings, routeContract) {
   'use strict';
 
   var appDependencies = [
@@ -30,8 +34,8 @@ define([
 
   /**
    * @ngdoc method
-   * @name routeContract
    * @methodOf app:interface
+   * @name routeContract
    * @function
    */
   app.config([
@@ -42,8 +46,8 @@ define([
 
   /**
    * @ngdoc method
-   * @name httpSettings
    * @methodOf app:interface
+   * @name httpSettings
    * @function
    */
   app.config([
@@ -56,4 +60,5 @@ define([
 
   return angularAMD.bootstrap(app);
 
-});
+}
+

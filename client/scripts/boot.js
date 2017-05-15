@@ -4,7 +4,9 @@
  * @name app:boot
  * @description Application Boot Loader.
  */
-(function () {
+(boot)();
+
+function boot () {
   'use strict';
 
   var env = {
@@ -31,7 +33,10 @@
 
       // AMD Dependencies
       'angularAMD' : 'ext/angularAMD/dist/angularAMD',
-      'ngload'     : 'ext/angularAMD/dist/ngload',
+
+			// AMD Plugins
+      'ngload' : 'ext/angularAMD/dist/ngload',
+      'css'    : 'ext/RequireCSS/css',
 
       // Framework Dependencies
       'angular'            : 'ext/angular/angular',
@@ -55,10 +60,15 @@
       'core/dual'     : '/assets/dual',
 
       // Application Core
-      'core/http'   : 'http',
-      'core/route'  : 'route',
-      'core/window' : 'component/window/index',
-      'core/meta'   : 'component/meta/index',
+      'core/http'              : 'http',
+      'core/route'             : 'route',
+      'core/window'            : 'component/window/index',
+      'core/meta'              : 'component/meta/index',
+      'core/directive/version' : 'directive/version/index',
+
+      // Application Commons
+      'utils/google/maps' : 'utils/google.maps',
+      'common/icons'      : 'common/icons',
 
       // Application Services
       'service/order' : 'service/order',
@@ -140,8 +150,9 @@
 
     },
 
-    deps: ['dual', 'interface']
+    // deps: ['core/dual', 'interface']
+    deps: ['interface']
   };
 
   require.config(env);
-})();
+}

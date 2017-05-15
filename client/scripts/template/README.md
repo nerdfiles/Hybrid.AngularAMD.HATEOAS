@@ -11,5 +11,6 @@ internaction models, which entail the presentation of complex HTML.
 
 1. Modals
 2. Panels
-3. Frames
-4. Stuff you cannot think to put in a Directive or Component
+3. Frame-likes
+4. Overrides (for other plugins)
+5. Stuff you cannot think to put in a Directive or Component

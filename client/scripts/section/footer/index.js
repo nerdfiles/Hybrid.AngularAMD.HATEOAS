@@ -4,14 +4,15 @@
  * @name app.footer.section:index
  * @description Footer Section Index Controller.
  */
-define([], function () {
+define([], footer);
+function footer () {
   var sectionInterface = [
-    FooterSectionIndexController
+    IndexController
   ];
   return sectionInterface;
-  function FooterSectionIndexController () {
+  function IndexController () {
     var vm = this;
     vm.sectionTitle = 'Footer';
     ////////////
   }
-});
+}

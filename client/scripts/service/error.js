@@ -6,7 +6,9 @@
  */
 define([
   'interface',
-], function (__interface__) {
+], error);
+
+function error (__interface__) {
   'use strict';
 
   __interface__.service('ErrorService', [
@@ -49,4 +51,4 @@ define([
     }
 
   }
-});
+}

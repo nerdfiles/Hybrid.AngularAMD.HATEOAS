@@ -6,16 +6,17 @@
  */
 define([
   'service/error'
-], function () {
+], notification);
+function notification () {
   'use strict';
 
   var sectionInterface = [
     '$rootScope',
     'ErrorService',
-    NotificationSectionIndexController
+    IndexController
   ];
   return sectionInterface;
-  function NotificationSectionIndexController ($rootScope, ErrorService) {
+  function IndexController ($rootScope, ErrorService) {
     var vm = this;
     vm.sectionTitle = 'Notification';
 
@@ -37,4 +38,4 @@ define([
 
     ////////////
   }
-});
+}

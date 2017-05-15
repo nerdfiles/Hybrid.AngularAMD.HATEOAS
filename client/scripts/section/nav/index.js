@@ -4,14 +4,15 @@
  * @name app.nav.section:index
  * @description Navigation Section Index Controller.
  */
-define([], function () {
+define([], nav);
+function nav () {
   var sectionInterface = [
-    NavigationSectionIndexController
+    IndexController
   ];
   return sectionInterface;
-  function NavigationSectionIndexController () {
+  function IndexController () {
     var vm = this;
     vm.sectionTitle = 'Navigation';
     ////////////
   }
-});
+}

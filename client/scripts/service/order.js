@@ -6,7 +6,9 @@
  */
 define([
   'interface'
-], function (__interface__) {
+], order);
+
+function order (__interface__) {
   'use strict';
 
   var expect = function (input) {
@@ -42,9 +44,22 @@ define([
 
     ////////////
 
+    /**
+     * @ngdoc method
+     * @methodOf app.logistics.module:order
+     * @name orderNoop
+     * @returns {undefined}
+     */
     function orderNoop () {
     }
 
+    /**
+     * @ngdoc method
+     * @methodOf app.logistics.module:order
+     * @name orderGet
+     * @param {number|string} orderId Order ID.
+     * @returns {undefined}
+     */
     function orderGet (orderId) {
 
       var endpointUrl = (_url + orderId);
@@ -66,9 +81,22 @@ define([
 
     }
 
+    /**
+     * @ngdoc method
+     * @methodOf app.logistics.module:order
+     * @name orderTwo
+     * @returns {undefined}
+     */
     function orderTwo () {
     }
 
+    /**
+     * @ngdoc method
+     * @methodOf app.logistics.module:order
+     * @name ordersGet
+     * @param orderId
+     * @returns {object:Promise} Promise object.
+     */
     function ordersGet (orderId) {
       var defer = $q.defer();
       var message = 'Load an orders list';
@@ -76,18 +104,42 @@ define([
       return defer.promise;
     }
 
+    /**
+     * @ngdoc method
+     * @methodOf app.logistics.module:order
+     * @name orderCreate
+     * @returns {undefined}
+     */
     function orderCreate () {
     }
 
+    /**
+     * @ngdoc method
+     * @methodOf app.logistics.module:order
+     * @name orderUpdate
+     * @returns {undefined}
+     */
     function orderUpdate () {
     }
 
+    /**
+     * @ngdoc method
+     * @methodOf app.logistics.module:order
+     * @name orderDelete
+     * @returns {undefined}
+     */
     function orderDelete () {
     }
 
+    /**
+     * @ngdoc method
+     * @methodOf app.logistics.module:order
+     * @name orderRemove
+     * @returns {undefined}
+     */
     function orderRemove () {
     }
 
     return service;
   }
-});
+}

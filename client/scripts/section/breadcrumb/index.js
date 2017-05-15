@@ -4,19 +4,24 @@
  * @name app.breadcrumb.section:index
  * @description Breadcrumb Section Index Controller.
  */
-define([], function () {
+define([], breadcrumb);
+
+function breadcrumb () {
   'use strict';
 
   var sectionInterface = [
-    BreadcrumbSectionIndexController
+    IndexController
   ];
 
   return sectionInterface;
 
-  function BreadcrumbSectionIndexController () {
+  function IndexController () {
     var vm = this;
     vm.sectionTitle = 'Breadcrumb';
+    vm.init = init;
     ////////////
+    function init () {
+    }
   }
 
-});
+}

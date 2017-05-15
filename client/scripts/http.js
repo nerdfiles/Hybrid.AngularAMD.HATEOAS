@@ -4,7 +4,9 @@
  * @name app:http
  * @description HTTP Configuration Module.
  */
-define([], function () {
+define([], http);
+
+function http () {
   'use strict';
 
   /**
@@ -17,4 +19,4 @@ define([], function () {
 
   return httpSettings;
 
-});
+}

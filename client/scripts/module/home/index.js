@@ -7,15 +7,16 @@
 define([
   'core/window',
   'core/meta'
-], function () {
+], home);
+function home () {
 
   var moduleInterface = [
-    HomeModuleIndexController
+    IndexController
   ];
 
   return moduleInterface;
 
-  function HomeModuleIndexController () {
+  function IndexController () {
 
     var vm = this;
     vm.meta = {
@@ -31,4 +32,4 @@ define([
     ////////////
 
   }
-});
+}

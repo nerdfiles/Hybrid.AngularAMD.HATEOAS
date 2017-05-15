@@ -7,15 +7,17 @@
 define([
   'core/window',
   'core/meta'
-], function () {
+], settings);
+function settings () {
+  'use strict';
 
   var moduleInterface = [
-    SettingsModuleIndexController
+    IndexController
   ];
 
   return moduleInterface;
 
-  function SettingsModuleIndexController () {
+  function IndexController () {
 
     var vm = this;
     vm.meta = {
@@ -32,4 +34,4 @@ define([
 
     ////////////
   }
-});
+}

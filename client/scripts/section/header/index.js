@@ -4,14 +4,15 @@
  * @name app.header.section:index
  * @description Header Section Index Controller.
  */
-define([], function () {
+define([], header);
+function header () {
   var sectionInterface = [
-    HeaderSectionIndexController
+    IndexController
   ];
   return sectionInterface;
-  function HeaderSectionIndexController () {
+  function IndexController () {
     var vm = this;
     vm.sectionTitle = 'Header';
     ////////////
   }
-});
+}

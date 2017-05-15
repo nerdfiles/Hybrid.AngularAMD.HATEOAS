@@ -6,7 +6,9 @@
  */
 define([
   'angularAMD'
-], function (angularAMD) {
+], route);
+
+function route (angularAMD) {
   'use strict';
 
   var redirectDefault = '/';
@@ -134,4 +136,4 @@ define([
 
   return routeContract;
 
-});
+}
