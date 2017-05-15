@@ -1,13 +1,19 @@
 // ./config/shell.js
+/**
+ * @ngdoc object
+ * @name config.module:shell
+ * @description shell config.
+ */
 var path = require('path');
 
 module.exports = function (grunt) {
 
 	/**
-   * @ngdoc function
-	 * @function cordovaCommand
+   * @ngdoc method
+   * @methodOf config.module:shell
+	 * @name cordovaCommand
 	 * @param {string} command Cordova command to execute.
-	 * @returns {string}
+	 * @returns {string} Path to Cordova directory.
 	 */
   var cordovaCommand = function (command) {
     var target = grunt.option('target') || 'ios';

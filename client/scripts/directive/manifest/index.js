@@ -6,6 +6,7 @@
  */
 define([
   'angularAMD',
+  'css!../../../styles/config/manifest',
   'ngload!external/service/package'
 ], manifest);
 function manifest (angularAMD) {

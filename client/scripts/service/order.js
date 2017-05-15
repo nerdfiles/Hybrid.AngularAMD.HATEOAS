@@ -48,7 +48,7 @@ function order (__interface__) {
      * @ngdoc method
      * @methodOf app.logistics.module:order
      * @name orderNoop
-     * @returns {undefined}
+     * @returns {*} undefined
      */
     function orderNoop () {
     }
@@ -58,7 +58,7 @@ function order (__interface__) {
      * @methodOf app.logistics.module:order
      * @name orderGet
      * @param {number|string} orderId Order ID.
-     * @returns {undefined}
+     * @returns {*} undefined
      */
     function orderGet (orderId) {
 
@@ -85,7 +85,7 @@ function order (__interface__) {
      * @ngdoc method
      * @methodOf app.logistics.module:order
      * @name orderTwo
-     * @returns {undefined}
+     * @returns {*} undefined
      */
     function orderTwo () {
     }
@@ -94,7 +94,7 @@ function order (__interface__) {
      * @ngdoc method
      * @methodOf app.logistics.module:order
      * @name ordersGet
-     * @param orderId
+     * @param {number|string} orderId Order ID.
      * @returns {object:Promise} Promise object.
      */
     function ordersGet (orderId) {
@@ -108,7 +108,7 @@ function order (__interface__) {
      * @ngdoc method
      * @methodOf app.logistics.module:order
      * @name orderCreate
-     * @returns {undefined}
+     * @returns {*} undefined
      */
     function orderCreate () {
     }
@@ -117,7 +117,7 @@ function order (__interface__) {
      * @ngdoc method
      * @methodOf app.logistics.module:order
      * @name orderUpdate
-     * @returns {undefined}
+     * @returns {*} undefined
      */
     function orderUpdate () {
     }
@@ -126,7 +126,7 @@ function order (__interface__) {
      * @ngdoc method
      * @methodOf app.logistics.module:order
      * @name orderDelete
-     * @returns {undefined}
+     * @returns {*} undefined
      */
     function orderDelete () {
     }
@@ -135,7 +135,7 @@ function order (__interface__) {
      * @ngdoc method
      * @methodOf app.logistics.module:order
      * @name orderRemove
-     * @returns {undefined}
+     * @returns {*} undefined
      */
     function orderRemove () {
     }
