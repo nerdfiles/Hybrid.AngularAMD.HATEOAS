@@ -26,7 +26,7 @@
     paths: {
 
       // Needful
-      'lodash' : 'ext/lodash',
+      'lodash' : 'ext/lodash/dist/lodash',
       'cuid'   : 'ext/cuid/dist/browser-cuid',
 
       // AMD Dependencies
@@ -49,6 +49,10 @@
 
       // Application Interface
       'interface' : 'interface',
+
+      // Protocol Dependencies
+      // 'core/protocol' : 'node_modules/dual-protocol/index',
+      'core/dual'     : '/assets/dual',
 
       // Application Core
       'core/http'   : 'http',
@@ -136,7 +140,7 @@
 
     },
 
-    deps: ['interface']
+    deps: ['dual', 'interface']
   };
 
   require.config(env);

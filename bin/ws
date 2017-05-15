@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+// -*- mode: javascript -*-
+/*jslint node: true */
+"use strict";
+
+// Needful dependencies
+var engine = require('engine.io');
+var dualserver = require('../server/dualserver');
+
+var server = engine.listen(3001);
+var dual = dualserver({});
+
+server.on('connection', function (socket) {
+  return dual.engineio(socket);
+});
+
+console.log('Sockets up!');
