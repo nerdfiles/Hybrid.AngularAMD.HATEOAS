@@ -12,6 +12,6 @@ module.exports = function (grunt) {
    * @name version
    * @description Version project.
    */
-  grunt.registerTask('version', ['bump']);
+  grunt.registerTask('touch/version', ['bump']);
 
 };
