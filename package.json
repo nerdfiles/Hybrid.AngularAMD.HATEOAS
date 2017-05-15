@@ -1,6 +1,6 @@
 {
   "name": "Hybrid.angularAMD.HATEOAS",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "ws": "node ./bin/ws",
     "build/dual": "browserify client/scripts/static.js -o build/static-app.js"
@@ -14,6 +14,7 @@
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^0.7.3",
     "grunt-bower-task": "~0.3.2",
+    "grunt-bump": "^0.8.0",
     "grunt-concurrent": "^0.5.0",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-concat": "^0.4.0",
@@ -44,10 +45,10 @@
     "karma-phantomjs-launcher": "^1.0.4",
     "load-grunt-tasks": "^0.4.0",
     "lodash": "^4.17.4",
+    "mocha": "^3.4.1",
     "plato": "^1.7.0",
     "q": "^1.5.0",
-    "time-grunt": "^0.3.1",
-    "mocha": "^3.4.1"
+    "time-grunt": "^0.3.1"
   },
   "dependencies": {
     "bluebird": "^3.5.0",
