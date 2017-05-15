@@ -2,7 +2,7 @@
 define([
   'css!https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css',
   'css!../../styles/config/icons'
-], common);
-function common () {
-  console.log('🔶 Loaded common styles');
+], icons);
+function icons () {
+  console.log('🔶 Loaded common icon styles');
 }
