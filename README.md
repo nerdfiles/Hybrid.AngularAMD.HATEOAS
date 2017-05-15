@@ -55,15 +55,22 @@ Removing vendors in similar fashion is easy:
 
 ## Other noteworthy points
 
-1. TODO RequireJS Hot Swapping / Code-On-Demand
-2. ngdocs on RequireJS
+1. `TODO` RequireJS Hot Swapping / Code-On-Demand
+2. ngdocs on RequireJS, RequireCSS, etc.
 3. ngdocs on GruntJS (really modular tasks as basics and workflows)
-4. Organic CSS
-5. Optimized builds
-6. TODO Layering: (RequireJS Modules + DualApi) ➢ Hypertext Passing
-7. TODO [angular-hypermedia][angular-hypermedia] or [angular-hy-res][angular-hy-res]
-
+4. `TODO` Organic CSS (need to think about how to implement functional groups and
+   common styles; so, Organic RequireCSS)
+5. `TODO` Optimized builds (need a better way to maintain disparate `shim`s)
+6. `TODO` Layering: (RequireJS Modules + `dualapi`) ➢ Hypertext Passing for
+   Discovery Layer (`lodash` is missing from `browserify`'s dependency list)
+7. `TODO` [angular-hypermedia][angular-hypermedia] obeys which JSON Schema spec
+   for [Hypermedia][hyper]? (HAL? [Siren][sirenlint]?)
+8. `TODO` *chain environments for Value Layer
+9. `TODO` lib for Attribution Layer
+10. `TODO` Leaflet Maps common modules
 
 [halberd]: https://github.com/jpbochi/halberd
 [angular-hypermedia]: https://github.com/jcassee/angular-hypermedia
 [angular-hy-res]: https://github.com/petejohanson/angular-hy-res
+[sirenlint]: https://github.com/kevinswiber/sirenlint
+[hyper]: http://amundsen.com/hypermedia/

@@ -23,6 +23,7 @@ module.exports = function (grunt) {
 
   // Needful configurations
   var bower         = require('./config/bower')(grunt);
+  var bump          = require('./config/bump')(grunt);
   var clean         = require('./config/clean')(grunt);
   var copy          = require('./config/copy')(grunt);
   var cordovacli    = require('./config/cordovacli')(grunt);
@@ -50,6 +51,7 @@ module.exports = function (grunt) {
   // Configure Grunt
   grunt.config('env'           , project.env);
   grunt.config('bower'         , bower);
+  grunt.config('bump'          , bump);
   grunt.config('clean'         , clean);
   grunt.config('copy'          , copy);
   grunt.config('cordovacli'    , cordovacli);

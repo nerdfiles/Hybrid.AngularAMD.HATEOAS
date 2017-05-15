@@ -34,7 +34,8 @@ module.exports = function (grunt) {
   var basics = [
     'default',
     '(add|remove)/vendor --layer=(style|script) --vendor=[bower_components/]path/to/file.(js|css)',
-    'read/env'
+    'show/env',
+    'touch/version'
   ].label(l).prefix(nl).prepare(nl);
 
   // Workflows
