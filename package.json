@@ -1,6 +1,6 @@
 {
   "name": "Hybrid.angularAMD.HATEOAS",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "ws": "node ./bin/ws",
     "build/dual": "browserify client/scripts/static.js -o build/static-app.js"
