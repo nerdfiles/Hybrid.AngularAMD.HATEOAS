@@ -43,7 +43,8 @@
     "../node_modules/dual-protocol/src/uid.js",
     "../node_modules/dual-protocol/src/unmount.js",
     "../node_modules/dual-protocol/src/waitFor.js",
-    "lodash/dist/lodash.js"
+    "lodash/dist/lodash.js",
+    "RequireCSS/css.js"
   ],
   "vendorStyles": [
     "organic-css/src/common.scss",
