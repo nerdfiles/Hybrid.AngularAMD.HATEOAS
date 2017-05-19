@@ -1,7 +1,4 @@
 #!/usr/bin/env node
-// -*- mode: javascript -*-
-/*jslint node: true */
-"use strict";
 
 // Needful dependencies
 var engine = require('engine.io');
