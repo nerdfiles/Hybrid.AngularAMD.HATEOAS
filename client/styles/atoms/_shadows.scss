@@ -1,17 +1,4 @@
-// ./app/styles/atoms/_atoms.scss
-/**
- * @name app.atoms:_atoms
- * @description Atoms definitions.
- */
-
-@include define-atom("font-family") {
-  font-family: "Helvetica";
-}
-
-@include define-atom("assistive-font-family") {
-  font-family: "Eulexia";
-}
-
+// ./client/styles/atoms/_shadows.scss
 @include define-atom("shadow-1") {
   box-shadow: 0 0 4px 2px rgba( 0, 0, 0, .2 );
 }
@@ -32,12 +19,4 @@
   box-shadow: 4px 4px 8px 0 rgba( 0, 0, 0, .2 );
 }
 
-@include define-atom("accessibly-hide") {
-  position: absolute;
-  left: -9999px;
-}
 
-@include define-atom("completely-hide") {
-  display: none;
-  visibility: hidden;
-}

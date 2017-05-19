@@ -1,0 +1,117 @@
+// ./client/atoms/_break-point.scss
+@mixin break-point-template ($point-from, $point-to, $orientation: landscape) {
+
+  // iPads (portrait and landscape)
+	@include break-point-range($point-from, $point-to) {
+    @content;
+  }
+
+  @if ($orientation == landscape) {
+
+    // iPads (landscape)
+    @media only screen and (min-device-width : $point-from) and (max-device-width : $point-to) and (orientation : $orientation) {
+      @content;
+    }
+  } @else {
+
+    // iPads (portrait)
+    @media only screen and (min-device-width : $point-from) and (max-device-width : $point-to) and (orientation : $orientation) {
+      @content;
+    }
+  }
+}
+
+@mixin break-point-template-with-ratio ($point-from, $point-to, $orientation, $pixel-ratio: 2) {
+  @media only screen and (min-device-width : $point-from) and (max-device-width : $point-to) and (orientation : $orientation) and (-webkit-min-device-pixel-ratio : $pixel-ratio) {
+    @content;
+  }
+
+  @media only screen and (min-device-width : $point-from) and (max-device-width : $point-to) and (orientation : $orientation) and (-webkit-min-device-pixel-ratio : 2) {
+    @content;
+  }
+}
+
+@mixin break-point-template-desktop ($point-from: 1224px) {
+  @media only screen and (min-width : $point-from) {
+    @content;
+  }
+}
+
+@mixin break-point-template-large ($point-from: 1824px) {
+  @media only screen and (min-width : $point-from) {
+    @content;
+  }
+}
+
+@mixin break-point-iphone4 () {
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    @content;
+  }
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    @content;
+  }
+}
+
+@mixin break-point-iphone5 () {
+  @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+    @content;
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+    @content;
+  }
+}
+
+@mixin break-point-iphone6 () {
+  @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+    @content;
+  }
+
+  @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+    @content;
+  }
+}
+
+@mixin break-point-iphone6-plus () {
+  @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+    @content;
+  }
+
+  @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+    @content;
+  }
+}
+
+@mixin break-point-s3 () {
+  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    @content;
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    @content;
+  }
+}
+
+@mixin break-point-s4 () {
+  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+    @content;
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+    @content;
+  }
+}
+
+@mixin break-point-s5 () {
+  @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+    @content;
+  }
+
+  @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+    @content;
+  }
+}
+
+
+

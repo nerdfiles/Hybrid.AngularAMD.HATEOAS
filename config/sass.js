@@ -10,7 +10,7 @@ module.exports = function (grunt) {
   var buildFiles = [{
     expand : true,
     cwd    : '<%= env.client %>/<%= env.clientStyles %>',
-    src    : ['*.scss'],
+    src    : ['*.scss', 'config/*.scss'],
     dest   : '<%= env.client %>/<%= env.clientStyles %>',
     ext    : '.css'
   }];

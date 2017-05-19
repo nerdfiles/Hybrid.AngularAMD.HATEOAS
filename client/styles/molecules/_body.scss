@@ -8,6 +8,45 @@ body {
   @include atoms((
     font-size-16,
     line-height-28,
-    font-family
-  ))
+    font-family,
+  ));
+
+	// Smartphones (portrait and landscape)
+	@include break-point-range(320px, 480px) {
+		background-color: coral;
+	}
+
+  // Smartphones (landscape)
+	@include break-point-higher-than(321px) {
+		background-color: skyblue;
+  }
+
+	// Smartphones (portrait)
+	@include break-point-lower-than(320px) {
+	}
+
+	// Templates
+	@include break-point-template(768px, 1024px) {
+		background-color: silver;
+  };
+	@include break-point-template(768px, 1024px, landscape) {};
+
+	// iPad 3 Default
+	@include break-point-template-with-ratio(768px, 1024px, landscape, 2) {};
+	@include break-point-template-with-ratio(768px, 1024px, portrait, 2) {};
+
+	// More templates
+	@include break-point-template-desktop() {
+		background-color: silver;
+  }
+	@include break-point-template-large() {
+		background-color: silver;
+	}
+	@include break-point-iphone4() {}
+	@include break-point-iphone5() {}
+	@include break-point-iphone6() {}
+	@include break-point-iphone6-plus() {}
+	@include break-point-s3() {}
+	@include break-point-s4() {}
+	@include break-point-s5() {}
 }

@@ -1,0 +1,16 @@
+// ./client/styles/molecules/_menu.scss
+@mixin header--menu {
+  menu {
+    @include atoms((
+      padding-left-0,
+    ));
+  }
+}
+
+@mixin menu--listing {
+  li {
+    @include atoms((
+      list-style-none,
+    ));
+  }
+}
