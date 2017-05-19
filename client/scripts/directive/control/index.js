@@ -10,15 +10,39 @@ define([
   'ngload!external/service/package'
 ], control);
 function control (angularAMD) {
+
+  /**
+   * @ngdoc controller
+   * @name ControlDirectiveController
+   * @memberOf app.core.directive:control
+   */
   function ControlDirectiveController ($scope, PackageService) {
-    PackageService.get().then(PackagetLoadCompleted, PackageLoadFailed);
-    function PackagetLoadCompleted (content) { $scope.vm.package = content; }
-    function PackageLoadFailed (error) { console.log('⚠️ Could not load project manifest'); }
+
+    PackageService
+      .get()
+      .then(PackagetLoadCompleted, PackageLoadFailed);
+
+    function PackagetLoadCompleted (content) {
+      $scope.vm.package = content;
+    }
+    function PackageLoadFailed (error) {
+      console.log('⚠️ Could not load project manifest');
+    }
   }
-  angularAMD.directive('appControl', [appControl]);
+
+	/**
+	 * @ngdoc directive
+   * @name appControl
+   * @memberOf app.core.directive:control
+	 */
+  angularAMD
+		.directive('appControl', [
+			appControl
+		]);
+
   function appControl () {
     var directive = {
-      scope : {},
+      scope        : {},
       templateUrl  : 'assets/scripts/directive/control/index.html',
       controllerAs : 'vm',
       controller   : ['$scope', 'PackageService', ControlDirectiveController],
