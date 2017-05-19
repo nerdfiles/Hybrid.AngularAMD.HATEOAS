@@ -8,7 +8,8 @@ define([
   'core/window',
   'core/meta',
   'service/order',
-  'service/error'
+  'service/error',
+  './directive/control/index'
 ], orders);
 function orders () {
   'use strict';
@@ -24,7 +25,13 @@ function orders () {
 
   return moduleInterface;
 
-  function IndexController ($stateParams, $timeout, $rootScope, OrderService, ErrorService) {
+  /**
+   * @ngdoc controller
+   * @memberOf app.orders.module
+   * @description Orders Index Controller.
+   */
+  function IndexController ($stateParams, $timeout, $rootScope, OrderService,
+    ErrorService) {
 
     var vm = this;
     vm.meta = {

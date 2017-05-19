@@ -4,7 +4,9 @@
  * @name app.header.section:index
  * @description Header Section Index Controller.
  */
-define([], header);
+define([
+  './module/orders/directive/index'
+], header);
 function header () {
   var sectionInterface = [
     IndexController

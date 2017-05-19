@@ -1,0 +1,31 @@
+<form
+  action="/api/v1/order"
+  method="post"
+  itemprop="potentialAction"
+  itemscope itemtype="https://schema.org/OrderAction"
+  enctype="application/x-www-form-urlencoded"
+>
+  <meta
+    itemprop="target"
+    content="https://example.com/order"
+  />
+  <app-🔳-error
+    itemprop="error"
+    content="https://example.com/error"
+  ></app-🔳-error>
+
+  <menuitem
+    type="radio"
+    name="group1"
+    onclick="vm.option()"
+    checked="true"
+  >
+    Order
+  </menuitem>
+
+  <input
+    itemprop="order-index"
+    type="submit"
+    name="order-index"
+  />
+</form>

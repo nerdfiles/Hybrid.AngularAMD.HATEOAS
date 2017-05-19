@@ -1,0 +1,37 @@
+<form
+  name="ControlAction"
+  itemprop="potentialAction"
+  itemscope
+  itemtype="https://schema.org/ControlAction"
+>
+
+<link
+  rel="item"
+  itemprop="item"
+  href="https://example.com/dresses"
+/>
+
+<meta
+  itemprop="target"
+  content="https://example.com/control/{item}"
+/>
+<app-🔳-error
+  itemprop="error"
+  content="https://example.com/error"
+></app-🔳-error>
+
+<input
+  itemprop="item"
+  type="text"
+  name="itemFormInput"
+  ng-model="vm.item"
+  ng-required="true"
+/>
+
+<input
+  itemprop="control-index"
+  type="submit"
+  name="control-index"
+/>
+
+</form>
