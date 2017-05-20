@@ -46,6 +46,8 @@ function boot () {
       'angular-touch'      : 'ext/angular-touch/angular-touch',
       'angular-ui-router'  : 'ext/angular-ui-router/release/angular-ui-router',
       'angular-hypermedia' : 'ext/angular-hypermedia/dist/hypermedia',
+			'angular-material'   : 'ext/angular-material/angular-material',
+      'angular-aria'       : 'ext/angular-aria/angular-aria',
 
       // Hypermedia Dependencies
       'linkheader-parser-browser' : 'ext/linkheader-parser/dist/linkheader-parser-browser',
@@ -133,6 +135,14 @@ function boot () {
       ],
 
       'angular-ui-router': [
+        'angular'
+      ],
+
+      'angular-aria': [
+        'angular'
+      ],
+
+      'angular-material': [
         'angular'
       ],
 

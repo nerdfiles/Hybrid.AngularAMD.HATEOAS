@@ -13,20 +13,20 @@
 }
 
 @mixin navigation--listing {
-  li {
-    @include atoms((
-      inline-block
-    ));
-  }
+  // li {
+  //   @include atoms((
+  //     inline-block
+  //   ));
+  // }
 }
 
 @mixin navigation--link {
-  a {
-    @include atoms((
-      font-size-16,
-      cursor-pointer,
-      padding-left-10,
-      no-underline
-    ));
-  }
+  // a {
+  //   @include atoms((
+  //     font-size-16,
+  //     cursor-pointer,
+  //     padding-left-10,
+  //     no-underline
+  //   ));
+  // }
 }

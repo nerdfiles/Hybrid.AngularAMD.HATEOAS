@@ -1,42 +1,38 @@
 <h1>{{vm.sectionTitle}}</h1>
-<ol class="breadcrumb--list">
-  <li
+
+<md-nav-bar class="breadcrumb--list">
+
+  <md-nav-item
     itemscope
     itemtype="http://data-vocabulary.org/Breadcrumb"
+    md-nav-sref="default"
+    itemprop="url"
+    class="hint hint--bottom"
+    data-hint="Return to Home"
   >
-    <a
-      ui-sref="default"
-      itemprop="url"
-      class="hint hint--bottom"
-      data-hint="Return to Home"
-    >
-      <span itemprop="title">Home</span>
-    </a>
-  </li>
-  <li
+    <span itemprop="title">Home</span>
+  </md-nav-item>
+
+  <md-nav-item
     itemscope
     itemtype="http://data-vocabulary.org/Breadcrumb"
+    md-nav-href="orders/"
+    itemprop="url"
+    class="hint hint--bottom"
+    data-hint="List of orders"
   >
-    <a
-      href="orders/"
-      itemprop="url"
-      class="hint hint--bottom"
-      data-hint="List of orders"
-    >
-      <span itemprop="title">Orders</span>
-    </a>
-  </li>
-  <li
+    <span itemprop="title">Orders</span>
+  </md-nav-item>
+
+  <md-nav-item
     itemscope
     itemtype="http://data-vocabulary.org/Breadcrumb"
+    itemprop="url"
+    md-nav-href="orders/42"
+    class="hint hint--bottom"
+    data-hint="Order no. 42 detail"
   >
-    <a
-      href="orders/42"
-      itemprop="url"
-      class="hint hint--bottom"
-      data-hint="Order no. 42 detail"
-    >
-      <span itemprop="title">Order</span>
-    </a>
-  </li>
-</ol>
+    <span itemprop="title">Order</span>
+  </md-nav-item>
+
+</md-nav-bar>

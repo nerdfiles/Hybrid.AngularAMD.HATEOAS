@@ -1,14 +1,17 @@
 <form
+  name="OrderAction"
   action="/api/v1/orders"
   method="post"
   itemprop="potentialAction"
   itemscope itemtype="https://schema.org/OrderAction"
   enctype="application/x-www-form-urlencoded"
 >
+
   <meta
     itemprop="target"
     content="https://example.com/order"
   />
+
   <app-🔳-error
     itemprop="error"
     content="https://example.com/error"
@@ -16,16 +19,21 @@
 
   <menuitem
     type="radio"
-    name="group1"
-    onclick="vm.option()"
+    name="orderSingular"
+    ng-click="vm.option()"
     checked="true"
+    aria-label="Order"
   >
     Order
   </menuitem>
 
-  <input
+  <md-button
+    aria-label="Submit"
     itemprop="order-index"
     type="submit"
     name="order-index"
-  />
+  >
+    Submit
+  </md-button>
+
 </form>

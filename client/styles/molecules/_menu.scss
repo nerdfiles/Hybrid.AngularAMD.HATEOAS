@@ -1,18 +1,23 @@
 // ./client/styles/molecules/_menu.scss
 @mixin header--menu {
-  menu {
-    @include atoms((
-			padding-0,
-			margin-0,
-			flex
-    ));
-  }
+  // menu {
+  //   @include atoms((
+			// white,
+			// padding-0,
+			// margin-0,
+			// flex
+  //   ));
+		// @include bg-color(#000);
+		// a[ui-sref] {
+  //     border: none;
+		// }
+  // }
 }
 
 @mixin menu--listing {
-  li {
-    @include atoms((
-      list-style-none,
-    ));
-  }
+  // li {
+  //   @include atoms((
+  //     list-style-none,
+  //   ));
+  // }
 }

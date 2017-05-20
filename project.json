@@ -44,7 +44,9 @@
     "../node_modules/dual-protocol/src/unmount.js",
     "../node_modules/dual-protocol/src/waitFor.js",
     "lodash/dist/lodash.js",
-    "RequireCSS/css.js"
+    "RequireCSS/css.js",
+    "angular-material/angular-material.js",
+    "angular-aria/angular-aria.js"
   ],
   "vendorStyles": [
     "organic-css/src/common.scss",
@@ -79,7 +81,8 @@
     "hint.css/src/hint-theme.scss",
     "hint.css/src/hint-variables.scss",
     "hint.css/src/hint.scss",
-    "hint.css/src/hint.base.scss"
+    "hint.css/src/hint.base.scss",
+    "angular-material/angular-material.css"
   ],
   "buildFiles": [
     "images/**",

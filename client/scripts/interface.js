@@ -9,6 +9,8 @@ define([
   'core/http',
   'core/route',
   'common/icons',
+  'angular-aria',
+  'angular-material',
   'angular-animate',
   'angular-cookies',
   'angular-sanitize',
@@ -24,7 +26,9 @@ function __interface__ (angularAMD, httpSettings, routeContract) {
     'ngAnimate',
     'ngCookies',
     'ngSanitize',
+    'ngAria',
     'ngTouch',
+    'ngMaterial',
     'ui.router',
     'hypermedia'
   ];
