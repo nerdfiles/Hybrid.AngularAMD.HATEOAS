@@ -5,7 +5,6 @@
  * @description Application Boot Loader.
  */
 (boot)();
-
 function boot () {
   'use strict';
 

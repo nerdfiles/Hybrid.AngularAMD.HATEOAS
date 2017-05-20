@@ -1,0 +1,30 @@
+// ./client/styles/config/support.scss
+@mixin supports-hypermodern () {
+	@supports (display: grid) {
+		@content;
+	}
+}
+
+@mixin supports-modern () {
+	@supports (display: flex) {
+		@content;
+	}
+}
+
+@mixin support-legacy-strict () {
+	@supports (not(display: grid)) and (not(display: flex)) {
+     @content;
+	}
+}
+
+@mixin support-legacy-liberal () {
+	@supports (not(display: grid)) and (display: flex) {
+		@content;
+	}
+}
+
+@mixin support-legacy-liberal () {
+	@supports (not(display: grid)) and (display: flex) {
+		@content;
+	}
+}
