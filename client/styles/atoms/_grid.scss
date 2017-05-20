@@ -1,0 +1,15 @@
+// ./client/styles/atoms/_grid.scss
+@mixin grid ($grid) {
+  $grid-width   : str-length(nth($grid, 1));
+  $column-width : 100% / $grid-width;
+  $row-height   : 100% / length($grid);
+  & {
+    width: $grid-width;
+    & {
+      width  : $column-width;
+      height : $row-height;
+    }
+
+    @content;
+  }
+}

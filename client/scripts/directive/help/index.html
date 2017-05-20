@@ -1,0 +1,37 @@
+<form
+  name="HelpAction"
+  itemprop="potentialAction"
+  itemscope
+  itemtype="https://schema.org/HelpAction"
+>
+
+<link
+  rel="help"
+  itemprop="help"
+  href="https://example.com/help"
+/>
+
+<meta
+  itemprop="target"
+  content="https://example.com/help/{helpId}"
+/>
+<app-🔳-error
+  itemprop="error"
+  content="https://example.com/error"
+></app-🔳-error>
+
+<input
+  itemprop="help"
+  type="text"
+  name="helpFormInput"
+  ng-model="vm.help"
+  ng-required="true"
+/>
+
+<input
+  itemprop="help-index"
+  type="submit"
+  name="help-index"
+/>
+
+</form>

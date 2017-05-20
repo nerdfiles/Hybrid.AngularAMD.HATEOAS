@@ -10,6 +10,7 @@ define([
   'ngload!external/service/package'
 ], control);
 function control (angularAMD) {
+  'use strict';
 
   /**
    * @ngdoc controller

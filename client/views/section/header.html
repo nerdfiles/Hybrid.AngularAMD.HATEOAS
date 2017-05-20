@@ -8,14 +8,36 @@
       type="context"
       id="file-menu"
     >
-      <!-- an order button (like at a restaurant) -->
-      <app-🔳
-        label="Order"
-        tabindex="0"
-        aria-hidden="false"
-      ></app-🔳>
+			<li>
+				<!-- an order button (like at a restaurant) -->
+				<app-🔳
+					label="Order"
+					tabindex="0"
+					aria-hidden="false"
+				></app-🔳>
+			</li>
     </menu>
   </li>
+  <li>
+    <button
+      type="menu"
+      menu="help-menu"
+    >Help</button>
+    <menu
+      type="context"
+      id="file-menu"
+    >
+			<li>
+				<!-- an order button (like at a restaurant) -->
+				<app-❓
+					label="Help"
+					tabindex="1"
+					aria-hidden="false"
+				></app❓>
+			</li>
+    </menu>
+  </li>
+
 </menu>
 
 <h1>{{vm.sectionTitle}}</h1>
