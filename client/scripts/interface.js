@@ -14,7 +14,6 @@ define([
   'angular-animate',
   'angular-cookies',
   'angular-sanitize',
-  'angular-touch',
   'angular-ui-router',
   'angular-hypermedia'
 ], __interface__);
@@ -27,7 +26,6 @@ function __interface__ (angularAMD, httpSettings, routeContract) {
     'ngCookies',
     'ngSanitize',
     'ngAria',
-    'ngTouch',
     'ngMaterial',
     'ui.router',
     'hypermedia'

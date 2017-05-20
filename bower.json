@@ -9,7 +9,6 @@
     "angular-cookies": "1.5",
     "angular-resource": "1.5",
     "angular-sanitize": "1.5",
-    "angular-touch": "1.5",
     "angular-ui-router": "0.4.2",
     "organic-css": "https://github.com/krasimir/organic-css.git",
     "tachyons": "^4.7.2",

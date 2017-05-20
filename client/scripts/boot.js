@@ -43,7 +43,6 @@ function boot () {
       'angular-animate'    : 'ext/angular-animate/angular-animate',
       'angular-cookies'    : 'ext/angular-cookies/angular-cookies',
       'angular-sanitize'   : 'ext/angular-sanitize/angular-sanitize',
-      'angular-touch'      : 'ext/angular-touch/angular-touch',
       'angular-ui-router'  : 'ext/angular-ui-router/release/angular-ui-router',
       'angular-hypermedia' : 'ext/angular-hypermedia/dist/hypermedia',
 			'angular-material'   : 'ext/angular-material/angular-material',
@@ -127,10 +126,6 @@ function boot () {
       ],
 
       'angular-sanitize': [
-        'angular'
-      ],
-
-      'angular-touch': [
         'angular'
       ],
 
