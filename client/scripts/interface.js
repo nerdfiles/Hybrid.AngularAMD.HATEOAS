@@ -21,7 +21,6 @@ define([
 
 function __interface__ (angularAMD, env, httpSettings, routeContract) {
   'use strict';
-  console.log(env);
 
   var appDependencies = [
     'ngAnimate',
