@@ -31,15 +31,15 @@ function control (angularAMD) {
     }
   }
 
-	/**
-	 * @ngdoc directive
+  /**
+   * @ngdoc directive
    * @name appControl
    * @memberOf app.core.directive:control
-	 */
+   */
   angularAMD
-		.directive('appControl', [
-			appControl
-		]);
+    .directive('appControl', [
+      appControl
+    ]);
 
   function appControl () {
     var directive = {
