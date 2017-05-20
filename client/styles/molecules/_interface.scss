@@ -22,7 +22,6 @@
 	@include break-point-higher-than(321px) {
 		background-color: skyblue;
 		@include grid((" ")) {
-			outline: 20px solid #e2e2e2;
 		};
   }
 
