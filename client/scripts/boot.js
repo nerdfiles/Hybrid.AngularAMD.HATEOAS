@@ -61,6 +61,7 @@ function boot () {
       'core/dual'     : '/assets/dual',
 
       // Application Core
+      'core/env'                : 'config/env',
       'core/http'               : 'http',
       'core/route'              : 'route',
       'core/window'             : 'component/window/index',

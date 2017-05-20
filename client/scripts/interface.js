@@ -6,6 +6,7 @@
  */
 define([
   'angularAMD',
+  'core/env',
   'core/http',
   'core/route',
   'common/icons',
@@ -18,8 +19,9 @@ define([
   'angular-hypermedia'
 ], __interface__);
 
-function __interface__ (angularAMD, httpSettings, routeContract) {
+function __interface__ (angularAMD, env, httpSettings, routeContract) {
   'use strict';
+  console.log(env);
 
   var appDependencies = [
     'ngAnimate',

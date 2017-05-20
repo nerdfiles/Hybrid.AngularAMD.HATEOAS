@@ -18,15 +18,15 @@ function help (angularAMD) {
   function HelpDirectiveController ($scope) {
   }
 
-	/**
-	 * @ngdoc directive
+  /**
+   * @ngdoc directive
    * @name appHelpDirective
    * @memberOf app.core.directive:control
-	 */
+   */
   angularAMD
-		.directive('app❓', [
-			appHelpDirective
-		]);
+    .directive('app❓', [
+      appHelpDirective
+    ]);
 
   function appHelpDirective () {
     var directive = {
