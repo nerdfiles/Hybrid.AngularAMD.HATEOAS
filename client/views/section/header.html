@@ -1,15 +1,10 @@
-<md-menu-bar
-  flex
-  layout="row"
-  layout-wrap
->
+<md-menu-bar>
 
-  <md-menu flex="none">
+  <md-menu>
 
     <md-button
-      type="menu"
-      menu="app-menu"
       class="primary"
+      ng-click="false"
       aria-label="App"
     >App</md-button>
 
@@ -26,12 +21,11 @@
 
   </md-menu>
 
-  <md-menu flex="none">
+  <md-menu>
 
     <md-button
-      type="menu"
-      menu="help-menu"
       class="primary"
+      ng-click="false"
       aria-label="Help"
     >Help</md-button>
 
@@ -42,12 +36,12 @@
 					label="Help"
 					tabindex="1"
 					aria-hidden="false"
-				></app❓>
+				></app-❓>
 			</md-menu-item>
     </md-menu-content>
 
   </md-menu>
 
-</md-menu>
+</md-menu-bar>
 
 <h1>{{vm.sectionTitle}}</h1>
