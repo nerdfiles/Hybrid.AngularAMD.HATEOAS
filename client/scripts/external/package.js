@@ -1,3 +1,4 @@
+// ./client/scripts/external/package.js
 (function () {
   angular
     .module('Project', [])

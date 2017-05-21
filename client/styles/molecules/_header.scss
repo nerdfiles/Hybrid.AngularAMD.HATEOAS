@@ -1,4 +1,9 @@
 // ./client/styles/organelles/_interface--header.scss
+
+/**
+ * @name header--headline
+ */
+
 @mixin header--headline {
   h1 {
     @include atoms((
@@ -6,3 +11,6 @@
     ))
   }
 }
+
+////////////
+

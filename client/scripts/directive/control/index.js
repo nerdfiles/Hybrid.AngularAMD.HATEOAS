@@ -1,7 +1,7 @@
 // ./client/scripts/directive/control/index.js
 /**
  * @ngdoc overview
- * @name app.core.directive:control
+ * @name app.core.index:control
  * @description Application Control directive.
  */
 define([
@@ -11,6 +11,16 @@ define([
 ], control);
 function control (angularAMD) {
   'use strict';
+
+  /**
+   * @ngdoc directive
+   * @name appControl
+   * @memberOf app.core.index:control
+   */
+  angularAMD
+    .directive('appControl', [
+      appControl
+    ]);
 
   /**
    * @ngdoc controller
@@ -23,23 +33,24 @@ function control (angularAMD) {
       .get()
       .then(PackagetLoadCompleted, PackageLoadFailed);
 
+    /**
+     * @function PackagetLoadCompleted
+     * @param {object} conten Content from npm package.json.
+     * @returns {undefined}
+     */
     function PackagetLoadCompleted (content) {
       $scope.vm.package = content;
     }
+
+    /**
+     * @function PackageLoadFailed
+     * @param {object} error Error state.
+     * @returns {undefined}
+     */
     function PackageLoadFailed (error) {
       console.log('⚠️ Could not load project manifest');
     }
   }
-
-	/**
-	 * @ngdoc directive
-   * @name appControl
-   * @memberOf app.core.directive:control
-	 */
-  angularAMD
-		.directive('appControl', [
-			appControl
-		]);
 
   function appControl () {
     var directive = {

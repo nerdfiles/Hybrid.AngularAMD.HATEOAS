@@ -1,3 +1,8 @@
+// ./client/styles/molecules/_footer.scss
+
+/**
+ * @name footer--headline
+ */
 @mixin footer--headline {
   h1 {
     @include atoms((
@@ -5,3 +10,6 @@
     ))
   }
 }
+
+////////////
+

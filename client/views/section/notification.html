@@ -1,7 +1,8 @@
 <ul>
   <li
+    ng-init="isShowingNotification = notification && notification.expect !== null"
+    ng-show="isShowingNotification"
     ng-repeat="notification in notifications"
-    ng-show="notification && notification.expect !== null"
   >
     <p>
       <span class="label">⚠️</span>

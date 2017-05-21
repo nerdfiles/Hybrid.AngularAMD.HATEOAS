@@ -9,6 +9,7 @@ define([
   'core/meta'
 ], home);
 function home () {
+  'use strict';
 
   var moduleInterface = [
     IndexController
