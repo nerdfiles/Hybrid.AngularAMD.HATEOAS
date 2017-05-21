@@ -1,5 +1,11 @@
 // ./client/scripts/external/package.js
 (function () {
+  /**
+   * @ngdoc service
+   * @name PackageService
+   * @returns {*} undefined
+   * @description An actual service.
+   */
   angular
     .module('Project', [])
     .service('PackageService', ['$http', PackageService]);
