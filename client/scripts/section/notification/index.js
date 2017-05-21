@@ -4,9 +4,7 @@
  * @name app.notification.section:index
  * @description Notification Section Index Controller.
  */
-define([
-  'service/error'
-], notification);
+define(['service/error'], notification);
 function notification () {
   'use strict';
 
@@ -15,7 +13,17 @@ function notification () {
     'ErrorService',
     IndexController
   ];
+
   return sectionInterface;
+
+  ////////////
+
+  /**
+   * @ngdoc controller
+   * @name IndexController
+   * @memberOf app.notification.section:index
+   * @returns {undefined}
+   */
   function IndexController ($rootScope, ErrorService) {
     var vm = this;
     vm.sectionTitle = 'Notification';

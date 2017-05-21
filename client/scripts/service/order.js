@@ -4,10 +4,7 @@
  * @name app.logistics.module:order
  * @description User Service Module.
  */
-define([
-  'interface'
-], order);
-
+define(['interface'], order);
 function order (__interface__) {
   'use strict';
 
@@ -19,13 +16,27 @@ function order (__interface__) {
     };
   };
 
-  __interface__.factory('OrderService', [
-    'ResourceContext',
-    'HalResource',
-    '$q',
-    OrderService
-  ]);
+  /**
+   * @ngdoc service
+   * @name OrderService
+   * @memberOf app.logistics.module:order
+   * @description An order service as a factory.
+   */
+  __interface__
+    .factory('OrderService', [
+      'ResourceContext',
+      'HalResource',
+      '$q',
+      OrderService
+    ]);
 
+  /**
+   * @function OrderService
+   * @param ResourceContext
+   * @param HalResource
+   * @param $q
+   * @returns {undefined}
+   */
   function OrderService (ResourceContext, HalResource, $q) {
 
     var service = {
@@ -41,6 +52,8 @@ function order (__interface__) {
 
     var baseUrl = 'http://localhost:9001';
     var _url = (baseUrl + '/api/v0/orders/');
+
+    return service;
 
     ////////////
 
@@ -140,6 +153,5 @@ function order (__interface__) {
     function orderRemove () {
     }
 
-    return service;
   }
 }

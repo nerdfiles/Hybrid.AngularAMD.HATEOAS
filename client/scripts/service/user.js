@@ -4,23 +4,32 @@
  * @name app.core.login:user
  * @description User Service Module.
  */
-define([
-  'interface'
-], user);
-
+define(['interface'], user);
 function user (__interface__) {
   'use strict';
 
-  __interface__.factory('UserService', [
-    UserService
-  ]);
+  /**
+   * @ngdoc service
+   * @name UserService
+   * @memberOf app.core.login:user
+   */
+  __interface__
+    .factory('UserService', [
+      UserService
+    ]);
 
+  /**
+   * @function UserService
+   * @returns {object} A service API for users.
+   */
   function UserService () {
     var service = {
       userLogin : userLogin,
       userGet   : userGet,
       usersGet  : usersGet
     };
+
+    return service;
 
     ////////////
 
@@ -33,6 +42,6 @@ function user (__interface__) {
     function usersGet () {
     }
 
-    return service;
   }
 }
+

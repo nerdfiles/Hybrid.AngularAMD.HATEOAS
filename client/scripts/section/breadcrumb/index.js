@@ -15,6 +15,14 @@ function breadcrumb () {
 
   return sectionInterface;
 
+  ////////////
+
+  /**
+   * @ngdoc controller
+   * @name IndexController
+   * @memberOf app.breadcrumb.section:index
+   * @returns {*} undefined
+   */
   function IndexController () {
     var vm = this;
     vm.sectionTitle = 'Breadcrumb';
@@ -25,3 +33,4 @@ function breadcrumb () {
   }
 
 }
+

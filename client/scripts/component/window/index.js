@@ -48,3 +48,4 @@ function windowSpec (__interface__) {
     .component('windowSpec', componentConfig);
 
 }
+

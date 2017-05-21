@@ -9,13 +9,26 @@ define([
 	'./directive/help/index'           // is site-wide; so the directive will be accessible for every other controller, even if they have not specifically called it in their definition...
 ], header);
 function header () {
+  'use strict';
+
   var sectionInterface = [
     IndexController
   ];
+
   return sectionInterface;
+
+  ////////////
+
+  /**
+   * @ngdoc controller
+   * @name IndexController
+   * @memberOf app.header.section:index
+   * @returns {*} undefined
+   */
   function IndexController () {
     var vm = this;
     vm.sectionTitle = 'Header';
     ////////////
   }
 }
+
