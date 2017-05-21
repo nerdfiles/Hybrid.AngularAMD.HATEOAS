@@ -1,7 +1,7 @@
 // ./client/scripts/config/env.js
 /**
  * @ngdoc overview
- * @name app.config.env
+ * @name app.config:env
  * @description Bind contracts to API for the environment.
  * @usage
 

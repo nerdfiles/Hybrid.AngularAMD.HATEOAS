@@ -17,6 +17,13 @@ function settings () {
 
   return moduleInterface;
 
+  /**
+   * @ngdoc controller
+   * @memberOf app.settings.module
+   * @name IndexController
+   *
+   * @returns {undefined}
+   */
   function IndexController () {
 
     var vm = this;

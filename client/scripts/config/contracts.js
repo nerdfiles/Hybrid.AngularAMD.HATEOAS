@@ -1,4 +1,8 @@
 // ./client/scripts/config/contracts.js
+/**
+ * @ngdoc overview
+ * @name app.config:contracts
+ */
 define([], __contracts__);
 function __contracts__ () {
   'use strict';

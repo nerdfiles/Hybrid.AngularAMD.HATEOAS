@@ -1,7 +1,7 @@
 // ./client/scripts/component/meta/index.js
 /**
  * @ngdoc overview
- * @name app.core.hypermedia:meta
+ * @name app.core.meta:index
  * @description Dynamic meta-content settings.
  */
 define(['interface'], metaSpec);
@@ -32,7 +32,7 @@ function metaSpec (__interface__) {
 
   /**
    * @ngdoc component
-   * @memberOf app.core.hypermedia:meta
+   * @memberOf app.core.meta
    * @name metaSpec
    */
   __interface__

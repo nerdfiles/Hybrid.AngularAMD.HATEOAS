@@ -28,6 +28,7 @@ function orders () {
   /**
    * @ngdoc controller
    * @memberOf app.orders.module
+   * @name IndexController
    * @description Orders Index Controller.
    */
   function IndexController ($stateParams, $timeout, $rootScope, OrderService,
@@ -70,14 +71,25 @@ function orders () {
 
     ////////////
 
+    /**
+     * @function followRel
+     * @param rel
+     * @returns {*} undefined
+     */
     function followRel (rel) {
       vm.page.$linkRel(rel).$get().then(function (page) {
         vm.page = page;
       });
     }
 
+    /**
+     * @function hasRel
+     * @param rel
+     * @returns {boolean} Relation check.
+     */
     function hasRel (rel) {
       return rel in vm.page.$links;
     }
+
   }
 }

@@ -17,6 +17,11 @@ function home () {
 
   return moduleInterface;
 
+  /**
+   * @ngdoc controller
+   * @memberOf app.home.module
+   * @name IndexController
+   */
   function IndexController () {
 
     var vm = this;

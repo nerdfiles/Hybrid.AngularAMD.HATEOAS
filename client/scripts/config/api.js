@@ -1,4 +1,8 @@
 // ./client/scripts/config/api.js
+/**
+ * @ngdoc overview
+ * @name app.config:api
+ */
 define([], __api__);
 function __api__ () {
   'use strict';
@@ -17,7 +21,7 @@ function __api__ () {
 
   /**
    * @ngdoc method
-   * @methodOf app.__api__.config
+   * @methodOf app.config:api
    * @returns {string} The current ENDPOINT.
    */
   __api__.init = function (type) {
@@ -41,7 +45,7 @@ function __api__ () {
 
   /**
    * @ngdoc method
-   * @methodOf app.__api__.config
+   * @methodOf app.config:api
    * @name get
    * @returns {string} The current baseUrl.
    */
@@ -51,7 +55,7 @@ function __api__ () {
 
   /**
    * @ngdoc method
-   * @methodOf app.__api__.config
+   * @methodOf app.config:api
    * @name update
    * @param {string} baseUrl A base URL to set.
    * @returns {*} undefined
