@@ -4,7 +4,16 @@
  * @name app.core.seo:window
  * @description Dynamic window setting on window.
  */
-define(['interface'], function (__interface__) {
+define(['interface'], windowSpec);
+function windowSpec (__interface__) {
+  'use strict';
+
+  /**
+   * @function WindowSpecController
+   * @param $scope
+   * @param $rootScope
+   * @returns {*} undefined
+   */
   function WindowSpecController ($scope, $rootScope) {
     var defaultIcon = '🖼';
     var sep = $scope.vm.sep = ' ';
@@ -19,12 +28,23 @@ define(['interface'], function (__interface__) {
       }
     });
   }
-  __interface__.component('windowSpec', {
-    templateUrl: 'assets/scripts/component/window/index.html',
-    controller: WindowSpecController,
-    controllerAs: 'vm',
-    bindings: {
+
+  var componentConfig = {
+    templateUrl      : 'assets/scripts/component/window/index.html',
+    controller       : ['$scope', '$rootScope', WindowSpecController],
+    controllerAs     : 'vm',
+    bindToController : true,
+    bindings         : {
       title: '='
     }
-  });
-});
+  };
+
+  /**
+   * @ngdoc component
+   * @memberOf app.core.seo:title
+   * @name windowSpec
+   */
+  __interface__
+    .component('windowSpec', componentConfig);
+
+}
