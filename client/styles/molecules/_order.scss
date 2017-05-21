@@ -4,6 +4,9 @@
  * @description Company molecule.
  */
 
+/**
+ * @name order--pic
+ */
 @mixin order--pic {
   img {
     @include atoms((
@@ -12,6 +15,8 @@
     ));
   }
 }
+
+////////////
 
 .order--headline {
   @include atoms((

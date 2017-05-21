@@ -4,6 +4,9 @@
  * @description User profile picture molecule.
  */
 
+/**
+ * @name customer--pic
+ */
 @mixin customer--pic {
   img {
     @include atoms((
@@ -12,3 +15,6 @@
     ));
   }
 }
+
+////////////
+

@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,SAAU;EAAE,KAAK,EAAE,KAAK",
+"mappings": "AAEA,SAAU;EAAE,KAAK,EAAE,KAAK",
 "sources": ["icons.scss"],
 "names": [],
 "file": "icons.css"

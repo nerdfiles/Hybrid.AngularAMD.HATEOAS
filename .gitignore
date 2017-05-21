@@ -17,3 +17,4 @@ client/styles/ext/
 *.swo
 .DS_Store
 config/platforms/
+tags

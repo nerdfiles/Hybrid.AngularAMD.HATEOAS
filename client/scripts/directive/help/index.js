@@ -1,7 +1,7 @@
 // ./client/scripts/directive/help/index.js
 /**
  * @ngdoc overview
- * @name app.core.directive:help
+ * @name app.core.index:help
  * @description Application Help directive.
  */
 define([
@@ -13,7 +13,7 @@ function help (angularAMD) {
   /**
    * @ngdoc controller
    * @name HelpDirectiveController
-   * @memberOf app.core.directive:help
+   * @memberOf app.core.index:help
    */
   function HelpDirectiveController ($scope) {
   }
@@ -21,13 +21,17 @@ function help (angularAMD) {
   /**
    * @ngdoc directive
    * @name appHelpDirective
-   * @memberOf app.core.directive:control
+   * @memberOf app.core.index:control
    */
   angularAMD
     .directive('app❓', [
       appHelpDirective
     ]);
 
+  /**
+   * @function appHelpDirective
+   * @returns {object} An AngularJS directive.
+   */
   function appHelpDirective () {
     var directive = {
       restrict     : 'E',

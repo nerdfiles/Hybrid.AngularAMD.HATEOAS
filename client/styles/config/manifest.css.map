@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,YAAa;EACX,gBAAgB,EAAE,OAAO",
+"mappings": "AAEA,YAAa;EACX,gBAAgB,EAAE,OAAO",
 "sources": ["manifest.scss"],
 "names": [],
 "file": "manifest.css"

@@ -4,6 +4,8 @@
  * @description
  */
 
+////////////
+
 .interface {
   @include atoms((
     block,
@@ -21,8 +23,8 @@
   // Smartphones (landscape)
 	@include break-point-higher-than(321px) {
 		background-color: skyblue;
-		@include grid((" ")) {
-		};
+
+		@include grid((" ")) {};
   }
 
 	// Smartphones (portrait)

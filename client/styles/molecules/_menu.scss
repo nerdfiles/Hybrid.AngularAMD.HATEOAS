@@ -1,4 +1,8 @@
 // ./client/styles/molecules/_menu.scss
+
+/**
+ * @name header--menu
+ */
 @mixin header--menu {
   // menu {
   //   @include atoms((
@@ -14,6 +18,9 @@
   // }
 }
 
+/**
+ * @name menu--listing
+ */
 @mixin menu--listing {
   // li {
   //   @include atoms((
@@ -21,3 +28,6 @@
   //   ));
   // }
 }
+
+////////////
+

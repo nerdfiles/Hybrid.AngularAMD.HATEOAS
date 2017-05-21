@@ -3,6 +3,10 @@
  * @name app.molecules:_breadcrumb
  * @description Pagination molecule.
  */
+
+/**
+ * @name breadcrumb--base
+ */
 @mixin breadcrumb--base {
   ol {
     @include atoms((
@@ -11,6 +15,9 @@
   }
 }
 
+/**
+ * @name breadcrumb--headline
+ */
 @mixin breadcrumb--headline {
   h1 {
     @include atoms((
@@ -19,6 +26,9 @@
   }
 }
 
+/**
+ * @name breadcrumb--listing
+ */
 @mixin breadcrumb--listing {
   li {
     @include atoms((
@@ -27,6 +37,9 @@
   }
 }
 
+/**
+ * @name breadcrumb--link
+ */
 @mixin breadcrumb--link {
   a {
     @include atoms((
@@ -36,3 +49,6 @@
     ));
   }
 }
+
+////////////
+

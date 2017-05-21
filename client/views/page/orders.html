@@ -38,22 +38,22 @@
       >
         <li>
           <md-button
-            ng-click="vm.followRel('prev')"
+            ng-click="vm.followRel(vm.meta.prevLabel)"
             ng-class="{
-              disabled: !vm.hasRel('prev')
+              disabled: !vm.hasRel(vm.meta.prevLabel)
             }"
           >⏮</md-button>
         </li>
         <li>
-          <app:control tabindex="1" aria-hidden="false">
+          <app:control tabindex="1" aria-hidden="vm.meta.ariaHideFalse">
             👗
           </app:control>
         </li>
         <li>
           <md-button
-            ng-click="vm.followRel('next')"
+            ng-click="vm.followRel(vm.meta.nextLabel)"
             ng-class="{
-              disabled: !vm.hasRel('next')
+              disabled: !vm.hasRel(vm.meta.nextLabel)
             }"
           >⏭</md-buton>
         </li>

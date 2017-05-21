@@ -1,4 +1,8 @@
 // ./client/styles/atoms/_grid.scss
+
+/**
+ * @name grid
+ */
 @mixin grid ($grid) {
   $grid-width   : str-length(nth($grid, 1));
   $column-width : 100% / $grid-width;

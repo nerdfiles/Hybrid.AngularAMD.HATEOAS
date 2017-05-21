@@ -1,4 +1,5 @@
 // ./client/styles/atoms/_cloaks.scss
+
 @include define-atom("accessibly-hide") {
   position: absolute;
   left: -9999px;

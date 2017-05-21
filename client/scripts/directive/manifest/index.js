@@ -10,18 +10,53 @@ define([
   'ngload!external/service/package'
 ], manifest);
 function manifest (angularAMD) {
-  function ManifestController ($scope, PackageService) {
+  'use strict';
+
+  /**
+   * @ngdoc directive
+   * @memberOf app.core.index:manifest
+   * @name appManifest
+   * @description A pseudo application manifest file which might be used
+   * to generate proper application manifest files.
+   */
+  angularAMD
+    .directive('appManifest', [appManifest]);
+
+  /**
+   * @function ManifestController
+   * @param $scope
+   * @param PackageService
+   * @returns {undefined}
+   */
+  function ManifestDirectiveController ($scope, PackageService) {
+
     PackageService.get().then(PackagetLoadCompleted, PackageLoadFailed);
+
+    /**
+     * @function PackagetLoadCompleted
+     * @param {object} content A JSON package file.
+     * @returns {*} undefined
+     */
     function PackagetLoadCompleted (content) { $scope.vm.package = content; }
+
+    /**
+     * @function PackageLoadFailed
+     * @param {object} error An error document.
+     * @returns {*} undefined
+     */
     function PackageLoadFailed (error) { console.log('⚠️ Could not load project manifest'); }
   }
-  angularAMD.directive('appManifest', [appManifest]);
+
+  /**
+   * @function appManifest
+   * @returns {object} An AngularJS directive.
+   */
   function appManifest () {
     var directive = {
       scope : {},
       templateUrl  : 'assets/scripts/directive/manifest/index.html',
       controllerAs : 'vm',
-      controller   : ['$scope', 'PackageService', ManifestController],
+      controller   : ['$scope', 'PackageService', ManifestDirectiveController],
       link         : link
     };
     return directive;

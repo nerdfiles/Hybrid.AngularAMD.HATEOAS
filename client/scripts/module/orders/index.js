@@ -42,7 +42,11 @@ function orders () {
       description: {
         icon    : '🎫',
         content : null
-      }
+      },
+      prevLabel        : 'prev',
+      nextLabel        : 'next',
+      ariaHideFalse    : false,
+      ariaHideTrue     : true
     };
 
     var _id = parseInt($stateParams.id, 10);

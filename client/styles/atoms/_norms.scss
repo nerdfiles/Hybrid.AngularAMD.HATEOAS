@@ -1,4 +1,5 @@
 // ./client/styles/atoms/_norms.scss
+
 @mixin norm ($guide: "[-][-][-]") {
   $sep : "[";
   $s   : str-index($guide, $sep);

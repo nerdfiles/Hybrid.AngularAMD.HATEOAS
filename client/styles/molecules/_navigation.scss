@@ -4,6 +4,9 @@
  * @description Navigation molecule.
  */
 
+/**
+ * @name navigation--headline
+ */
 @mixin navigation--headline {
   h1 {
     @include atoms((
@@ -12,6 +15,9 @@
   }
 }
 
+/**
+ * @name navigation--listing
+ */
 @mixin navigation--listing {
   // li {
   //   @include atoms((
@@ -20,6 +26,9 @@
   // }
 }
 
+/**
+ * @name navigation--link
+ */
 @mixin navigation--link {
   // a {
   //   @include atoms((
@@ -30,3 +39,6 @@
   //   ));
   // }
 }
+
+////////////
+
