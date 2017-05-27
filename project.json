@@ -2,8 +2,8 @@
   "env": {
     "name": "client",
     "client": "client",
-    "clientScripts": "scripts",
-    "clientStyles": "styles",
+    "clientScripts": "app",
+    "clientStyles": "app",
     "template": "template",
     "views": "views",
     "vendor": "ext",
@@ -85,8 +85,7 @@
   ],
   "buildFiles": [
     "images/**",
-    "scripts/**",
-    "styles/**",
+    "app/**",
     "views/**",
     "index.html"
   ]

@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAEA,WAAY;EACV,OAAO,EAAE,cAAc",
-"sources": ["control.scss"],
-"names": [],
-"file": "control.css"
-}

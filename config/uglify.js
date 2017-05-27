@@ -9,9 +9,9 @@ module.exports = function (grunt) {
 
   var deployFiles = [
     {
-      cwd    : '<%= env.build %>/scripts/',
+      cwd    : '<%= env.build %>/app/',
       expand : true,
-      dest   : '<%= env.dist %>/scripts/',
+      dest   : '<%= env.dist %>/app/',
       src    : [
         '*.js',
         'ext/require.js',
