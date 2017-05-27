@@ -7,9 +7,9 @@ define([], __api__);
 function __api__ () {
   'use strict';
 
-  var __api__ = {};
+  var config = {};
   var version = 'v1';
-  __api__.data = {
+  config.data = {
     protocol : window.location.protocol, // @example "http:"
     type     : 'application/json',
     hostname : 'example.com',
@@ -24,22 +24,22 @@ function __api__ () {
    * @methodOf app.config:api
    * @returns {string} The current ENDPOINT.
    */
-  __api__.init = function (type) {
+  config.init = function (type) {
     var glue = '';
-    __api__.data.ENDPOINT = [
-      __api__.data.protocol,
-      __api__.data.sep,
-      __api__.data.sep,
+    config.data.ENDPOINT = [
+      config.data.protocol,
+      config.data.sep,
+      config.data.sep,
       (type !== undefined ? [
-        __api__.data.type = type,
-        __api__.data.seg
+        config.data.type = type,
+        config.data.seg
       ].join(glue) : glue),
-      __api__.data.hostname,
-      __api__.data.sep,
-      __api__.data.basePath,
-      __api__.data.sep,
-      __api__.data.version,
-      __api__.data.sep
+      config.data.hostname,
+      config.data.sep,
+      config.data.basePath,
+      config.data.sep,
+      config.data.version,
+      config.data.sep
     ].join(glue);
   };
 
@@ -49,8 +49,8 @@ function __api__ () {
    * @name get
    * @returns {string} The current baseUrl.
    */
-  __api__.get = function () {
-    return __api__.data.ENDPOINT;
+  config.get = function () {
+    return config.data.ENDPOINT;
   };
 
   /**
@@ -60,13 +60,13 @@ function __api__ () {
    * @param {string} baseUrl A base URL to set.
    * @returns {*} undefined
    */
-  __api__.update = function (ENDPOINT) {
+  config.update = function (ENDPOINT) {
     var anchor, glue = '';
     if (ENDPOINT.endsWith('/')) {
       anchor = ENDPOINT.split('/').pop();
     }
-    __api__.data.ENDPOINT = anchor.join(glue);
+    config.data.ENDPOINT = anchor.join(glue);
   };
 
-  return __api__;
+  return config;
 }

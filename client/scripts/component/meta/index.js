@@ -20,7 +20,7 @@ function metaSpec (__interface__) {
     $scope.vm.prefix = $scope.vm.construct.icon || defaultIcon;
   }
 
-  var componentConfig = {
+  var component = {
     templateUrl  : 'assets/scripts/component/meta/index.html',
     controller   : MetaSpecController,
     controllerAs : 'vm',
@@ -36,6 +36,6 @@ function metaSpec (__interface__) {
    * @name metaSpec
    */
   __interface__
-    .component('metaSpec', componentConfig);
+    .component('metaSpec', component);
 
 }

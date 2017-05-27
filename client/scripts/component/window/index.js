@@ -29,7 +29,7 @@ function windowSpec (__interface__) {
     });
   }
 
-  var componentConfig = {
+  var component = {
     templateUrl      : 'assets/scripts/component/window/index.html',
     controller       : ['$scope', '$rootScope', WindowSpecController],
     controllerAs     : 'vm',
@@ -45,7 +45,7 @@ function windowSpec (__interface__) {
    * @name windowSpec
    */
   __interface__
-    .component('windowSpec', componentConfig);
+    .component('windowSpec', component);
 
 }
 

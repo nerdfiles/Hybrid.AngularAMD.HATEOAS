@@ -6,7 +6,7 @@
 define([], __contracts__);
 function __contracts__ () {
   'use strict';
-  return [
+  var config = [
     {'login/**/authorize': {
       secure    : true,
       session   : true,
@@ -24,4 +24,5 @@ function __contracts__ () {
       cache     : new Date()
     }}
   ];
+  return config;
 }

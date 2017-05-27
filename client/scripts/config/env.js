@@ -26,11 +26,11 @@ define([
 function __env__ (_, __api__, __contracts__) {
   var DIR = {};
   var CONTRACTS = __contracts__.map(contractMapper);
-  var environment = {
+  var config = {
     start     : CONTRACTS,
     directory : DIR
   };
-  return environment;
+  return config;
   ////////////
   function contractMapper (contract, index) {
     __api__.init();
