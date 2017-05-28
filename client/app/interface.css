@@ -1,0 +1,269 @@
+/**
+ * @name app.interface
+ * @description Interface for Style.
+ */
+@import url(./ext/animate.css/animate.css);
+@import url(./ext/hint.css/hint.css);
+@import url(./ext/angular-material/angular-material.css);
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+table, th, td, caption,
+hr, .interface {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.interface--breadcrumb li, .module--pagination li {
+  display: inline-block; }
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+table, th, td, caption,
+hr {
+  font-weight: bold; }
+
+a {
+  text-decoration: underline; }
+
+a:hover, .module--pagination a {
+  text-decoration: none; }
+
+body, .interface--breadcrumb a {
+  font-size: 14px; }
+
+body {
+  font-size: 16px; }
+
+body {
+  line-height: 22px; }
+
+body {
+  line-height: 28px; }
+
+.page--customer img, .page--order img {
+  float: left; }
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+table, th, td, caption,
+hr {
+  margin: 0; }
+
+.interface {
+  margin: 0 auto; }
+
+.page--customer img, .page--order img {
+  margin-right: 30px; }
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+table, th, td, caption,
+hr, .interface {
+  padding: 0; }
+
+.interface {
+  padding: 0px; }
+
+.interface--breadcrumb a {
+  padding-left: 10px; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+a {
+  color: #000; }
+
+.interface--breadcrumb a, .module--pagination a {
+  cursor: pointer; }
+
+/**
+ * @name break-point-template
+ */
+/**
+ * @name break-point-template-with-ratio
+ */
+/**
+ * @name break-point-template-desktop
+ */
+/**
+ * @name break-point-template-large
+ */
+/**
+ * @name break-point-iphone4
+ */
+/**
+ * @name break-point-iphone5
+ */
+/**
+ * @name break-point-iphone6
+ */
+/**
+ * @name break-point-iphone6-plus
+ */
+/**
+ * @name break-point-s3
+ */
+/**
+ * @name break-point-s4
+ */
+/**
+ * @name break-point-s5
+ */
+/**
+ * @name grid
+ */
+/**
+ * @name table
+ */
+/**
+ * @name app.atom:_atoms
+ * @description Atoms definitions.
+ */
+body {
+  font-family: "Helvetica"; }
+
+.interface--navigation h1, .interface--breadcrumb h1, .interface--header h1, .interface--footer h1 {
+  display: none;
+  visibility: hidden; }
+
+.interface--breadcrumb ol {
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2); }
+
+/**
+ * @name app.molecule:_body
+ * @description Body molecule.
+ */
+/**
+ * @name app.molecule:_navigation
+ * @description Navigation molecule.
+ */
+/**
+ * @name navigation--headline
+ */
+/**
+ * @name navigation--listing
+ */
+/**
+ * @name navigation--link
+ */
+/**
+ * @name app.molecule:_breadcrumb
+ * @description Pagination molecule.
+ */
+/**
+ * @name breadcrumb--base
+ */
+/**
+ * @name breadcrumb--headline
+ */
+/**
+ * @name breadcrumb--listing
+ */
+/**
+ * @name breadcrumb--link
+ */
+/**
+ * @name app.molecule:_pagination
+ * @description Pagination molecule.
+ */
+/**
+ * @name pagination--listing
+ */
+/**
+ * @name app.molecule:_interface
+ * @description
+ */
+@media all and (min-width: 320px) and (max-width: 480px) {
+  .interface {
+    background-color: coral; } }
+@media all and (min-width: 321px) {
+  .interface {
+    background-color: skyblue; }
+    .interface {
+      width: 1; }
+      .interface {
+        width: 100%;
+        height: 100%; } }
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .interface {
+    background-color: #f6f6f6; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .interface {
+    background-color: #f6f6f6; } }
+@media only screen and (min-width: 1224px) {
+  .interface {
+    background-color: #f6f6f6; } }
+@media only screen and (min-width: 1824px) {
+  .interface {
+    background-color: #f6f6f6; } }
+
+/**
+ * @name app.molecule:customer-pic
+ * @description User profile picture molecule.
+ */
+/**
+ * @name app.molecule:_order
+ * @description Company molecule.
+ */
+/**
+ * @name order--pic
+ */
+.order--headline {
+  display: flex;
+  flex-direction: row; }
+
+dt.details--specifications {
+  position: absolute;
+  top: -9999px;
+  left: 0; }
+
+/**
+ * @name app.molecule:_headline
+ * @description Headers molecule.
+ */
+/**
+ * @name headline--title
+ */
+/**
+ * @name headline--release-date
+ */
+/**
+ * @name app.molecule:header--headline
+ */
+/**
+ * @name app.molecule:header--menu
+ */
+/**
+ * @name menu--listing
+ */
+/**
+ * @name app.molecule:footer--headline
+ */
+/**
+ * @name app.organelles:_organelles
+ * @description Global organelles.
+ */
+/**
+ * @name app.organelles.interface:navigation
+ * @memberOf app.organelles:_organelles
+ * @requires hint.css
+ */
+/**
+ * @name app.organelles.interface:breadcrumb
+ * @memberOf app.organelles:_organelles
+ * @requires hint.css
+ */
+
+/*# sourceMappingURL=interface.css.map */
