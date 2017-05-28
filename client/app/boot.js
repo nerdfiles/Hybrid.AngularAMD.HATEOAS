@@ -26,30 +26,30 @@ function boot () {
     paths: {
 
       // Needful
-      'lodash' : 'ext/lodash/dist/lodash',
-      'cuid'   : 'ext/cuid/dist/browser-cuid',
+      'lodash' : 'vendor/lodash/dist/lodash',
+      'cuid'   : 'vendor/cuid/dist/browser-cuid',
 
       // AMD Dependencies
-      'angularAMD' : 'ext/angularAMD/dist/angularAMD',
+      'angularAMD' : 'vendor/angularAMD/dist/angularAMD',
 
       // AMD Plugins
-      'ngload' : 'ext/angularAMD/dist/ngload',
-      'css'    : 'ext/RequireCSS/css',
+      'ngload' : 'vendor/angularAMD/dist/ngload',
+      'css'    : 'vendor/RequireCSS/css',
 
       // Framework Dependencies
-      'angular'            : 'ext/angular/angular',
-      'angular-animate'    : 'ext/angular-animate/angular-animate',
-      'angular-cookies'    : 'ext/angular-cookies/angular-cookies',
-      'angular-sanitize'   : 'ext/angular-sanitize/angular-sanitize',
-      'angular-ui-router'  : 'ext/angular-ui-router/release/angular-ui-router',
-      'angular-hypermedia' : 'ext/angular-hypermedia/dist/hypermedia',
-      'angular-material'   : 'ext/angular-material/angular-material',
-      'angular-aria'       : 'ext/angular-aria/angular-aria',
+      'angular'            : 'vendor/angular/angular',
+      'angular-animate'    : 'vendor/angular-animate/angular-animate',
+      'angular-cookies'    : 'vendor/angular-cookies/angular-cookies',
+      'angular-sanitize'   : 'vendor/angular-sanitize/angular-sanitize',
+      'angular-ui-router'  : 'vendor/angular-ui-router/release/angular-ui-router',
+      'angular-hypermedia' : 'vendor/angular-hypermedia/dist/hypermedia',
+      'angular-material'   : 'vendor/angular-material/angular-material',
+      'angular-aria'       : 'vendor/angular-aria/angular-aria',
 
       // Hypermedia Dependencies
-      'linkheader-parser-browser' : 'ext/linkheader-parser/dist/linkheader-parser-browser',
-      'mediatype-parser-browser'  : 'ext/mediatype-parser/dist/mediatype-parser-browser',
-      'uri-templates'             : 'ext/uri-templates/uri-templates',
+      'linkheader-parser-browser' : 'vendor/linkheader-parser/dist/linkheader-parser-browser',
+      'mediatype-parser-browser'  : 'vendor/mediatype-parser/dist/mediatype-parser-browser',
+      'uri-templates'             : 'vendor/uri-templates/uri-templates',
 
       // Application Interface
       'interface' : 'interface',

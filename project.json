@@ -6,7 +6,7 @@
     "clientStyles": "app",
     "template": "template",
     "views": "views",
-    "vendor": "ext",
+    "vendor": "vendor",
     "build": "build",
     "dist": "dist",
     "hostname": "localhost",
