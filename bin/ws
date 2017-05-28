@@ -1,6 +1,4 @@
 #!/usr/bin/env node
-
-// Needful dependencies
 var engine = require('engine.io');
 var dualserver = require('../server/dualserver');
 
