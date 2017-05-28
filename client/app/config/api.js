@@ -8,12 +8,14 @@ function __api__ () {
 
   var config = {};
   var version = 'v1';
+  version = '';
   config.data = {
     protocol : window.location.protocol, // @example "http:"
-    type     : 'application/json',
-    hostname : 'example.com',
+    hostname : 'localhost',
+    port     : '8081',
     basePath : 'api',
     version  : version,
+    col      : ':',
     seg      : '.',
     sep      : '/'
   };
@@ -29,16 +31,15 @@ function __api__ () {
       config.data.protocol,
       config.data.sep,
       config.data.sep,
-      (type !== undefined ? [
-        config.data.type = type,
-        config.data.seg
-      ].join(glue) : glue),
       config.data.hostname,
+      config.data.col,
+      config.data.port,
       config.data.sep,
       config.data.basePath,
       config.data.sep,
       config.data.version,
-      config.data.sep
+      (config.data.version === '' ?
+        glue : config.data.sep)
     ].join(glue);
   };
 

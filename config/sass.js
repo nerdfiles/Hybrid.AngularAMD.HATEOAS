@@ -15,7 +15,11 @@ module.exports = function (grunt) {
       'config/*.scss',
       'atom/*.scss',
       'molecule/*.scss',
-      'organelle/*.scss'
+      'organelle/*.scss',
+      'component/**/*.scss',
+      'module/**/*.scss',
+      'section/**/*.scss',
+      'directive/**/*.scss'
     ],
     dest   : '<%= env.client %>/<%= env.clientStyles %>',
     ext    : '.css'

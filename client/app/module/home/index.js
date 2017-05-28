@@ -8,6 +8,7 @@ function home () {
   'use strict';
 
   var moduleInterface = [
+    'noopService',
     IndexController
   ];
 
@@ -18,7 +19,7 @@ function home () {
    * @memberOf app.home.module
    * @name IndexController
    */
-  function IndexController () {
+  function IndexController (noopService) {
 
     var vm = this;
     vm.meta = {
@@ -30,9 +31,17 @@ function home () {
       }
     };
     vm.pageTitle = 'Home';
-
+    vm.init = init;
+    vm.init()
     ////////////
 
+    function init() {
+      noopService.test().then(function (data) {
+        data.$get().then(function (noop) {
+          vm.noop = noop;
+        });
+      });
+    }
   }
 }
 

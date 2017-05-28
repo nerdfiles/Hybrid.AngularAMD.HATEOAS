@@ -20,9 +20,8 @@ define(['env'], (env) => {
  */
 function __env__ (_, __api__, __contracts__) {
   var DIR = {};
-  var CONTRACTS = __contracts__.map(contractMapper);
+  __contracts__.map(contractMapper);
   var config = {
-    start     : CONTRACTS,
     directory : DIR
   };
   return config;

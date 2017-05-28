@@ -88,6 +88,7 @@ function order (__interface__) {
         defer.resolve({ expect: test, error: e });
         o = defer.promise;
       } finally {
+        console.log(o);
         return o;
       }
 

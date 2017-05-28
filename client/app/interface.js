@@ -19,7 +19,7 @@ function __interface__ (angularAMD, env, httpSettings, routeContract) {
 
   var app = angular.module('app', appDependencies);
 
-  app.constant('env', [env]);
+  app.constant('env', env);
 
   /**
    * @ngdoc method
