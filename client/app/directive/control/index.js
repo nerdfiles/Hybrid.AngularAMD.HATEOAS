@@ -22,29 +22,7 @@ function control (angularAMD) {
    * @name ControlDirectiveController
    * @memberOf app.core.directive:control
    */
-  function ControlDirectiveController ($scope, PackageService) {
-
-    PackageService
-      .get()
-      .then(PackagetLoadCompleted, PackageLoadFailed);
-
-    /**
-     * @function PackagetLoadCompleted
-     * @param {object} conten Content from npm package.json.
-     * @returns {undefined}
-     */
-    function PackagetLoadCompleted (content) {
-      $scope.vm.package = content;
-    }
-
-    /**
-     * @function PackageLoadFailed
-     * @param {object} error Error state.
-     * @returns {undefined}
-     */
-    function PackageLoadFailed (error) {
-      console.log('⚠️ Could not load project manifest');
-    }
+  function ControlDirectiveController ($scope) {
   }
 
   function appControl () {
@@ -52,7 +30,10 @@ function control (angularAMD) {
       scope        : {},
       templateUrl  : 'assets/app/directive/control/index.html',
       controllerAs : 'vm',
-      controller   : ['$scope', 'PackageService', ControlDirectiveController],
+      controller   : [
+        '$scope',
+        ControlDirectiveController
+      ],
       link         : link
     };
     return directive;
@@ -65,7 +46,6 @@ function control (angularAMD) {
 
 define([
   'angularAMD',
-  'css!../../../app/config/control',
-  'ngload!external/service/package'
+  'css!../../../app/config/control'
 ], control);
 

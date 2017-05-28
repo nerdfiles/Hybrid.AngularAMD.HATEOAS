@@ -24,7 +24,17 @@ function header () {
   function IndexController () {
     var vm = this;
     vm.sectionTitle = 'Header';
+    vm.noop = noop;
+
     ////////////
+
+    /**
+     * noop
+     *
+     * @returns {undefined}
+     */
+    function noop () {
+    }
   }
 }
 

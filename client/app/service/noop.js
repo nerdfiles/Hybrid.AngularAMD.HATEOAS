@@ -1,3 +1,4 @@
+// ./client/app/service/noop.js
 function noop (__interface__) {
 
   __interface__
@@ -11,4 +12,4 @@ function noop (__interface__) {
   }
 }
 
-define(['interface'], noop)
+define(['interface'], noop);

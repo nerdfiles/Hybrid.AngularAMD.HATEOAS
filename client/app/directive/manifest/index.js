@@ -32,14 +32,18 @@ function manifest (angularAMD) {
      * @param {object} content A JSON package file.
      * @returns {*} undefined
      */
-    function PackagetLoadCompleted (content) { $scope.vm.package = content; }
+    function PackagetLoadCompleted (content) {
+      $scope.vm.package = content;
+    }
 
     /**
      * @function PackageLoadFailed
      * @param {object} error An error document.
      * @returns {*} undefined
      */
-    function PackageLoadFailed (error) { console.log('⚠️ Could not load project manifest'); }
+    function PackageLoadFailed (error) {
+      console.log('⚠️ Could not load project manifest');
+    }
   }
 
   /**
@@ -51,7 +55,11 @@ function manifest (angularAMD) {
       scope : {},
       templateUrl  : 'assets/app/directive/manifest/index.html',
       controllerAs : 'vm',
-      controller   : ['$scope', 'PackageService', ManifestDirectiveController],
+      controller   : [
+        '$scope',
+        'PackageService',
+        ManifestDirectiveController
+      ],
       link         : link
     };
     return directive;
