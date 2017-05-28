@@ -1,4 +1,4 @@
-// ./client/scripts/external/package.js
+// ./client/app/external/package.js
 (function () {
   /**
    * @ngdoc service

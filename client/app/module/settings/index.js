@@ -1,4 +1,4 @@
-// ./client/scripts/module/settings/index.js
+// ./client/app/module/settings/index.js
 /**
  * @ngdoc overview
  * @name app.settings.module:index

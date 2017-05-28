@@ -1,4 +1,4 @@
-// ./client/scripts/http.js
+// ./client/app/http.js
 /**
  * @ngdoc overview
  * @name app:http

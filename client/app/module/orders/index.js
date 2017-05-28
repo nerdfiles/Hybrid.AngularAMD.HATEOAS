@@ -1,4 +1,4 @@
-// ./client/scripts/module/orders/index.js
+// ./client/app/module/orders/index.js
 /**
  * @ngdoc overview
  * @name app.orders.module:index

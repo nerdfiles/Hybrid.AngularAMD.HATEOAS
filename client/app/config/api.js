@@ -1,4 +1,4 @@
-// ./client/scripts/config/api.js
+// ./client/app/config/api.js
 /**
  * @ngdoc overview
  * @name app.config:api

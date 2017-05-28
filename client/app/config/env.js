@@ -1,4 +1,4 @@
-// ./client/scripts/config/env.js
+// ./client/app/config/env.js
 /**
  * @ngdoc overview
  * @name app.config:env

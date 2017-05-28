@@ -1,4 +1,4 @@
-// ./client/scripts/component/window/index.js
+// ./client/app/component/window/index.js
 /**
  * @ngdoc overview
  * @name app.core.window:index
@@ -29,7 +29,7 @@ function windowSpec (__interface__) {
   }
 
   var component = {
-    templateUrl      : 'assets/scripts/component/window/index.html',
+    templateUrl      : 'assets/app/component/window/index.html',
     controller       : ['$scope', '$rootScope', WindowSpecController],
     controllerAs     : 'vm',
     bindToController : true,

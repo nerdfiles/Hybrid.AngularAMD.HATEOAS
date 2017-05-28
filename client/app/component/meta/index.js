@@ -1,4 +1,4 @@
-// ./client/scripts/component/meta/index.js
+// ./client/app/component/meta/index.js
 /**
  * @ngdoc overview
  * @name app.core.meta:index
@@ -20,7 +20,7 @@ function metaSpec (__interface__) {
   }
 
   var component = {
-    templateUrl  : 'assets/scripts/component/meta/index.html',
+    templateUrl  : 'assets/app/component/meta/index.html',
     controller   : MetaSpecController,
     controllerAs : 'vm',
     bindings     : {

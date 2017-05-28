@@ -1,4 +1,7 @@
-// ./client/scripts/app.js
+// ./client/app/engine.js
+/**
+ * @author https://github.com/plediii
+ */
 module.exports = app;
 function app (options) {
   var eio = require('engine.io-client');

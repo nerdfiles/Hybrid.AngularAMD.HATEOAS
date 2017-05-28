@@ -1,4 +1,4 @@
-// ./client/scripts/section/footer/index.js
+// ./client/app/section/footer/index.js
 /**
  * @ngdoc overview
  * @name app.footer.section:index

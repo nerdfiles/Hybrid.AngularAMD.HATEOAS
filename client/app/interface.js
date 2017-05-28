@@ -1,4 +1,4 @@
-// ./client/scripts/interface.js
+// ./client/app/interface.js
 /**
  * @ngdoc interface
  * @name app:interface

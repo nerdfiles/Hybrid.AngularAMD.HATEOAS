@@ -1,4 +1,4 @@
-// ./client/scripts/directive/help/index.js
+// ./client/app/directive/help/index.js
 /**
  * @ngdoc overview
  * @name app.core.index:help
@@ -33,7 +33,7 @@ function help (angularAMD) {
     var directive = {
       restrict     : 'E',
       scope        : {},
-      templateUrl  : 'assets/scripts/directive/help/index.html',
+      templateUrl  : 'assets/app/directive/help/index.html',
       controllerAs : 'vm',
       controller   : ['$scope', HelpDirectiveController],
       link         : link

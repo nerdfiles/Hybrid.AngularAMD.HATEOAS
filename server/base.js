@@ -50,7 +50,7 @@ app.use('/assets/package.json', express.static(__dirname + '/../package.json'));
 app.use('/assets', express.static(__dirname + '/../client'));
 
 // Serve dualapi
-app.get('/assets/scripts/dual.js', browserify(__dirname + '/../client/scripts/served.js'));
+app.get('/assets/app/dualapi.js', browserify(__dirname + '/../client/app/served.js'));
 
 // Serve Mock API
 require('./mockRoutes')(app);

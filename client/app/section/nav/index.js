@@ -1,4 +1,4 @@
-// ./client/scripts/section/nav/index.js
+// ./client/app/section/nav/index.js
 /**
  * @ngdoc overview
  * @name app.nav.section:index

@@ -1,13 +1,13 @@
-// ./client/styles/interface.scss
+// ./client/app/interface.scss
 
 /**
  * @name table
  */
 @mixin table () {
-	display               : grid;
-	grid-gap              : 5px;
-	grid-template-columns : repeat(7, 1fr);
-	grid-template-rows    : repeat(5, 50px);
-	max-width             : 960;
-	margin                : 1em auto;
+  display               : grid;
+  grid-gap              : 5px;
+  grid-template-columns : repeat(7, 1fr);
+  grid-template-rows    : repeat(5, 50px);
+  max-width             : 960;
+  margin                : 1em auto;
 }

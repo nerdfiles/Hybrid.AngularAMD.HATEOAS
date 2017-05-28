@@ -1,4 +1,4 @@
-// ./client/scripts/service/order.js
+// ./client/app/service/order.js
 /**
  * @ngdoc service
  * @name app.logistics.module:order

@@ -1,4 +1,4 @@
-// ./client/scripts/service/user.js
+// ./client/app/service/user.js
 /**
  * @ngdoc service
  * @name app.core.login:user

@@ -1,4 +1,4 @@
-// ./client/scripts/section/notification/index.js
+// ./client/app/section/notification/index.js
 /**
  * @ngdoc overview
  * @name app.notification.section:index

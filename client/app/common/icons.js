@@ -1,4 +1,4 @@
-// ./client/scripts/common/icons.js
+// ./client/app/common/icons.js
 /**
  * @ngdoc overview
  * @name app.common:icons

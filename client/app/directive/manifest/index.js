@@ -1,4 +1,4 @@
-// ./client/scripts/directive/manifest/index.js
+// ./client/app/directive/manifest/index.js
 /**
  * @ngdoc overview
  * @name app.core.directive:manifest
@@ -49,7 +49,7 @@ function manifest (angularAMD) {
   function appManifest () {
     var directive = {
       scope : {},
-      templateUrl  : 'assets/scripts/directive/manifest/index.html',
+      templateUrl  : 'assets/app/directive/manifest/index.html',
       controllerAs : 'vm',
       controller   : ['$scope', 'PackageService', ManifestDirectiveController],
       link         : link

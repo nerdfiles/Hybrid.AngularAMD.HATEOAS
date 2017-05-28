@@ -1,4 +1,4 @@
-// ./client/scripts/section/breadcrumb/index.js
+// ./client/app/section/breadcrumb/index.js
 /**
  * @ngdoc overview
  * @name app.breadcrumb.section:index

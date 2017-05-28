@@ -1,4 +1,4 @@
-// ./client/atoms/_break-point.scss
+// ./client/app/atoms/_break-point.scss
 
 /**
  * @name break-point-template
@@ -6,7 +6,7 @@
 @mixin break-point-template ($point-from, $point-to, $orientation: landscape) {
 
   // iPads (portrait and landscape)
-	@include break-point-range($point-from, $point-to) {
+  @include break-point-range($point-from, $point-to) {
     @content;
   }
 

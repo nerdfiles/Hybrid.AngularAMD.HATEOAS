@@ -1,4 +1,4 @@
-// ./client/scripts/directive/control/index.js
+// ./client/app/directive/control/index.js
 /**
  * @ngdoc overview
  * @name app.core.index:control
@@ -50,7 +50,7 @@ function control (angularAMD) {
   function appControl () {
     var directive = {
       scope        : {},
-      templateUrl  : 'assets/scripts/directive/control/index.html',
+      templateUrl  : 'assets/app/directive/control/index.html',
       controllerAs : 'vm',
       controller   : ['$scope', 'PackageService', ControlDirectiveController],
       link         : link

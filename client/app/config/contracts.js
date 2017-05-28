@@ -1,4 +1,4 @@
-// ./client/scripts/config/contracts.js
+// ./client/app/config/contracts.js
 /**
  * @ngdoc overview
  * @name app.config:contracts

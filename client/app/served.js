@@ -1,2 +1,5 @@
-// ./client/scripts/served.js
-require('./app')();
+// ./client/app/served.js
+/**
+ * @author https://github.com/plediii
+ */
+require('./engine')();

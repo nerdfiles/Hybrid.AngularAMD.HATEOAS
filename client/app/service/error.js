@@ -1,4 +1,4 @@
-// ./client/scripts/service/error.js
+// ./client/app/service/error.js
 /**
  * @ngdoc service
  * @name app.core.window:error

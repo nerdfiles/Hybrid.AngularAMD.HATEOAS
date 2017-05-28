@@ -1,12 +1,12 @@
-// ./client/styles/config/support.scss
+// ./client/app/config/support.scss
 
 /**
  * @name supports-hypermodern
  */
 @mixin supports-hypermodern () {
-	@supports (display: grid) {
-		@content;
-	}
+  @supports (display: grid) {
+    @content;
+  }
 }
 
 
@@ -14,9 +14,9 @@
  * @name supports-modern
  */
 @mixin supports-modern () {
-	@supports (display: flex) {
-		@content;
-	}
+  @supports (display: flex) {
+    @content;
+  }
 }
 
 
@@ -24,9 +24,9 @@
  * @name supports-legacy-strict
  */
 @mixin support-legacy-strict () {
-	@supports (not(display: grid)) and (not(display: flex)) {
+  @supports (not(display: grid)) and (not(display: flex)) {
      @content;
-	}
+  }
 }
 
 
@@ -34,9 +34,9 @@
  * @name supports-legacy-liberal
  */
 @mixin support-legacy-liberal () {
-	@supports (not(display: grid)) and (display: flex) {
-		@content;
-	}
+  @supports (not(display: grid)) and (display: flex) {
+    @content;
+  }
 }
 
 

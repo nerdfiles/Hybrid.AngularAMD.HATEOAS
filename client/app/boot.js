@@ -1,4 +1,4 @@
-// ./client/scripts/boot.js
+// ./client/app/boot.js
 /**
  * @ngdoc service
  * @name app:boot
@@ -15,7 +15,7 @@ function boot () {
      * @propertyOf app:boot
      * @description Base URL for JS behavior/event/AJAX/vendor/etc.
      */
-    baseUrl: 'assets/scripts/',
+    baseUrl: 'assets/app/',
 
     /**
      * @ngdoc property

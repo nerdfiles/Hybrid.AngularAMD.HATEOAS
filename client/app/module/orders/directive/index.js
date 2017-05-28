@@ -1,4 +1,4 @@
-// ./client/scripts/module/orders/directive/index.js
+// ./client/app/module/orders/directive/index.js
 function index (__interface__) {
   var __Order__ = [
     '$rootScope',
@@ -20,7 +20,7 @@ function index (__interface__) {
       controller       : [OrderActionController],
       bindToController : true,
       controllerAs     : 'vm',
-      templateUrl      : './assets/scripts/module/orders/template/action.html'
+      templateUrl      : './assets/app/module/orders/directive/index.html'
     };
     return dv;
     ////////////

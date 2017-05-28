@@ -1,4 +1,4 @@
-// ./client/scripts/utils/google.maps.js
+// ./client/app/utils/google.maps.js
 /**
  * @ngdoc overview
  * @name app.utils.google.maps:base
