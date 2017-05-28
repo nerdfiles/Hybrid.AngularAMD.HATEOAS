@@ -1,11 +1,7 @@
-// ./client/app/molecules/_customer-pic.scss
+// ./client/app/molecule/_customer-pic.scss
 /**
- * @name app.molecules:_customer-pic
+ * @name app.molecule:customer-pic
  * @description User profile picture molecule.
- */
-
-/**
- * @name customer--pic
  */
 @mixin customer--pic {
   img {

@@ -13,31 +13,31 @@
 @import "./ext/organic-css/src/main";
 @import "./ext/organic-css/src/molecules/_reset";
 
-// @requires Atoms
-@import "atoms/display";
-@import "atoms/_break-point";
-@import "atoms/_grid";
-@import "atoms/_table";
-@import "atoms/_norms";
-@import "atoms/_fonts";
-@import "atoms/_cloaks";
-@import "atoms/_lists";
-@import "atoms/_shadows";
+// @requires Atom
+@import "atom/display";
+@import "atom/_break-point";
+@import "atom/_grid";
+@import "atom/_table";
+@import "atom/_norms";
+@import "atom/_fonts";
+@import "atom/_cloaks";
+@import "atom/_lists";
+@import "atom/_shadows";
 
-// @requires Molecules
-@import "molecules/_body";
-@import "molecules/_navigation";
-@import "molecules/_breadcrumb";
-@import "molecules/_pagination";
-@import "molecules/_interface";
-@import "molecules/_customer-pic";
-@import "molecules/_order";
-@import "molecules/_headline";
-@import "molecules/_header";
-@import "molecules/_menu";
-@import "molecules/_footer";
-@import "organelles/_organelles";
+// @requires Molecule
+@import "molecule/_body";
+@import "molecule/_navigation";
+@import "molecule/_breadcrumb";
+@import "molecule/_pagination";
+@import "molecule/_interface";
+@import "molecule/_customer-pic";
+@import "molecule/_order";
+@import "molecule/_headline";
+@import "molecule/_header";
+@import "molecule/_menu";
+@import "molecule/_footer";
 
-// @requires organelles
-@import "organelles/_interface--header";
-@import "organelles/_interface--footer";
+// @requires organelle
+@import "organelle/_organelle";
+@import "organelle/_interface--header";
+@import "organelle/_interface--footer";

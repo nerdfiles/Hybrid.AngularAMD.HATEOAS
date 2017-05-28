@@ -1,9 +1,7 @@
-// ./client/app/organelles/_interface--header.scss
-
+// ./client/app/molecule/_header.scss
 /**
- * @name header--headline
+ * @name app.molecule:header--headline
  */
-
 @mixin header--headline {
   h1 {
     @include atoms((
