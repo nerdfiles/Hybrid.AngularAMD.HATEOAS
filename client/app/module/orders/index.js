@@ -92,6 +92,7 @@ define([
   'core/meta',
   'service/order',
   'service/error',
-  './directive/control/index'
+  './directive/control/index',
+  'css!./module/orders/index.css'
 ], orders);
 
