@@ -71,6 +71,7 @@ function boot () {
       'common/icons'      : 'common/icons',
 
       // Application Services
+      'service/noop'    : 'service/noop',
       'service/order'   : 'service/order',
       'service/user'    : 'service/user',
       'service/error'   : 'service/error',

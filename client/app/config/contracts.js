@@ -21,6 +21,14 @@ function __contracts__ () {
       timely    : true,
       protected : true,
       cache     : new Date()
+    }},
+    {'noop': {
+      secure    : true,
+      session   : true,
+      tough     : true,
+      timely    : true,
+      protected : true,
+      cache     : new Date()
     }}
   ];
   return config;

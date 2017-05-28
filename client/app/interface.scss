@@ -5,13 +5,13 @@
  */
 
 // @requires animate.css, hint.css
-@import "./ext/animate.css/animate.css";
-@import "./ext/hint.css/hint.css";
-@import "./ext/angular-material/angular-material.css";
+@import "./vendor/animate.css/animate.css";
+@import "./vendor/hint.css/hint.css";
+@import "./vendor/angular-material/angular-material.css";
 
 // @requires organic-css
-@import "./ext/organic-css/src/main";
-@import "./ext/organic-css/src/molecules/_reset";
+@import "./vendor/organic-css/src/main";
+@import "./vendor/organic-css/src/molecules/_reset";
 
 // @requires Atom
 @import "atom/display";

@@ -2,9 +2,9 @@
  * @name app.interface
  * @description Interface for Style.
  */
-@import url(./ext/animate.css/animate.css);
-@import url(./ext/hint.css/hint.css);
-@import url(./ext/angular-material/angular-material.css);
+@import url(./vendor/animate.css/animate.css);
+@import url(./vendor/hint.css/hint.css);
+@import url(./vendor/angular-material/angular-material.css);
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 dl, dd, ol, ul,
