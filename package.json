@@ -53,6 +53,7 @@
   "dependencies": {
     "bluebird": "^3.5.0",
     "browserify-middleware": "^7.1.0",
+    "dotenv": "^4.0.0",
     "dual-engine.io": "git+https://github.com/plediii/dual-engine.io.git",
     "dual-engine.io-client": "git+https://github.com/plediii/dual-engine.io-client.git",
     "dualapi": "^1.3.1",
