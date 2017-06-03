@@ -4,7 +4,7 @@
  * @name app:interface
  * @description Application Interface Module.
  */
-function __interface__ (angularAMD, env, httpSettings, routeContract) {
+function __interface__ (angularAMD, env, httpConfig, routeContract) {
   'use strict';
 
   var appDependencies = [
@@ -36,13 +36,13 @@ function __interface__ (angularAMD, env, httpSettings, routeContract) {
   /**
    * @ngdoc method
    * @methodOf app:interface
-   * @name httpSettings
+   * @name httpConfig
    * @function
    */
   app.config([
     '$httpProvider',
     '$locationProvider',
-    httpSettings
+    httpConfig
   ]);
 
   ////////////

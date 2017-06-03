@@ -10,14 +10,21 @@ function base () {
   return angular
     // Grouping common Google Maps stuffs
     .module('common', [])
-    .run(function ($rootScope) {
+    .run(runBlock);
+    /**
+     * runBlock
+     *
+     * @param $rootScope
+     * @returns {undefined}
+     */
+    function runBlock($rootScope) {
       console.log($rootScope);
       try {
         console.log(window.google);
       } catch (e) {
         console.log(e);
       }
-    });
+    }
 }
 
 define([

@@ -60,8 +60,8 @@ function boot () {
 
       // Application Core
       'core/env'                : 'config/env',
-      'core/http'               : 'http',
-      'core/route'              : 'route',
+      'core/http'               : 'config/http',
+      'core/route'              : 'config/route',
       'core/window'             : 'component/window/index',
       'core/meta'               : 'component/meta/index',
       'core/directive/manifest' : 'directive/manifest/index',

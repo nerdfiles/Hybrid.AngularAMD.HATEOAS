@@ -19,6 +19,7 @@ define(['env'], (env) => {
 
  */
 function __env__ (_, __api__, __contracts__) {
+  'use strict';
   var DIR = {};
   __contracts__.map(contractMapper);
   var config = {
