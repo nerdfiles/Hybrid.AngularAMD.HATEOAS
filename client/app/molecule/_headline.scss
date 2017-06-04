@@ -1,4 +1,6 @@
 // ./client/app/molecule/_headline.scss
+@import "./vendor/organic-css/src/main"; // To use across modules.
+
 /**
  * @name app.molecule:_headline
  * @description Headers molecule.
@@ -7,15 +9,19 @@
 /**
  * @name headline--title
  */
-@mixin headline--title {
+@mixin headline--title() {
+  @content;
   h1 {
+    @include atoms((
+      margin-0
+    ))
   }
 }
 
 /**
  * @name headline--release-date
  */
-@mixin headline--release-date {
+@mixin headline--release-date() {
   span {
   }
 }

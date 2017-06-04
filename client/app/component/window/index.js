@@ -39,7 +39,7 @@ function windowSpec (__interface__) {
   };
 
   /**
-   * @ngdoc component
+   * @ngdoc interface
    * @memberOf app.core.window
    * @name windowSpec
    */

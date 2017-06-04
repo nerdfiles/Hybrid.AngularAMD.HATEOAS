@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,YAAa;EACX,OAAO,EAAE,cAAc",
-"sources": ["index.scss"],
+"mappings": "AAaE,eAAoB;EAAE,MAAY,EAAE,GAAa;;ACVnD;;;GAGG;AAEH;;GAEG;AAUH;;GAEG;ACpBH,YAAa;EAET,OAAO,EAAE,cAAc",
+"sources": ["../../vendor/organic-css/src/common.scss","../../molecule/_headline.scss","index.scss"],
 "names": [],
 "file": "index.css"
 }

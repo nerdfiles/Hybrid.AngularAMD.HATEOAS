@@ -21,7 +21,7 @@ function notification () {
    * @ngdoc controller
    * @name IndexController
    * @memberOf app.notification.section:index
-   * @returns {undefined}
+   * @returns {*} undefined
    */
   function IndexController ($rootScope, ErrorService) {
     var vm = this;

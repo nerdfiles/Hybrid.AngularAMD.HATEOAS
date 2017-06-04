@@ -17,8 +17,7 @@ function settings () {
    * @ngdoc controller
    * @memberOf app.settings.module
    * @name IndexController
-   *
-   * @returns {undefined}
+   * @returns {*} undefined
    */
   function IndexController () {
 

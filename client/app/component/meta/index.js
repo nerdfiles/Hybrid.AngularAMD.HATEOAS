@@ -30,7 +30,7 @@ function metaSpec (__interface__) {
   };
 
   /**
-   * @ngdoc component
+   * @ngdoc interface
    * @memberOf app.core.meta
    * @name metaSpec
    */
