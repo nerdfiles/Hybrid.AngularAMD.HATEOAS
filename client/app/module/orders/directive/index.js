@@ -13,7 +13,7 @@ function index (__interface__) {
       console.log(vm);
     }
   }
-  function OrderAction () {
+  function OrderAction ($rootScope) {
     var dv = {
       link             : link,
       scope            : {},
