@@ -41,9 +41,9 @@ function order (__interface__) {
 
     var service = {
       noop     : orderNoop,
-      one      : orderGet,
+      one      : getOrder,
       two      : orderTwo,
-      multiple : ordersGet,
+      multiple : getOrders,
       create   : orderCreate,
       update   : orderUpdate,
       delete   : orderDelete,
@@ -51,7 +51,7 @@ function order (__interface__) {
     };
 
     var baseUrl = 'http://localhost:9001';
-    var _url = (baseUrl + '/api/v0/orders/');
+    var _url = baseUrl + '/api/v0/orders/';
 
     return service;
 
@@ -69,13 +69,13 @@ function order (__interface__) {
     /**
      * @ngdoc method
      * @methodOf app.logistics.module:order
-     * @name orderGet
+     * @name getOrder
      * @param {number|string} orderId Order ID.
      * @returns {*} undefined
      */
-    function orderGet (orderId) {
+    function getOrder (id) {
 
-      var endpointUrl = (_url + orderId);
+      var endpointUrl = (_url + id);
       var context = new ResourceContext(HalResource);
       var order;
       var o;
@@ -107,11 +107,11 @@ function order (__interface__) {
     /**
      * @ngdoc method
      * @methodOf app.logistics.module:order
-     * @name ordersGet
+     * @name getOrders
      * @param {number|string} orderId Order ID.
      * @returns {object:Promise} Promise object.
      */
-    function ordersGet (orderId) {
+    function getOrders (orderId) {
       return api.orders.list()
     }
 
