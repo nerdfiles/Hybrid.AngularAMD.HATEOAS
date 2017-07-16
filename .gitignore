@@ -1,0 +1,16 @@
+*.swp
+*.swo
+*.swn
+tags
+.DS_Store
+*.log
+node_modules/
+bower_components/
+.sass-cache
+.idea
+build
+docs
+reports/
+dist/
+config/platforms/
+client/app/vendor/
