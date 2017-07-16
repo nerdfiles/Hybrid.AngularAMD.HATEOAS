@@ -10,7 +10,7 @@ define([
     CompanyAction
   ];
 
-  __interface__.directive('app🆔', __Company__);
+  __interface__.directive('🆔', __Company__);
 
   CompanyActionController.$inject = [
     '$rootScope'

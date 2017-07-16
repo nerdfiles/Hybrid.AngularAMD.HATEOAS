@@ -2,20 +2,22 @@
  * @ngdoc controller
  */
 define([
-  'interface'
+  'core/window',
+  'core/meta',
+  './module/downloads/directive/index'
 ], function() {
 
   /**
-   * @name controller
+   * @name downloads
    * @param $scope
    * @returns {undefined}
    */
-  function controller($scope) {
+  function downloads($scope) {
     console.log($scope)
   }
 
   return [
     '$scope',
-    controller
+    downloads
   ]
 })

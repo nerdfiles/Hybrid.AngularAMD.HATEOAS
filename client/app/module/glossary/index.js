@@ -1,7 +1,12 @@
 /**
  * @ngdoc controller
  */
-define(['interface'], () => {
+define([
+  'core/window',
+  'core/meta',
+  './module/glossary/directive/index'
+], () => {
+
   return [
     '$scope',
     glossary

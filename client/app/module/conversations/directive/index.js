@@ -10,7 +10,7 @@ define([
     ConversationAction
   ];
 
-  __interface__.directive('app💬', __Conversation__);
+  __interface__.directive('💬', __Conversation__);
 
   ConversationActionController.$inject = [
     '$rootScope'

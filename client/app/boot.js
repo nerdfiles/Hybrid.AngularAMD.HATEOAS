@@ -86,6 +86,8 @@ function boot () {
       'BreadcrumbSectionIndexController'   : 'section/breadcrumb/index',
       'FooterSectionIndexController'       : 'section/footer/index',
 
+      'DownloadsController' : 'module/downloads/index',
+
       // Module Pages
       'HomeModuleIndexController'        : 'module/home/index',
       'OrdersModuleIndexController'      : 'module/orders/index',

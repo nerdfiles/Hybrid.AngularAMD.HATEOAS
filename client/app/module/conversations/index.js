@@ -1,16 +1,21 @@
 /**
  * @ngdoc controller
  */
-define(['interface'], () => {
+define([
+  'core/window',
+  'core/meta',
+  './module/conversations/directive/index'
+], () => {
+
   return [
     '$scope',
-    conversation
+    conversations
   ]
 
   /**
    * @name conversation
    * @returns {*} undefined
    */
-  function conversation() {
+  function conversations() {
   }
 })

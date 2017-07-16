@@ -36,6 +36,8 @@ define([
       templateUrl      : './assets/app/module/downloads/directive/index.html'
     };
 
+    return dv;
+
     /**
      * @name link
      * @param $scope

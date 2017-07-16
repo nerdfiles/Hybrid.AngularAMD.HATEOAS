@@ -1,16 +1,21 @@
 /**
  * @ngdoc controller
  */
-define(['interface'], () => {
+define([
+  'core/window',
+  'core/meta',
+  './module/figures/directive/index'
+], () => {
+
   return [
     '$scope',
-    figure
+    figures
   ]
 
   /**
    * @name figure
    * @returns {*} undefined
    */
-  function figure($scope) {
+  function figures($scope) {
   }
 })
