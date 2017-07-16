@@ -20,13 +20,16 @@ define([
 
       if (g) {
         return function(element, operation, schema, url) {
-          endpointUrl = url
-          var oneHourAgo = Date.now() - 60*60*1000
-          // $get = g.$loadPaths({
-          //   order: {
-          //   }
-          // })
-          $get = g.$load(oneHourAgo)
+          if (operation === 'getList') {
+            endpointUrl = url
+            var oneHourAgo = Date.now() - 60*60*1000
+            // $get = g.$loadPaths({
+            //   order: {
+            //   }
+            // })
+            $get = g.$load(oneHourAgo)
+            return element
+          }
           return element
         }
       }
@@ -36,7 +39,7 @@ define([
         endpointUrl = url
 
         if (operation === 'getList') {
-          if (!response) return data
+          if (g || !response) return g || data
 
           var res;
 
@@ -46,12 +49,32 @@ define([
               res._links = _.extend({}, data._links)
               g = res
             }
-            return res
           } catch(e) {
             console.log(e)
             res = data._embedded[schema]
-            return res
           }
+
+          console.log('getList: ', data)
+
+          return data
+        }
+
+        if (operation === 'get') {
+          if (g || !response) return g || data
+
+          var res;
+
+          try {
+            res = data._embedded[schema]
+            if (res) {
+              res._links = _.extend({}, data._links)
+              g = res
+            }
+          } catch(e) {
+            console.log(e)
+            res = data._embedded[schema]
+          }
+          return res
         }
 
         return data
