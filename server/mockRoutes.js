@@ -8,32 +8,35 @@ module.exports = function (app) {
     var _json;
     var json;
 
-    try {
-      _json = JSON.parse(fs.readFileSync(__dirname + '/../mocks/orders/' + id + '.json', 'utf8'));
-      _.extend(_json, { status: 200 });
-    } catch (e) {
-      _json = { status: 404, error: e };
-    } finally {
-      json = _json;
-    }
-
-    if (!id) {
+    if (id) {
+      try {
+        _json = JSON.parse(fs.readFileSync(__dirname + '/../mocks/orders/' + id + '.json', 'utf8'));
+        _.extend(_json, { status: 200 });
+      } catch (e) {
+        _json = { status: 404, error: e };
+      } finally {
+        json = _json;
+      }
+    } else if (!id) {
       json = {
         status: 200
       }
+
       return response
         .status(json.status)
         .json(
           {
-            id: 1,
             _links: {
               self: {
-                href: 'api/v1/orders'
+                href: 'api/v0/orders'
               }
             },
             _embedded: {
-              'api/v1/orders': [
-
+              'api/v0/orders': [
+                {
+                  id: 42,
+                  title: 'Some item'
+                }
               ]
             }
           }

@@ -11,64 +11,70 @@
     construct="vm.meta.description"
   ></meta:spec>
 
-  <li
-    ng-if="vm.page.length"
-    ng-repeat="order in vm.page"
-  >
-    {{order.id}}
-  </li>
+  <ul ng-switch="vm.method">
 
-  <md-card
-    ng-if="!vm.page.length"
-    class="page--order"
-  >
-
-    <img
-      src="http://placehold.it/350x150"
-      class="md-card-image"
-      alt="Order Default Image"
-    />
-
-    <md-card-content>
-      <header class="order--headline">
-        <h1>{{vm.pageTitle}}</h1>
-      </header>
-    </md-card-content>
-
-    <md-card-footer>
-
-      <dl>
-        <dt>Order ID</dt>
-        <dd>{{vm.page.properties.orderNumber}}</dd>
-      </dl>
-
-      <nav
-        ng-show="vm.pageLoading !== true"
-        class="module--pagination"
-      >
-        <li>
-          <md-button
-            ng-click="vm.followRel(vm.meta.prevLabel)"
-            ng-class="{
-              disabled: !vm.hasRel(vm.meta.prevLabel)
-            }"
-          >⏮</md-button>
+    <li ng-switch-when="multiple">
+      <ul>
+        <li ng-repeat="i in vm.page">
+          <a
+            title="Endpoint: {{i.route}}"
+            ng-href="./orders/{{i.id}}"
+          >{{i.id}}</a>
         </li>
-        <li>
-          <app:control tabindex="1" aria-hidden="vm.meta.ariaHideFalse">
-            👗
-          </app:control>
-        </li>
-        <li>
-          <md-button
-            ng-click="vm.followRel(vm.meta.nextLabel)"
-            ng-class="{
-              disabled: !vm.hasRel(vm.meta.nextLabel)
-            }"
-          >⏭</md-buton>
-        </li>
-      </nav>
+      </ul>
+    </li>
 
-    </md-card-footer>
-  </md-card>
+    <li ng-switch-when="one">
+      <md-card class="page--order">
+
+        <img
+          src="http://placehold.it/350x150"
+          class="md-card-image"
+          alt="Order Default Image"
+        />
+
+        <md-card-content>
+          <header class="order--headline">
+            <h1>{{vm.pageTitle}}</h1>
+          </header>
+        </md-card-content>
+
+        <md-card-footer>
+
+          <dl>
+            <dt>Order ID</dt>
+            <dd>{{vm.page.properties.orderNumber}}</dd>
+          </dl>
+
+          <nav
+            ng-show="vm.pageLoading !== true"
+            class="module--pagination"
+          >
+            <li>
+              <md-button
+                ng-click="vm.followRel(vm.meta.prevLabel)"
+                ng-class="{
+                  disabled: !vm.hasRel(vm.meta.prevLabel)
+                }"
+              >⏮</md-button>
+            </li>
+            <li>
+              <app:control tabindex="1" aria-hidden="vm.meta.ariaHideFalse">
+                👗
+              </app:control>
+            </li>
+            <li>
+              <md-button
+                ng-click="vm.followRel(vm.meta.nextLabel)"
+                ng-class="{
+                  disabled: !vm.hasRel(vm.meta.nextLabel)
+                }"
+              >⏭</md-buton>
+            </li>
+          </nav>
+
+        </md-card-footer>
+      </md-card>
+    </li>
+  </ul>
 </div>

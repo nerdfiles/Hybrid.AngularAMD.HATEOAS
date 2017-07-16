@@ -56,7 +56,7 @@ define([
 
           console.log('getList: ', data)
 
-          return data
+          return res || data
         }
 
         if (operation === 'get') {

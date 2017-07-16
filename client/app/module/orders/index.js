@@ -44,16 +44,20 @@ function orders () {
       ariaHideTrue     : true
     }
 
-    var _id = parseInt($stateParams.id, 10)
-    var orderId = !isNaN(_id) ? _id : ($stateParams.id === '') ? 'multiple' : null
-    var method = (orderId === 'multiple') ? orderId : 'one'
+    vm._id = $stateParams.id || null
+    vm.method = (vm._id === null) ? 'multiple' : 'one'
+    vm.listViewTitle = 'Orders'
+    vm.detailViewTitle = 'Order detail for Order ID: ' + vm._id
 
-    vm.pageTitle = (method === 'multiple') ? 'Orders' : vm.meta.title.icon + 'Order detail for Order ID: ' + orderId
-    vm.meta.title.content = vm.meta.description.content = (method === 'one') ? 'Loading...' : vm.pageTitle
+    vm.pageTitle = (vm.method === 'multiple')
+      ? vm.listViewTitle
+      : vm.detailViewTitle
+
+    vm.meta.title.content = vm.meta.description.content = vm.pageTitle
 
     vm.pageLoading = true
 
-    OrderService[method](orderId).then(function (response) {
+    OrderService[vm.method](vm._id).then(function (response) {
       if (response.expect) {
         return ErrorService.notify(response)
       }
