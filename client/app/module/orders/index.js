@@ -48,14 +48,12 @@ function orders () {
     vm.method = (vm._id === null) ? 'multiple' : 'one'
     vm.listViewTitle = 'Orders'
     vm.detailViewTitle = 'Order detail for Order ID: ' + vm._id
-
+    vm.pageLoading = true
     vm.pageTitle = (vm.method === 'multiple')
       ? vm.listViewTitle
       : vm.detailViewTitle
 
     vm.meta.title.content = vm.meta.description.content = vm.pageTitle
-
-    vm.pageLoading = true
 
     OrderService[vm.method](vm._id).then(function (response) {
       if (response.expect) {
