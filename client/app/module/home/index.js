@@ -50,5 +50,6 @@ function home () {
 define([
   'core/window',
   'core/meta',
-  'service/noop'
+  'service/noop',
+  'core/form'
 ], home);

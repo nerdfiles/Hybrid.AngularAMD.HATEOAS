@@ -68,6 +68,7 @@ function boot () {
       'core/window'             : 'component/window/index',
       'core/meta'               : 'component/meta/index',
       'core/directive/manifest' : 'directive/manifest/index',
+      'core/form'               : 'directive/form/index',
 
       // Application Commons
       'utils/google/maps' : 'utils/google.maps',
