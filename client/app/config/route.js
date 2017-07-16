@@ -99,8 +99,6 @@ function route (angularAMD) {
         }
       })
 
-
-
       .state('orders', {
         url: '/orders/:id?',
         views: {

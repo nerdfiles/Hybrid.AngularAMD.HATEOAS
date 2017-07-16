@@ -25,6 +25,7 @@ function order (__interface__) {
     .factory('OrderService', [
       'ResourceContext',
       'HalResource',
+      'api',
       '$q',
       OrderService
     ]);
@@ -36,7 +37,7 @@ function order (__interface__) {
    * @param $q
    * @returns {undefined}
    */
-  function OrderService (ResourceContext, HalResource, $q) {
+  function OrderService (ResourceContext, HalResource, api, $q) {
 
     var service = {
       noop     : orderNoop,
@@ -111,11 +112,45 @@ function order (__interface__) {
      * @returns {object:Promise} Promise object.
      */
     function ordersGet (orderId) {
-      var defer = $q.defer();
-      var message = 'Load an orders list';
-      defer.resolve({ expect: orderId, info: message });
-      return defer.promise;
+      return api.orders.list()
     }
+
+    /**
+     * @ngdoc method
+     * @methodOf app.logistics.module:order
+     * @name orderCreate
+     * @returns {*} undefined
+     */
+    function orderCreate () {
+    }
+
+    /**
+     * @ngdoc method
+     * @methodOf app.logistics.module:order
+     * @name orderUpdate
+     * @returns {*} undefined
+     */
+    function orderUpdate () {
+    }
+
+    /**
+     * @ngdoc method
+     * @methodOf app.logistics.module:order
+     * @name orderDelete
+     * @returns {*} undefined
+     */
+    function orderDelete () {
+    }
+
+    /**
+     * @ngdoc method
+     * @methodOf app.logistics.module:order
+     * @name orderRemove
+     * @returns {*} undefined
+     */
+    function orderRemove () {
+    }
+
   }
 }
 

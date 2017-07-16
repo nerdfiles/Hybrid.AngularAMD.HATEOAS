@@ -37,6 +37,7 @@ function boot () {
       'css'    : 'vendor/RequireCSS/css',
 
       'restangular' : 'vendor/restangular/dist/restangular.min',
+      'model'       : 'config/model',
 
       // Framework Dependencies
       'angular'            : 'vendor/angular/angular',
@@ -77,6 +78,7 @@ function boot () {
       'service/order'   : 'service/order',
       'service/user'    : 'service/user',
       'service/error'   : 'service/error',
+      'api'             : 'services/api',
 
       // Application Externals
       'external/service/package' : 'external/package',

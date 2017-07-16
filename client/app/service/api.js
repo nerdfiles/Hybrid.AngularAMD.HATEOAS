@@ -1,30 +1,46 @@
 define([
-  'interface'
-], function() {
-  var interface = {
-    orders: {
-      get: getOrder,
-      list: getOrders
+  'interface',
+  'model'
+], function(__interface__) {
+
+  var ApiService = [
+    '$timeout',
+    'Restangular',
+    Api
+  ]
+
+  __interface__.factory('api', ApiService)
+
+  function Api($timeout, Restangular) {
+    var interface = {
+      orders: {
+        get: getOrder,
+        list: getOrders
+      }
     }
-  }
 
-  const orders = Restangular.all('orders')
+    const orders = Restangular.all('api/v0/orders')
 
-  function getOrder(id) {
-    return orders.one('orders', id).get()
-      .then(function(data) {
-        return data.order
-      }, function(e) {
-        return e
-      })
-  }
+    return interface
 
-  function getOrders() {
-    return orders.get()
-      .then(function(data) {
-        return data.orders
-      }, function(e) {
-        return e
-      })
+    ////////////
+
+    function getOrder(id) {
+      return orders.one(id).get()
+        .then(function(data) {
+          return data.order
+        }, function(e) {
+          return e
+        })
+    }
+
+    function getOrders() {
+      return orders.getList()
+        .then(function(data) {
+          return data
+        }, function(e) {
+          return e
+        })
+    }
   }
 })

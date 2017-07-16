@@ -1,17 +1,27 @@
-<window:spec title="vm.meta.title"></window:spec>
-
-<meta:spec
-  type="description"
-  construct="vm.meta.description"
-></meta:spec>
-
 <div
   ng-show="vm.pageLoading !== true"
   role="main"
   class="module--page"
 >
 
-  <md-card class="page--order">
+  <window:spec title="vm.meta.title"></window:spec>
+
+  <meta:spec
+    type="description"
+    construct="vm.meta.description"
+  ></meta:spec>
+
+  <li
+    ng-if="vm.page.length"
+    ng-repeat="order in vm.page"
+  >
+    {{order.id}}
+  </li>
+
+  <md-card
+    ng-if="!vm.page.length"
+    class="page--order"
+  >
 
     <img
       src="http://placehold.it/350x150"

@@ -3,7 +3,7 @@ var _ = require('lodash');
 
 module.exports = function (app) {
 
-  app.get('/api/v0/orders/:id', function (request, response, next) {
+  app.get('/api/v0/orders/:id?', function (request, response, next) {
     var id = request.params.id || null;
     var _json;
     var json;
@@ -15,6 +15,19 @@ module.exports = function (app) {
       _json = { status: 404, error: e };
     } finally {
       json = _json;
+    }
+
+    if (!id) {
+      json = {
+        status: 200
+      }
+      return response
+        .status(json.status)
+        .json([
+          {
+            id: 1
+          }
+        ])
     }
 
     response

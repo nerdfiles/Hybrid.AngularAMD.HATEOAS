@@ -13,6 +13,7 @@ function orders () {
     '$rootScope',
     'OrderService',
     'ErrorService',
+    'api',
     IndexController
   ];
 
@@ -24,8 +25,7 @@ function orders () {
    * @name IndexController
    * @description Orders Index Controller.
    */
-  function IndexController ($stateParams, $timeout, $rootScope, OrderService,
-    ErrorService) {
+  function IndexController ($stateParams, $timeout, $rootScope, OrderService, ErrorService, api) {
 
     var vm = this;
     vm.meta = {
@@ -47,21 +47,24 @@ function orders () {
     var orderId = !isNaN(_id) ? _id : ($stateParams.id === '') ? 'multiple' : null
     var method = (orderId === 'multiple') ? orderId : 'one'
 
-    vm.pageTitle = (method === 'multiple') ? 'Orders' : vm.meta.title.icon + 'Order detail'
-    vm.pageLoading = true
+    vm.pageTitle = (method === 'multiple') ? 'Orders' : vm.meta.title.icon + 'Order detail for Order ID: ' + orderId
     vm.meta.title.content = vm.meta.description.content = (method === 'one') ? 'Loading...' : vm.pageTitle
+
+    vm.pageLoading = true
 
     OrderService[method](orderId).then(function (response) {
       if (response.expect) {
         return ErrorService.notify(response)
       }
+      var isListView = response.length
       vm.page = response
+      vm.pageLoading = false
+      if (isListView) return
+
       vm.followRel = followRel
       vm.hasRel = hasRel
-      vm.pageLoading = false
-      vm.meta.title.content = vm.meta.description.content = (vm.pageTitle + ' for Order ID: ' + orderId)
     }, function(e) {
-      vm.meta.title.content = vm.pageTitle
+      vm.pageLoading = false
     })
 
     ////////////
@@ -92,8 +95,9 @@ function orders () {
 define([
   'core/window',
   'core/meta',
-  'service/order',
   'service/error',
+  'service/api',
+  'service/order',
   './directive/control/index',
   'css!./module/orders/index.css'
 ], orders)
