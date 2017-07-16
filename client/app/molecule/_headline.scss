@@ -1,5 +1,5 @@
 // ./client/app/molecule/_headline.scss
-@import "./vendor/organic-css/src/main"; // To use across modules.
+@import "../vendor/organic-css/src/main"; // To use across modules.
 
 /**
  * @name app.molecule:_headline
@@ -23,6 +23,8 @@
  */
 @mixin headline--release-date() {
   span {
+  }
+  & > * {
   }
 }
 
