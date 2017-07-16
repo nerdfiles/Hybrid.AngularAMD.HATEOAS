@@ -30,37 +30,39 @@ function orders () {
     var vm = this;
     vm.meta = {
       title: {
-        icon    : '🎫',
+        icon    : '🎫 ',
         content : null
       },
       description: {
-        icon    : '🎫',
+        icon    : '🎫 ',
         content : null
       },
       prevLabel        : 'prev',
       nextLabel        : 'next',
       ariaHideFalse    : false,
       ariaHideTrue     : true
-    };
+    }
 
-    var _id = parseInt($stateParams.id, 10);
-    var orderId = !isNaN(_id) ? _id : ($stateParams.id === '') ? 'multiple' : null;
-    var method = (orderId === 'multiple') ? orderId : 'one';
+    var _id = parseInt($stateParams.id, 10)
+    var orderId = !isNaN(_id) ? _id : ($stateParams.id === '') ? 'multiple' : null
+    var method = (orderId === 'multiple') ? orderId : 'one'
 
-    vm.pageTitle = (method === 'multiple') ? 'Orders' : 'Order detail';
-    vm.pageLoading = true;
-    vm.meta.title.content = vm.meta.description.content = (method === 'one') ? 'Loading...' : vm.pageTitle;
+    vm.pageTitle = (method === 'multiple') ? 'Orders' : vm.meta.title.icon + 'Order detail'
+    vm.pageLoading = true
+    vm.meta.title.content = vm.meta.description.content = (method === 'one') ? 'Loading...' : vm.pageTitle
 
     OrderService[method](orderId).then(function (response) {
       if (response.expect) {
-        return ErrorService.notify(response);
+        return ErrorService.notify(response)
       }
-      vm.page = response;
-      vm.followRel = followRel;
-      vm.hasRel = hasRel;
-      vm.pageLoading = false;
-      vm.meta.title.content = vm.meta.description.content = (vm.pageTitle + ' for Order ID: ' + orderId);
-    });
+      vm.page = response
+      vm.followRel = followRel
+      vm.hasRel = hasRel
+      vm.pageLoading = false
+      vm.meta.title.content = vm.meta.description.content = (vm.pageTitle + ' for Order ID: ' + orderId)
+    }, function(e) {
+      vm.meta.title.content = vm.pageTitle
+    })
 
     ////////////
 
@@ -71,8 +73,8 @@ function orders () {
      */
     function followRel (rel) {
       vm.page.$linkRel(rel).$get().then(function (page) {
-        vm.page = page;
-      });
+        vm.page = page
+      })
     }
 
     /**
@@ -81,7 +83,7 @@ function orders () {
      * @returns {boolean} Relation check.
      */
     function hasRel (rel) {
-      return rel in vm.page.$links;
+      return rel in vm.page.$links
     }
 
   }
@@ -94,5 +96,5 @@ define([
   'service/error',
   './directive/control/index',
   'css!./module/orders/index.css'
-], orders);
+], orders)
 

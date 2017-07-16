@@ -116,43 +116,6 @@ function order (__interface__) {
       defer.resolve({ expect: orderId, info: message });
       return defer.promise;
     }
-
-    /**
-     * @ngdoc method
-     * @methodOf app.logistics.module:order
-     * @name orderCreate
-     * @returns {*} undefined
-     */
-    function orderCreate () {
-    }
-
-    /**
-     * @ngdoc method
-     * @methodOf app.logistics.module:order
-     * @name orderUpdate
-     * @returns {*} undefined
-     */
-    function orderUpdate () {
-    }
-
-    /**
-     * @ngdoc method
-     * @methodOf app.logistics.module:order
-     * @name orderDelete
-     * @returns {*} undefined
-     */
-    function orderDelete () {
-    }
-
-    /**
-     * @ngdoc method
-     * @methodOf app.logistics.module:order
-     * @name orderRemove
-     * @returns {*} undefined
-     */
-    function orderRemove () {
-    }
-
   }
 }
 

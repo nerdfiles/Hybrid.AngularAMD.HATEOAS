@@ -45,7 +45,8 @@
     "lodash/dist/lodash.js",
     "RequireCSS/css.js",
     "angular-material/angular-material.js",
-    "angular-aria/angular-aria.js"
+    "angular-aria/angular-aria.js",
+    "restangular/dist/restangular.min.js"
   ],
   "vendorStyles": [
     "organic-css/src/common.scss",

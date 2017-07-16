@@ -24,9 +24,11 @@ function home () {
     var vm = this;
     vm.meta = {
       title: {
+        icon: '🔰 ',
         content: 'Home'
       },
       description: {
+        icon: '🔰 ',
         content: 'Consectetur exercitation non consectetur eu adipisicing et sit ut sit.'
       }
     };

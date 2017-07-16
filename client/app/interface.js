@@ -14,6 +14,7 @@ function __interface__ (angularAMD, env, httpConfig, routeContract) {
     'ngAria',
     'ngMaterial',
     'ui.router',
+    'restangular',
     'hypermedia'
   ];
 
@@ -63,5 +64,6 @@ define([
   'angular-cookies',
   'angular-sanitize',
   'angular-ui-router',
+  'restangular',
   'angular-hypermedia'
 ], __interface__);

@@ -23,7 +23,8 @@
     "RequireCSS": "https://github.com/VIISON/RequireCSS.git",
     "angular-material": "^1.1.4",
     "angular-aria": "1.5.11",
-    "angular-jwt": "^0.1.9"
+    "angular-jwt": "^0.1.9",
+    "restangular": "^1.6.1"
   },
   "resolutions": {
     "angular": "1.5.11",

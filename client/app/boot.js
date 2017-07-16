@@ -36,6 +36,8 @@ function boot () {
       'ngload' : 'vendor/angularAMD/dist/ngload',
       'css'    : 'vendor/RequireCSS/css',
 
+      'restangular' : 'vendor/restangular/dist/restangular.min',
+
       // Framework Dependencies
       'angular'            : 'vendor/angular/angular',
       'angular-animate'    : 'vendor/angular-animate/angular-animate',
@@ -136,6 +138,10 @@ function boot () {
       ],
 
       'angular-aria': [
+        'angular'
+      ],
+
+      'restangular': [
         'angular'
       ],
 
