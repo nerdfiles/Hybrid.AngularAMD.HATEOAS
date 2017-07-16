@@ -1,20 +1,21 @@
 <form
-  action="api/v0/{{vm.endpoint}}"
+  ng-action="api/v0/{{vm.endpoint}}"
   method="post"
 >
-  <fieldset>
-    <div class="input--block">
-      <label for=""></label>
-      <input type="">
+
+  <fieldset ng-repeat="formInput in form">
+    <div ng-repeat="inputBlock in formInput">
+      <label for="{{inputBlock.id}}">
+        {{inputBlock.label}}
+      </label>
+      <input
+        name        = "{{inputBlock.name}}"
+        ng-show     = "inputBlock.type === 'text'
+        type        = "{{inputBlock.type}}
+        ng-model    = "inputBlock.value"
+        placeholder = "{{inputBlock.placeholder}}
+      />
     </div>
   </fieldset>
 
-  <fieldset>
-    <div class="input--block">
-      <button
-        type="submit"
-        value="formSubmit
-      >Submit</button>
-    </div>
-  </fieldset>
 </form>
