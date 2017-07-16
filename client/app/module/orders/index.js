@@ -14,7 +14,7 @@ function orders () {
     'OrderService',
     'ErrorService',
     'api',
-    'ModelService',
+    'model',
     IndexController
   ];
 
@@ -26,7 +26,7 @@ function orders () {
    * @name IndexController
    * @description Orders Index Controller.
    */
-  function IndexController ($stateParams, $timeout, $rootScope, OrderService, ErrorService, api, ModelService) {
+  function IndexController ($stateParams, $timeout, $rootScope, OrderService, ErrorService, api, model) {
 
     var vm = this;
     vm.meta = {
@@ -87,7 +87,11 @@ function orders () {
      * @returns {boolean} Relation check.
      */
     function hasRel (rel) {
-      return rel in vm.page.$links
+      var links
+      if (vm.page.$links)
+        links = rel in vm.page.$links
+      return links
+
     }
 
   }

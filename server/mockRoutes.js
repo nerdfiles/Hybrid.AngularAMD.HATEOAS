@@ -23,15 +23,26 @@ module.exports = function (app) {
       }
       return response
         .status(json.status)
-        .json([
+        .json(
           {
-            id: 1
+            id: 1,
+            _links: {
+              self: {
+                href: 'api/v1/orders'
+              }
+            },
+            _embedded: {
+              'api/v1/orders': [
+
+              ]
+            }
           }
-        ])
+        )
     }
 
     response
       .setHeader('Content-Type', 'application/json');
+
     response
       .status(json.status)
       .send(JSON.stringify(json, null, 3));

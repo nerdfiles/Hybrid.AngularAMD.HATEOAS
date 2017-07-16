@@ -1,42 +1,62 @@
 define([
-  'angularAMD'
-], function(angularAMD) {
+  'lodash'
+], function(_) {
 
-  var ModelService = [
-    'ResourceContext',
-    'HalResource',
-    'RestangularProvider',
-    Model
-  ]
+  return function(ResourceContext, HalResource, Restangular) {
+    Restangular.setBaseUrl("http://localhost:9001");
+    Restangular.setDefaultHeaders(
+      { "Content-Type": "application/json+hal" }
+    );
 
-  return ModelService;
+    Restangular.addRequestInterceptor(modelNamespace('orders'))
+    Restangular.addResponseInterceptor(modelNamespace('orders'))
 
-  function Model(ResourceContext, HalResource, RestangularProvider) {
-    RestangularProvider.addRequestInterceptor(modelNamespace('orders'))
-    RestangularProvider.addResponseInterceptor(modelNamespace('orders'))
-  }
+    var endpointUrl
 
-  function modelNamespace(name) {
-    var endpointUrl = url
-    var context = new ResourceContext(HalResource)
-    var g
+    function modelNamespace(name) {
+      var $get
+      var context = new ResourceContext(HalResource)
+      var g, _g
 
-    if (g) {
-      return function(element, operation, schema, url) {
-        if (g) {
-          return g
+      if (g) {
+        return function(element, operation, schema, url) {
+          endpointUrl = url
+          var oneHourAgo = Date.now() - 60*60*1000
+          // $get = g.$loadPaths({
+          //   order: {
+          //   }
+          // })
+          $get = g.$load(oneHourAgo)
+          return element
         }
-        return element
       }
-    }
 
-    return function(data, operation, schema, url, response, deferred) {
-      g = context.get(endpointUrl)
-      if (operation === 'getList') {
-        return response.$get() ? response.$get() : data
+      return function(data, operation, schema, url, response, deferred) {
+
+        endpointUrl = url
+
+        if (operation === 'getList') {
+          if (!response) return data
+
+          var res;
+
+          try {
+            res = data._embedded[schema]
+            if (res) {
+              res._links = _.extend({}, data._links)
+              g = res
+            }
+            return res
+          } catch(e) {
+            console.log(e)
+            res = data._embedded[schema]
+            return res
+          }
+        }
+
+        return data
       }
-      return response.$get() ? response.$get() : data
     }
-  }
+  };
 
 })

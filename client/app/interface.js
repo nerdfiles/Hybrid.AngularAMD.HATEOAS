@@ -4,7 +4,7 @@
  * @name app:interface
  * @description Application Interface Module.
  */
-function __interface__ (angularAMD, env, httpConfig, routeContract, applicationModel) {
+function __interface__ (angularAMD, env, httpConfig, routeContract, model) {
   'use strict';
 
   var appDependencies = [
@@ -46,7 +46,15 @@ function __interface__ (angularAMD, env, httpConfig, routeContract, applicationM
     httpConfig
   ]);
 
-  // app.config(applicationModel)
+
+  var ModelService = [
+    'ResourceContext',
+    'HalResource',
+    'Restangular',
+    model
+  ]
+
+  app.service('model', ModelService)
 
 
   ////////////
