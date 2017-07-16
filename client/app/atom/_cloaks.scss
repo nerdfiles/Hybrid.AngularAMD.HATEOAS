@@ -1,0 +1,10 @@
+// ./client/app/atom/_cloaks.scss
+@include define-atom("accessibly-hide") {
+  position: absolute;
+  left: -9999px;
+}
+
+@include define-atom("completely-hide") {
+  display: none;
+  visibility: hidden;
+}

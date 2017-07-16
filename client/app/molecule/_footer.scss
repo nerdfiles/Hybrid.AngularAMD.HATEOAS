@@ -1,0 +1,14 @@
+// ./client/app/molecule/_footer.scss
+/**
+ * @name app.molecule:footer--headline
+ */
+@mixin footer--headline {
+  h1 {
+    @include atoms((
+      completely-hide
+    ))
+  }
+}
+
+////////////
+

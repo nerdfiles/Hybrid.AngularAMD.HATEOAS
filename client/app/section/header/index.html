@@ -1,0 +1,47 @@
+<md-menu-bar ng-init="isHidden = false;">
+
+  <md-menu>
+
+    <md-button
+      class="primary"
+      ng-click="vm.noop()"
+      aria-label="App"
+    >App</md-button>
+
+    <md-menu-content>
+      <md-menu-item>
+        <!-- an order button (like at a restaurant) -->
+        <app-🔳
+          label="Order"
+          tabindex="0"
+          aria-hidden="isHidden"
+        ></app-🔳>
+      </md-menu-item>
+    </md-menu-content>
+
+  </md-menu>
+
+  <md-menu>
+
+    <md-button
+      class="primary"
+      ng-click="vm.noop()"
+      aria-label="Help"
+    >Help</md-button>
+
+    <md-menu-content>
+      <md-menu-item>
+        <!-- help button (like at an OS) -->
+        <app-❓
+          label="Help"
+          tabindex="1"
+          aria-hidden="isHidden"
+        ></app-❓>
+      </md-menu-item>
+    </md-menu-content>
+
+  </md-menu>
+
+</md-menu-bar>
+
+<h1>{{vm.sectionTitle}}</h1>

@@ -1,0 +1,14 @@
+// ./client/app/molecule/_header.scss
+/**
+ * @name app.molecule:header--headline
+ */
+@mixin header--headline {
+  h1 {
+    @include atoms((
+      completely-hide
+    ))
+  }
+}
+
+////////////
+

@@ -1,0 +1,25 @@
+<div class="vcard">
+  <span class="vcard--fn vcard--org">{{vcard.company.profile[0].fn}}</span>
+  Located at
+  <address class="vcard--adr">
+   <span class="vcard--street-address"></span>,
+   <span class="vcard--locality"></span>,
+   <span class="vcard--region"></span>.
+  </address>
+  <figure>
+    <img
+      class="vcard--logo"
+      src="http://www.example.com/logo.png"
+      alt="{{vcard.company.profile[0].logo_text}}"
+    />
+    <figcaption>{{vcard.company.profile[0].fn}}</figcaption>
+  </figure>
+  <dl>
+    <dt>Phone:</dt>
+    <dd><a class="tel" href="tel:+111-111-111">111-111-111</a></dd>
+  </dl>
+  <a
+    href="{{vcard.company.profile[0].link}}"
+    class="url"
+  >http://crytek.com</a>
+</div>

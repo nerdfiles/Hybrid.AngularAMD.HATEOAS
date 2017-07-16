@@ -1,0 +1,44 @@
+// ./client/app/molecule/_navigation.scss
+/**
+ * @name app.molecule:_navigation
+ * @description Navigation molecule.
+ */
+
+/**
+ * @name navigation--headline
+ */
+@mixin navigation--headline {
+  h1 {
+    @include atoms((
+      completely-hide
+    ));
+  }
+}
+
+/**
+ * @name navigation--listing
+ */
+@mixin navigation--listing {
+  // li {
+  //   @include atoms((
+  //     inline-block
+  //   ));
+  // }
+}
+
+/**
+ * @name navigation--link
+ */
+@mixin navigation--link {
+  // a {
+  //   @include atoms((
+  //     font-size-16,
+  //     cursor-pointer,
+  //     padding-left-10,
+  //     no-underline
+  //   ));
+  // }
+}
+
+////////////
+

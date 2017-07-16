@@ -1,0 +1,52 @@
+// ./client/app/organelles/_organelles.scss
+/**
+ * @name app.organelles:_organelles
+ * @description Global organelles.
+ */
+
+/**
+ * @name app.organelles.interface:navigation
+ * @memberOf app.organelles:_organelles
+ * @requires hint.css
+ */
+.interface--navigation {
+  @include navigation--headline;
+  @include navigation--listing;
+  @include navigation--link;
+}
+
+.interface--notifications {
+}
+
+/**
+ * @name app.organelles.interface:breadcrumb
+ * @memberOf app.organelles:_organelles
+ * @requires hint.css
+ */
+.interface--breadcrumb {
+  @include breadcrumb--base;
+  @include breadcrumb--headline;
+  @include breadcrumb--listing;
+  @include breadcrumb--link;
+}
+
+.interface--module {
+}
+
+  .module--pagination {
+    @include pagination--listing;
+  }
+
+  .page--customer {
+    @include customer--pic;
+  }
+
+  .page--order {
+    @include order--pic;
+  }
+
+  .order--headline {
+    @include headline--title;
+    @include headline--release-date;
+  }
+

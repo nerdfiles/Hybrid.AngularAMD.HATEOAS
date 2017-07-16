@@ -17,7 +17,7 @@ Review Grunt "strategies":
 
 *Stratgies* combine *Basics* and *Workflows* to achieve certain desirable configurations.
 
-<img src="https://git.kpd-i.com/aalexander/Hybrid.angularAMD.HATEOAS/raw/master/resources/grunt-default.png" alt="Strategies layout"/>
+<img src="https://raw.githubusercontent.com/nerdfiles/Hybrid.AngularAMD.HATEOAS/develop/resources/grunt-default.png" alt="Strategies layout"/>
 
 
 ### Vendor stuff

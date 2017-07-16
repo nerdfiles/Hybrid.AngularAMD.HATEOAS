@@ -1,6 +1,6 @@
-/*jslint node: true */
-/* global -Promise */
-
+/**
+ * @author https://github.com/plediii
+ */
 var dualapi = require('dualapi')
   .use(require('dual-engine.io'));
 
@@ -11,25 +11,25 @@ module.exports = function () {
 
   var addend = 0;
   var mountConfig = {
-		'**': function (body, ctxt) {
-			console.log(ctxt.from.join('/'), '->', ctxt.to.join('/'), ':', body);
-		},
+    '**': function (body, ctxt) {
+      console.log(ctxt.from.join('/'), '->', ctxt.to.join('/'), ':', body);
+    },
     add: function () {
-			addend++;
-			dual.send({
-			  to   : ['engineio', '*', 'addend'],
-			  body : addend
-			});
-		},
+      addend++;
+      dual.send({
+        to   : ['engineio', '*', 'addend'],
+        body : addend
+      });
+    },
     addend: function (body, ctxt) {
-			ctxt.return(addend);
-		},
+      ctxt.return(addend);
+    },
     error: function (ctxt) {
-			console.error(ctxt.body);
-			if (ctxt.body.message.stack) {
-			  console.error(ctxt.body.message.stack);
-			}
-		}
+      console.error(ctxt.body);
+      if (ctxt.body.message.stack) {
+        console.error(ctxt.body.message.stack);
+      }
+    }
   };
 
   dual.mount(mountConfig);

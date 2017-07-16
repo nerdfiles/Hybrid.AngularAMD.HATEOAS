@@ -1,9 +1,9 @@
 {
   "class": [ "order" ],
   "properties": {
-      "orderNumber": 42,
-      "itemCount": 3,
-      "status": "pending"
+    "orderNumber": 42,
+    "itemCount": 3,
+    "status": "pending"
   },
   "entities": [
     {

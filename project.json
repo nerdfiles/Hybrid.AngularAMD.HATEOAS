@@ -2,11 +2,11 @@
   "env": {
     "name": "client",
     "client": "client",
-    "clientScripts": "scripts",
-    "clientStyles": "styles",
+    "clientScripts": "app",
+    "clientStyles": "app",
     "template": "template",
     "views": "views",
-    "vendor": "ext",
+    "vendor": "vendor",
     "build": "build",
     "dist": "dist",
     "hostname": "localhost",
@@ -45,7 +45,8 @@
     "lodash/dist/lodash.js",
     "RequireCSS/css.js",
     "angular-material/angular-material.js",
-    "angular-aria/angular-aria.js"
+    "angular-aria/angular-aria.js",
+    "restangular/dist/restangular.min.js"
   ],
   "vendorStyles": [
     "organic-css/src/common.scss",
@@ -85,8 +86,7 @@
   ],
   "buildFiles": [
     "images/**",
-    "scripts/**",
-    "styles/**",
+    "app/**",
     "views/**",
     "index.html"
   ]

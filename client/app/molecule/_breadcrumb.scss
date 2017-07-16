@@ -1,0 +1,54 @@
+// ./client/app/molecule/_breadcrumb.scss
+/**
+ * @name app.molecule:_breadcrumb
+ * @description Pagination molecule.
+ */
+
+/**
+ * @name breadcrumb--base
+ */
+@mixin breadcrumb--base {
+  ol {
+    @include atoms((
+      shadow-3
+    ));
+  }
+}
+
+/**
+ * @name breadcrumb--headline
+ */
+@mixin breadcrumb--headline {
+  h1 {
+    @include atoms((
+      completely-hide
+    ));
+  }
+}
+
+/**
+ * @name breadcrumb--listing
+ */
+@mixin breadcrumb--listing {
+  li {
+    @include atoms((
+      inline-block
+    ));
+  }
+}
+
+/**
+ * @name breadcrumb--link
+ */
+@mixin breadcrumb--link {
+  a {
+    @include atoms((
+      cursor-pointer,
+      font-size-14,
+      padding-left-10
+    ));
+  }
+}
+
+////////////
+

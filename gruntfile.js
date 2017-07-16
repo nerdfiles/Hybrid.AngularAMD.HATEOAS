@@ -5,6 +5,8 @@
  * @description Grunt tasks interface module.
  */
 
+require('dotenv').config();
+
 /**
  * @function exports
  * @param grunt

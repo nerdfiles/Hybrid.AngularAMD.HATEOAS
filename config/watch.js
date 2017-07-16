@@ -29,13 +29,13 @@ module.exports = function (grunt) {
         '<%= env.client %>/<%= env.clientScripts %>/config/*',
         '<%= env.client %>/<%= env.clientScripts %>/filter/*',
         '<%= env.client %>/<%= env.clientScripts %>/<%= env.template %>/*',
-        '<%= env.client %>/<%= env.clientStyles %>/**/*.css',
-        '<%= env.client %>/<%= env.views %>/**/*',
+        // '<%= env.client %>/<%= env.clientStyles %>/**/*.css',
+        // '<%= env.client %>/<%= env.views %>/**/*',
         '<%= env.client %>/index.html',
-        '<%= env.client %>/<%= env.clientScripts %>/<%= env.vendor %>/*',
+        // '<%= env.client %>/<%= env.clientScripts %>/<%= env.vendor %>/*',
         '<%= env.client %>/<%= env.clientStyles %>/<%= env.vendor %>/*'
       ],
-      task: []
+      tasks: ['sass']
     },
 
     /**
@@ -63,7 +63,7 @@ module.exports = function (grunt) {
      */
     sass: {
       files: [
-        '<%= env.client %>/<%= env.clientStyles %>/**/*.scss'
+        // '<%= env.client %>/<%= env.clientStyles %>/**/*.scss'
       ],
       tasks: ['sass']
     }

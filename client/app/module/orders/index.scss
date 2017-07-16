@@ -1,0 +1,7 @@
+@import "../../molecule/_headline.scss";
+
+.page--order {
+  @include headline--title() {
+    outline: 1px solid gold;
+  };
+}

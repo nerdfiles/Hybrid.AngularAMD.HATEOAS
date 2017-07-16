@@ -1,0 +1,36 @@
+// ./client/app/molecule/_order.scss
+/**
+ * @name app.molecule:_order
+ * @description Company molecule.
+ */
+
+/**
+ * @name order--pic
+ */
+@mixin order--pic {
+  img {
+    @include atoms((
+      left,
+      margin-right-30
+    ));
+  }
+}
+
+////////////
+
+.order--headline {
+  @include atoms((
+  )) {
+    display: flex;
+    flex-direction: row;
+
+  }
+}
+
+dt.details--specifications {
+  @include atoms((
+
+  )) {
+    @include absolute($x: -9999px);
+  }
+}

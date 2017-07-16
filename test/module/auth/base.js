@@ -1,4 +1,6 @@
-/* global angular: false, beforeEach: false, inject: false, describe: false, expect:false, it: false, $httpProvider: false, jwtInterceptorProvider: false, jwtInterceptorProvider: false, $resourceProvider: false */
+/* global angular: false, beforeEach: false, inject: false, describe: false,
+   expect:false, it: false, $httpProvider: false, jwtInterceptorProvider: false,
+   jwtInterceptorProvider: false, $resourceProvider: false */
 // ./test/module/auth/base.js
 /**
  * @ngdoc interface

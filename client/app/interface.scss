@@ -1,0 +1,43 @@
+// ./client/app/interface.scss
+/**
+ * @name app.interface
+ * @description Interface for Style.
+ */
+
+// @requires animate.css, hint.css
+@import "./vendor/animate.css/animate.css";
+@import "./vendor/hint.css/hint.css";
+@import "./vendor/angular-material/angular-material.css";
+
+// @requires organic-css
+@import "./vendor/organic-css/src/main";
+@import "./vendor/organic-css/src/molecules/_reset";
+
+// @requires Atom
+@import "atom/_display";
+@import "atom/_break-point";
+@import "atom/_grid";
+@import "atom/_table";
+@import "atom/_norms";
+@import "atom/_fonts";
+@import "atom/_cloaks";
+@import "atom/_lists";
+@import "atom/_shadows";
+
+// @requires Molecule
+@import "molecule/_body";
+@import "molecule/_navigation";
+@import "molecule/_breadcrumb";
+@import "molecule/_pagination";
+@import "molecule/_interface";
+@import "molecule/_customer-pic";
+@import "molecule/_order";
+@import "molecule/_headline";
+@import "molecule/_header";
+@import "molecule/_menu";
+@import "molecule/_footer";
+
+// @requires organelle
+@import "organelle/_organelles";
+@import "organelle/_interface--header";
+@import "organelle/_interface--footer";

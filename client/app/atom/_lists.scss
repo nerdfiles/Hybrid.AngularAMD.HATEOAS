@@ -1,0 +1,6 @@
+// ./client/app/atom/_lists.scss
+%list-style-none {
+  & {
+    list-style: none;
+  }
+}

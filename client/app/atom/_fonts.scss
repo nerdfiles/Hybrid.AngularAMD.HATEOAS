@@ -1,0 +1,13 @@
+// ./client/app/atom/_fonts.scss
+/**
+ * @name app.atom:_atoms
+ * @description Atoms definitions.
+ */
+@include define-atom("font-family") {
+  font-family: "Helvetica";
+}
+
+@include define-atom("assistive-font-family") {
+  font-family: "Eulexia";
+}
+
