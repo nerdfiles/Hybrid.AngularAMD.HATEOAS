@@ -1,5 +1,5 @@
-# Companies
+# Downloads
 
 ## Spec
 
-1. http://dsheiko.github.io/h5i/#company-info
+1. http://www.catswhocode.com/blog/hyper-useful-ready-to-use-html5-snippets
