@@ -14,6 +14,7 @@ function orders () {
     'OrderService',
     'ErrorService',
     'api',
+    'ModelService',
     IndexController
   ];
 
@@ -25,7 +26,7 @@ function orders () {
    * @name IndexController
    * @description Orders Index Controller.
    */
-  function IndexController ($stateParams, $timeout, $rootScope, OrderService, ErrorService, api) {
+  function IndexController ($stateParams, $timeout, $rootScope, OrderService, ErrorService, api, ModelService) {
 
     var vm = this;
     vm.meta = {

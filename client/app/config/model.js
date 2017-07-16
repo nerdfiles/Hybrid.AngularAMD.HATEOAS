@@ -1,28 +1,28 @@
 define([
-  'interface'
-], function(__interface__) {
+  'angularAMD'
+], function(angularAMD) {
 
   var ModelService = [
     'ResourceContext',
     'HalResource',
-    'Restangular',
-    'api',
+    'RestangularProvider',
     Model
   ]
 
-  __interface__.service('ModelService', ModelService)
+  return ModelService;
 
-  function Model(ResourceContext, HalResource, Restangular, api) {
-    Restangular.addRequestInterceptor(modelNamespace('orders'))
-    Restangular.addResponseInterceptor(modelNamespace('orders', api))
+  function Model(ResourceContext, HalResource, RestangularProvider) {
+    RestangularProvider.addRequestInterceptor(modelNamespace('orders'))
+    RestangularProvider.addResponseInterceptor(modelNamespace('orders'))
   }
 
-  function modelNamespace(name, factory) {
-    if (!factory) {
+  function modelNamespace(name) {
+    var endpointUrl = url
+    var context = new ResourceContext(HalResource)
+    var g
+
+    if (g) {
       return function(element, operation, schema, url) {
-        var endpointUrl = url
-        var context = new ResourceContext(HalResource)
-        var g = context.get(endpointUrl)
         if (g) {
           return g
         }
@@ -31,10 +31,11 @@ define([
     }
 
     return function(data, operation, schema, url, response, deferred) {
+      g = context.get(endpointUrl)
       if (operation === 'getList') {
-        return data
+        return response.$get() ? response.$get() : data
       }
-      return response.$get() || data
+      return response.$get() ? response.$get() : data
     }
   }
 

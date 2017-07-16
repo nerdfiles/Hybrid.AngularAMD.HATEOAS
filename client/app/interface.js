@@ -4,7 +4,7 @@
  * @name app:interface
  * @description Application Interface Module.
  */
-function __interface__ (angularAMD, env, httpConfig, routeContract) {
+function __interface__ (angularAMD, env, httpConfig, routeContract, applicationModel) {
   'use strict';
 
   var appDependencies = [
@@ -46,6 +46,9 @@ function __interface__ (angularAMD, env, httpConfig, routeContract) {
     httpConfig
   ]);
 
+  // app.config(applicationModel)
+
+
   ////////////
 
   return angularAMD.bootstrap(app);
@@ -57,6 +60,7 @@ define([
   'core/env',
   'core/http',
   'core/route',
+  'model',
   'common/icons',
   'angular-aria',
   'angular-material',
