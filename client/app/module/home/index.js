@@ -34,7 +34,7 @@ function home () {
     };
     vm.pageTitle = 'Home';
     vm.init = init;
-    vm.init()
+    vm.init();
     ////////////
 
     function init() {

@@ -1,17 +1,19 @@
 define([
   'interface'
 ], function(__interface__) {
-  __interface__.directive('🔁', [__Quotation__])
-  function __Quotation__() {
+
+  __interface__.directive('🏷', [__Metadata__]);
+
+  function __Metadata__() {
     var dv = {
       scope: {
-        quotation: '='
+        metadata: '='
       },
       link: link,
-      templateUrl: 'assets/app/directive/quotation/index.html'
-    }
-    return dv
+      templateUrl: 'assets/app/directive/metadata/index.html'
+    };
+    return dv;
     function link($scope, $element, $attrs, $ctrl) {
     }
   }
-})
+});

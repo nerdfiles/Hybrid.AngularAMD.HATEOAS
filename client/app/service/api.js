@@ -7,9 +7,9 @@ define([
     '$timeout',
     'Restangular',
     Api
-  ]
+  ];
 
-  __interface__.factory('api', ApiService)
+  __interface__.factory('api', ApiService);
 
   function Api($timeout, Restangular) {
     var interface = {
@@ -17,30 +17,30 @@ define([
         get: getOrder,
         list: getOrders
       }
-    }
+    };
 
-    const orders = Restangular.all('api/v0/orders')
+    var orders = Restangular.all('api/v0/orders');
 
-    return interface
+    return interface;
 
     ////////////
 
     function getOrder(id) {
       return orders.one(id).get()
         .then(function(data) {
-          return data.order
+          return data.order;
         }, function(e) {
-          return e
-        })
+          return e;
+        });
     }
 
     function getOrders() {
       return orders.getList()
         .then(function(data) {
-          return data
+          return data;
         }, function(e) {
-          return e
-        })
+          return e;
+        });
     }
   }
-})
+});

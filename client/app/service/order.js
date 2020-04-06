@@ -112,7 +112,7 @@ function order (__interface__) {
      * @returns {object:Promise} Promise object.
      */
     function getOrders (orderId) {
-      return api.orders.list()
+      return api.orders.list();
     }
 
     /**

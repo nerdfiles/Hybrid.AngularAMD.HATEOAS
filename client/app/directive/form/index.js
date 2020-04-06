@@ -4,14 +4,14 @@
 define([
   'interface'
 ], function(__interface__) {
-  'use strict'
+  'use strict';
 
   var directiveInterface = [
     '$rootScope',
     __Form__
-  ]
+  ];
 
-  __interface__.directive('🔤', directiveInterface)
+  __interface__.directive('🔤', directiveInterface);
 
   /**
    * @name __Form__
@@ -43,9 +43,9 @@ define([
       },
       link: link,
       templateUrl: 'assets/app/directive/form/index.html'
-    }
-    return dv
+    };
+    return dv;
     function link($scope, $element, $attrs, $ctrl) {
     }
   }
-})
+});

@@ -1,7 +1,9 @@
 define([
   'interface'
 ], function(__interface__) {
-  __interface__.directive('🔁', [__Quotation__])
+
+  __interface__.directive('🔁', [__Quotation__]);
+
   function __Quotation__() {
     var dv = {
       scope: {
@@ -9,9 +11,9 @@ define([
       },
       link: link,
       templateUrl: 'assets/app/directive/quotation/index.html'
-    }
-    return dv
+    };
+    return dv;
     function link($scope, $element, $attrs, $ctrl) {
     }
   }
-})
+});

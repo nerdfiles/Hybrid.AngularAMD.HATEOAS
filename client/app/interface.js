@@ -52,9 +52,9 @@ function __interface__ (angularAMD, env, httpConfig, routeContract, model) {
     'HalResource',
     'Restangular',
     model
-  ]
+  ];
 
-  app.service('model', ModelService)
+  app.service('model', ModelService);
 
 
   ////////////
@@ -69,7 +69,7 @@ define([
   'core/http',
   'core/route',
   'model',
-  'common/icons',
+  //'common/icons',
   'angular-aria',
   'angular-material',
   'angular-animate',
