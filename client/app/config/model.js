@@ -3,7 +3,7 @@ define([
 ], function(_) {
 
   return function(ResourceContext, HalResource, Restangular) {
-    Restangular.setBaseUrl("http://localhost:9001");
+    Restangular.setBaseUrl("http://localhost:3001");
     Restangular.setDefaultHeaders(
       { "Content-Type": "application/json+hal" }
     );

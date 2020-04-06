@@ -10,7 +10,7 @@
     "build": "build",
     "dist": "dist",
     "hostname": "localhost",
-    "port": 9001,
+    "port": 3001,
     "portSecure": 8443
   },
   "vendorScripts": [

@@ -50,7 +50,7 @@ function order (__interface__) {
       remove   : orderRemove
     };
 
-    var baseUrl = 'http://localhost:9001';
+    var baseUrl = 'http://localhost:3001';
     var _url = baseUrl + '/api/v0/orders/';
 
     return service;
