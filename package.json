@@ -2,8 +2,12 @@
   "name": "Hybrid.angularAMD.HATEOAS",
   "version": "0.0.20",
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "ws": "node ./bin/ws",
     "build/dual": "browserify client/scripts/static.js -o build/static-app.js"
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.3"
   },
   "devDependencies": {
     "bunyan": "^1.8.10",
@@ -61,6 +65,7 @@
     "engine.io": "^1.5.1",
     "engine.io-client": "^1.5.1",
     "grunt-bower": "^0.21.4",
+    "gulp": "^4.0.2",
     "lodash": "^4.17.4"
   }
 }

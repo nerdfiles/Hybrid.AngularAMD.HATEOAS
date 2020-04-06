@@ -23,6 +23,7 @@ function control (angularAMD) {
    * @memberOf app.core.directive:control
    */
   function ControlDirectiveController ($scope) {
+    console.log($scope);
   }
 
   function appControl () {
