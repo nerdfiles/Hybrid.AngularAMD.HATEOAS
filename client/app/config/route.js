@@ -42,6 +42,12 @@ function route (angularAMD) {
         controllerAs  : 'vm'
       },
 
+      companies: {
+        templateUrl   : 'assets/app/module/companies/index.html',
+        controllerUrl : 'CompaniesController',
+        controllerAs  : 'vm',
+      },
+
       downloads: {
         templateUrl   : 'assets/app/module/downloads/index.html',
         controllerUrl : 'DownloadsController',
@@ -83,6 +89,18 @@ function route (angularAMD) {
           'notification' : angularAMD.route(routeDefinition.notification),
           'breadcrumb'   : angularAMD.route(routeDefinition.breadcrumb),
           'main'         : angularAMD.route(routeDefinition['main/home']),
+          'footer'       : angularAMD.route(routeDefinition.footer)
+        }
+      })
+
+      .state('companies', {
+        url: '/companies',
+        views: {
+          'header'       : angularAMD.route(routeDefinition.header),
+          'nav'          : angularAMD.route(routeDefinition.nav),
+          'notification' : angularAMD.route(routeDefinition.notification),
+          'breadcrumb'   : angularAMD.route(routeDefinition.breadcrumb),
+          'main'         : angularAMD.route(routeDefinition.companies),
           'footer'       : angularAMD.route(routeDefinition.footer)
         }
       })
