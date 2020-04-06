@@ -4,8 +4,8 @@
 define([
   'core/window',
   'core/meta',
-  './directive/quotation/index',
-  './module/downloads/directive/index'
+  'QuotationDirective',
+  'DownloadsDirective'
 ], function() {
 
   /**

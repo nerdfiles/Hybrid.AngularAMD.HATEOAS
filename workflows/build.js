@@ -22,6 +22,20 @@ module.exports = function (grunt) {
   /**
    * Build
    */
+  grunt.registerTask('build/amd', [
+    'jshint:build',
+    'clean:build',
+    'preprocess:build',
+    'htmlmin:build',
+    'cssmin:build',
+    'requirejs:buildAMD',
+    'copy:build'
+  ]);
+
+
+  /**
+   * Build
+   */
   grunt.registerTask('build/platform', [
     'jshint:build',
     'clean:build',

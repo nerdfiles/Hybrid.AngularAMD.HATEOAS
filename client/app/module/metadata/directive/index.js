@@ -3,7 +3,7 @@
  */
 define([
   'interface'
-], (__interface__) => {
+], function (__interface__) {
 
   var __Company__ = [
     '$rootScope',

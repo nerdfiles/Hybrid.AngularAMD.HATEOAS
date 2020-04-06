@@ -79,7 +79,7 @@ function boot () {
       'service/order'   : 'service/order',
       'service/user'    : 'service/user',
       'service/error'   : 'service/error',
-      'api'             : 'services/api',
+      'api'             : 'service/api',
 
       // Application Externals
       'external/service/package' : 'external/package',
@@ -93,9 +93,14 @@ function boot () {
 
       // Module Pages
       'CompaniesController'           : 'module/companies/index',
+      'CompaniesDirective'            : 'module/companies/directive/index',
       'DownloadsController'           : 'module/downloads/index',
+      'QuotationDirective'            : 'directive/quotation/index',
+      'DownloadsDirective'            : 'module/downloads/directive/index',
       'HomeModuleIndexController'     : 'module/home/index',
       'OrdersModuleIndexController'   : 'module/orders/index',
+      'OrdersDirective'               : 'module/orders/directive/index',
+      'HelpDirective'                 : 'directive/help/index',
       'SettingsModuleIndexController' : 'module/settings/index'
 
     },

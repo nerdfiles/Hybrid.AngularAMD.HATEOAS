@@ -4,7 +4,7 @@
 define([
   'core/window',
   'core/meta',
-  './module/companies/directive/index'
+  'CompaniesDirective'
 ], function() {
 
   /**
